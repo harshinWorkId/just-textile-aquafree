@@ -164,15 +164,15 @@ const marketsData: MarketItem[] = [
 
 const MarketsWeServe = () => {
   return (
-    <section className="bg-white py-4">
-      <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-16 gap-y-12 px-6 lg:flex-row lg:px-8">
+    <section className="bg-white py-20" style={{ backgroundImage: "url('/assets/images/bg1.png')" }}>
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-16 gap-y-12 px-6 lg:flex-row lg:px-8 bg-[#fcf8f4]/60 rounded-2xl py-12">
         {/* Left Column: Text Content and Feature Boxes */}
         <div className="w-full lg:w-3/5">
-          <h2 className="mt-4 text-4xl font-extrabold tracking-tight text-[var(--forestGreen)] sm:text-5xl">
+          <h2 className="mt-4 text-4xl font-medium tracking-tight text-[var(--greenShade)] sm:text-5xl">
             Markets We Serve
           </h2>
 
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-[22px] leading-8 text-[var(--bodyContent)] text-justify">
             We are dedicated to supporting a diverse range of industries with
             our high-quality textile applications, from highly technical defense
             fabrics to the latest fashion trends.
@@ -203,7 +203,7 @@ const MarketsWeServe = () => {
                     <h3 className="mt-4 text-xl font-semibold leading-7 text-gray-900">
                       {item.title}
                     </h3>
-                    <p className="mt-2 text-base leading-7 text-gray-600">
+                    <p className="mt-2 text-lg leading-7 text-[var(--bodyContent)]">
                       {item.description}
                     </p>
                   </div>
@@ -214,7 +214,7 @@ const MarketsWeServe = () => {
         </div>
 
         {/* Right Column: Large Image */}
-        <div className="relative h-[480px] w-full lg:w-2/5 overflow-hidden rounded-xl bg-gray-100 shadow-xl lg:h-[600px]">
+        <div className="relative h-[480px] w-full lg:w-2/5 overflow-hidden rounded-xl bg-gray-100 shadow-xl lg:h-[600px] mt-50">
           <Image
             src="/assets/images/textile-factory.png"
             alt="Textile manufacturing process with various applications"

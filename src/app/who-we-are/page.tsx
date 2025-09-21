@@ -90,7 +90,7 @@ const page = () => {
               {/* <p className="text-sm font-semibold uppercase tracking-wider text-gray-500">
                 EXCELLENT PRODUCTS
               </p> */}
-              <h2 className="mt-2 text-4xl font-extrabold tracking-tight text-[var(--forestGreen)] sm:text-5xl">
+              <h2 className="mt-2 text-4xl font-medium tracking-tight text-[var(--greenShade)] sm:text-5xl">
                 Who We Are
               </h2>
               <p className="mt-6 text-lg text-[var(--bodyContent)] text-justify">

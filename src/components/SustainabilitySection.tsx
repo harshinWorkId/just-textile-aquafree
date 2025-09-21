@@ -27,8 +27,8 @@ const sectionContent = {
 
 const SustainabilitySection: React.FC = () => {
   return (
-    <section className="bg-white py-16 sm:py-24">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-x-16 gap-y-12 px-6 lg:grid-cols-2 lg:px-8">
+    <section className="bg-white py-16 sm:py-24 " style={{ backgroundImage: "url('/assets/images/bg1.png')" }}>
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-x-16 gap-y-12 lg:grid-cols-2 bg-[#fcf8f4]/60 overflow-hidden rounded-2xl">
         {/* Left Column: Image */}
         <div className="relative overflow-hidden rounded-xl bg-gray-100 shadow-xl">
           {/* Using Next.js Image component for optimization */}
@@ -43,7 +43,7 @@ const SustainabilitySection: React.FC = () => {
         </div>
 
         {/* Right Column: Content */}
-        <div>
+        <div className="px-6">
           {/* Eyebrow Text */}
           {/* <p className="text-sm font-semibold uppercase tracking-wide text-orange-600">
           
@@ -52,12 +52,12 @@ const SustainabilitySection: React.FC = () => {
           </p> */}
 
           {/* Main Title */}
-          <h2 className="mt-4 text-4xl font-extrabold tracking-tight text-[var(--forestGreen)] sm:text-5xl">
+          <h2 className="mt-4 text-4xl font-medium tracking-tight text-[var(--greenShade)] sm:text-5xl">
             {sectionContent.title}
           </h2>
 
           {/* Paragraph Description */}
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8 text-[var(--bodyContent)] text-justify">
             {sectionContent.paragraph}
           </p>
 
@@ -66,10 +66,10 @@ const SustainabilitySection: React.FC = () => {
             {sectionContent.listItems.map((item, index) => (
               <li key={index} className="flex items-start">
                 <CheckCircleIcon
-                  className="h-6 w-6 flex-shrink-0 text-[var(--vibrantGreen)] mr-2"
+                  className="h-6 w-6 flex-shrink-0 text-[var(--forestGreen)] mr-2"
                   aria-hidden="true"
                 />
-                <span className="text-lg text-gray-700">{item.text}</span>
+                <span className="text-lg text-[var(--bodyContent)]">{item.text}</span>
               </li>
             ))}
           </ul>

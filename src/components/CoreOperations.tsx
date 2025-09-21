@@ -165,10 +165,10 @@ const CoreOperations: React.FC = () => {
     });
 
     return (
-        <section ref={sectionRef} className="bg-white py-20 overflow-x-hidden">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
+        <section ref={sectionRef} className="bg-white py-20 overflow-x-hidden" style={{ backgroundImage: "url('/assets/images/bg1.png')" }}>
+            <div className="mx-auto max-w-7xl px-6 lg:px-8 relative bg-[#fcf8f4]/60 py-12 rounded-2xl">
                 <div className="mx-auto max-w-2xl text-center mb-16">
-                    <h2 className="text-4xl font-bold tracking-tight text-[var(--forestGreen)] sm:text-5xl">
+                    <h2 className="text-4xl font-medium tracking-tight text-[var(--bodyContent)] sm:text-5xl">
                         Our Core Operations
                     </h2>
                 </div>
@@ -185,10 +185,10 @@ const CoreOperations: React.FC = () => {
                                 <h3 className="mt-6 text-lg font-semibold leading-7 text-gray-900">
                                     {operation.title}
                                 </h3>
-                                <p className="mt-2 text-base leading-7 text-gray-600">
+                                <p className="mt-2 text-base leading-7 text-[var(--bodyContent)]">
                                     {operation.description}
                                 </p>
-                                <a href="#" className="mt-4 inline-block font-semibold text-indigo-600 transition hover:text-indigo-800">
+                                <a href="#" className="mt-4 inline-block font-semibold text-[var(--deepOcean)] transition hover:text-indigo-800">
                                     Learn More &rarr;
                                 </a>
                             </div>

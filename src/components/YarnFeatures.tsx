@@ -46,14 +46,14 @@ const featureData: FeatureCard[] = [
 
 const YarnFeatures: React.FC = () => {
   return (
-    <section className="bg-[#f5f5f5] py-16 sm:py-24">
-      <div className="mx-auto max-w-[1290px] px-6 lg:px-8">
+    <section className="bg-[#f5f5f5] py-16 sm:py-24" style={{ backgroundImage: "url('/assets/images/bg1.png')" }}>
+      <div className="mx-auto max-w-[1290px] px-6 lg:px-8 bg-[#fcf8f4]/60 py-12 rounded-2xl">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center mb-16">
-          <h2 className="text-4xl font-extrabold tracking-tight text-[var(--forestGreen)] sm:text-5xl">
+          <h2 className="text-4xl font-medium tracking-tight text-[var(--greenShade)] sm:text-5xl">
             Our Journey
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-[22px] leading-8 text-[var(--bodyContent)]">
             Textiles are materials made from fibers or yarn, and they are used
             to create the widest range of products such as clothing and
             industrial goods.
@@ -83,7 +83,7 @@ const YarnFeatures: React.FC = () => {
                         />
                       </div>
                     </div>
-                    <p className="mt-4 text-base text-gray-600">
+                    <p className="mt-4 text-base text-[var(--bodyContent)]">
                       {feature.description}
                     </p>
                   </div>

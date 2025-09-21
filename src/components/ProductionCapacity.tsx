@@ -56,7 +56,7 @@ const CapacityCard: React.FC<{ card: CapacityCardProps }> = ({ card }) => {
     >
       {/* The blue accent bar at the top */}
       {/* Added rounded-b-md to the blue bar for a subtle visual separation at the bottom */}
-      <div className="absolute top-0 left-0 h-1.5 w-full bg-blue-500 rounded-b-md"></div>
+      <div className="absolute top-0 left-0 h-1.5 w-full bg-[var(--deepOcean)] rounded-b-md"></div>
       <div className="text-5xl font-bold text-gray-900 mb-2">
         {" "}
         {/* Text color adjusted for white bg */}
@@ -72,7 +72,7 @@ const CapacityCard: React.FC<{ card: CapacityCardProps }> = ({ card }) => {
       </div>
       <p className="mb-4 font-semibold text-gray-700">{card.title}</p>{" "}
       {/* Text color adjusted */}
-      <p className="text-gray-500 text-sm leading-relaxed">
+      <p className="text-[var(--bodyContent))] text-sm leading-relaxed">
         {card.description}
       </p>{" "}
       {/* Text color adjusted */}
@@ -83,17 +83,17 @@ const CapacityCard: React.FC<{ card: CapacityCardProps }> = ({ card }) => {
 // The main component that lays out the section
 const ProductionCapacity = () => {
   return (
-    <section className="bg-[#f3f4f6] py-10">
+    <section className="bg-[#f3f4f6] py-10" style={{ backgroundImage: "url('/assets/images/bg1.png')" }}>
       {" "}
       {/* Changed overall section bg to a very light gray for subtle contrast */}
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
+      <div className="mx-auto max-w-7xl bg-[#fcf8f4]/60 py-12 px-6 lg:px-8 relative rounded-2xl">
         <div className="text-center">
-          <h2 className="text-4xl font-bold tracking-tight text-[var(--forestGreen)] sm:text-5xl ">
+          <h2 className="text-4xl font-medium tracking-tight text-[var(--greenShade)] sm:text-5xl ">
             Our Production Capacity
           </h2>
         </div>
 
-        <div className="absolute right-0 -top-10">
+        <div className="absolute right-0 -top-5">
           <div className="relative w-[240px] h-[180px]">
             <Image
               src="/assets/images/thread2.png"
@@ -123,7 +123,7 @@ const ProductionCapacity = () => {
           ))}
         </div>
 
-        <p className="mt-12 text-center text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+        <p className="mt-12 text-center text-lg text-[var(--bodyContent))] max-w-3xl mx-auto leading-relaxed">
           {" "}
           {/* Adjusted text color, max-width, and line-height */}
           This significant capacity makes us one of the most productive textile

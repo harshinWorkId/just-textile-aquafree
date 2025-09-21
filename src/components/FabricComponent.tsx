@@ -47,14 +47,14 @@ const fiberData: FiberCard[] = [
 
 const FabricComponent: React.FC = () => {
   return (
-    <section className="py-16 sm:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="py-16 sm:py-24" style={{ backgroundImage: "url('/assets/images/bg1.png')" }}>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 bg-[#fcf8f4]/60 rounded-2xl py-12">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center mb-16">
-          <h2 className="mt-2 text-4xl font-bold tracking-tight text-[var(--forestGreen)] sm:text-5xl">
+          <h2 className="mt-2 text-4xl font-medium tracking-tight text-[var(--greenShade)] sm:text-5xl">
             Our Expertise Across Fibers
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-[22px] leading-8 text-[var(--bodyContent)]">
             From raw natural materials to advanced synthetics, our process
             ensures the highest quality at every stage, tailored to your
             specific needs.
@@ -104,7 +104,7 @@ const FabricComponent: React.FC = () => {
                 <h3 className="text-xl font-semibold text-gray-900">
                   {card.title}
                 </h3>
-                <p className="mt-2 text-base leading-7 text-gray-600">
+                <p className="mt-2 leading-7 text-[var(--bodyContent)] text-lg">
                   {card.description}
                 </p>
               </div>

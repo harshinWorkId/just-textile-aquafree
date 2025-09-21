@@ -41,8 +41,8 @@ const Navbar: React.FC = () => {
             <Image
               src="/assets/images/logo3.png"
               alt="Techwix Logo"
-              width={120}
-              height={32}
+              width={180}
+              height={45}
             />
           </Link>
         </div>

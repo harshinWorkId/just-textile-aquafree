@@ -156,11 +156,11 @@ const featuresData: FeatureItem[] = [
 
 const WhatSetsUsApart: React.FC = () => {
   return (
-    <section className="bg-gray-50 py-16 sm:py-24">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section className="bg-gray-50 py-16 sm:py-24" style={{ backgroundImage: "url('/assets/images/bg1.png')" }}>
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 bg-[#fcf8f4]/60 rounded-2xl py-12">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center mb-16">
-          <h2 className="mt-2 text-4xl font-bold tracking-tight text-[var(--forestGreen)] sm:text-5xl">
+          <h2 className="mt-2 text-4xl font-medium tracking-tight text-[var(--greenShade)] sm:text-5xl">
             What Sets Us Apart
           </h2>
         </div>
@@ -169,7 +169,7 @@ const WhatSetsUsApart: React.FC = () => {
         <div className="relative grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-4">
           {/* 1. The Continuous Gray Line (Background Layer) */}
           {/* UPDATED: Line position moved from top-10 to top-20 */}
-          <div className="absolute top-24 left-0 h-0.5 w-full bg-gray-200"></div>
+          <div className="absolute top-24 left-0 h-0.5 w-full bg-gray-400"></div>
 
           {featuresData.map((feature) => {
             const IconComponent = feature.icon;
@@ -200,7 +200,7 @@ const WhatSetsUsApart: React.FC = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="mt-4 text-md leading-7 text-gray-600">
+                <p className="mt-4 text-lg leading-7 text-[var(--bodyContent)]">
                   {feature.description}
                 </p>
               </div>
