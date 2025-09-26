@@ -1,4 +1,7 @@
-import AboutNavbar from "@/components/AboutNavbar";
+// import AboutNavbar from "@/components/AboutNavbar";
+import Navbar2 from "@/components/Navbar2";
+import Navbar from "@/components/Navbar";
+
 import Image from "next/image";
 import EnvironmentalLeadership from "@/components/EnvironmentalLeadership";
 import ScalingExcellenceProps from "@/components/ScalingExcellenceProps";
@@ -6,7 +9,7 @@ import ScalingExcellenceProps from "@/components/ScalingExcellenceProps";
 export default function Home() {
   return (
     <div>
-      <AboutNavbar />
+      <Navbar2/>
       
       {/* Just Textiles Ltd: Pioneering Innovation in Sustainable Textile
       Manufacturing */}

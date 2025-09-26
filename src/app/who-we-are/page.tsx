@@ -16,7 +16,7 @@ const page = () => {
 
       {/* banner section  */}
       <section
-        className={`relative h-[80vh] flex items-center justify-center z-10`}
+        className={`relative h-[80vh] flex items-center justify-center z-10 mt-20`}
       >
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-800/60">

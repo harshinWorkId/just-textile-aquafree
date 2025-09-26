@@ -14,16 +14,16 @@ const navLinks = [
     //   { name: 'Service', href: '/service' },
     // ],
   },
-  { name: 'About Us', href: '/about' },
+ 
   {
-    name: 'Pages',
-    href: '/',
-    // dropdown: [
-    //   { name: 'Why Choose Us', href: '/why-choose-us' },
-    //   { name: 'Testimonial', href: '/testimonials' },
-    //   { name: 'Pricing', href: '/pricing' },
-    //   { name: 'Login & Register', href: '/login-register' },
-    // ],
+    name: 'About Us',
+    href: '#',
+    dropdown: [
+      { name: 'Who We Are', href: '/who-we-are' },
+      { name: 'Why Our Work Matters', href: '/why-our-work-matters' },
+      { name: 'Our Vision, Mission and Purpose', href: '/our-vision-mission-and-purpose' },
+      { name: 'Login & Register', href: '/login-register' },
+    ],
   },
   { name: 'Blog', href: '/blog' },
   { name: 'Contact', href: '/contact' },
@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
-    <nav className="bg-white shadow-sm">
+    <nav className="bg-white shadow-sm fixed top-0 w-full z-100">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         {/* Left Section: Logo */}
         <div className="flex items-center">
@@ -54,23 +54,23 @@ const Navbar: React.FC = () => {
             <div
               key={link.name}
               className="relative py-2" // py-2 to maintain vertical alignment
-              // onMouseEnter={() => link.dropdown && setOpenDropdown(link.name)}
-              // onMouseLeave={() => link.dropdown && setOpenDropdown(null)}
+              onMouseEnter={() => link.dropdown && setOpenDropdown(link.name)}
+              onMouseLeave={() => link.dropdown && setOpenDropdown(null)}
             >
               <Link
                 href={link.href}
                 className="flex items-center text-base font-semibold leading-6 text-gray-900 hover:text-blue-600 transition-colors"
               >
                 {link.name}
-                {/* {link.dropdown && (
+                {link.dropdown && (
                   <ChevronDownIcon
                     className={`ml-1 h-4 w-4 text-gray-400 transition-transform ${
                       openDropdown === link.name ? 'rotate-180' : ''
                     }`}
                   />
-                )} */}
+                )}
               </Link>
-              {/* {link.dropdown && openDropdown === link.name && (
+              {link.dropdown && openDropdown === link.name && (
                 // CHANGED: Positioned relative to the new padded container using 'top-full'
                 <div className="absolute left-1/2 top-full pt-4 -translate-x-1/2 z-50">
                   <div className="w-48 rounded-md bg-white p-2 shadow-lg ring-1 ring-gray-900/5 focus:outline-none">
@@ -85,7 +85,7 @@ const Navbar: React.FC = () => {
                     ))}
                   </div>
                 </div>
-              )} */}
+              )}
             </div>
           ))}
         </div>
