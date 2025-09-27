@@ -164,8 +164,9 @@ const marketsData: MarketItem[] = [
 
 const MarketsWeServe = () => {
   return (
-    <section className="bg-white py-20" style={{ backgroundImage: "url('/assets/images/bg1.png')" }}>
-      <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-16 gap-y-12 px-6 lg:flex-row lg:px-8 bg-[#fcf8f4]/60 rounded-2xl py-12">
+    // style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
+    <section className="py-20" >
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-16 gap-y-12 px-6 lg:flex-row lg:px-8 bg-white/80 rounded-2xl py-12">
         {/* Left Column: Text Content and Feature Boxes */}
         <div className="w-full lg:w-3/5">
           <h2 className="mt-4 text-4xl font-medium tracking-tight text-[var(--greenShade)] sm:text-5xl">

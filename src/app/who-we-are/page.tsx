@@ -11,7 +11,8 @@ import WhatSetsUsApart from "@/components/WhatSetsUsApart";
 
 const page = () => {
   return (
-    <div className="relative">
+    <div className="relative bg-fixed bg-cover bg-center bg" style={{ backgroundImage: "url('/assets/images/bg1.png')" }} >
+      {/* bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/assets/images/bg1.png')" }} */}
       <Navbar2 />
 
       {/* banner section  */}
@@ -59,10 +60,10 @@ const page = () => {
 
       {/* who we are  */}
       <div
-        className="bg-gray-100 p-4 flex items-center justify-center"
-        style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
+        className="p-4 flex items-center justify-center"
+        // style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
       >
-        <section className="relative mx-auto my-12 max-w-7xl bg-[#fcf8f4]/60 rounded-2xl">
+        <section className="relative mx-auto my-12 max-w-7xl bg-white/80 rounded-2xl">
           <div className="overflow-hidden rounded-lg relativee shadow-lg lg:grid lg:grid-cols-2 lg:gap-4">
             {/* Left Column: Image */}
             <div

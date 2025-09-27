@@ -27,8 +27,9 @@ const sectionContent = {
 
 const SustainabilitySection: React.FC = () => {
   return (
-    <section className="bg-white py-16 sm:py-24 " style={{ backgroundImage: "url('/assets/images/bg1.png')" }}>
-      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-x-16 gap-y-12 lg:grid-cols-2 bg-[#fcf8f4]/60 overflow-hidden rounded-2xl">
+    // style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
+    <section className="py-16 sm:py-24 " >
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-x-16 gap-y-12 lg:grid-cols-2 bg-white/80 overflow-hidden rounded-2xl">
         {/* Left Column: Image */}
         <div className="relative overflow-hidden rounded-xl bg-gray-100 shadow-xl">
           {/* Using Next.js Image component for optimization */}

@@ -83,10 +83,11 @@ const CapacityCard: React.FC<{ card: CapacityCardProps }> = ({ card }) => {
 // The main component that lays out the section
 const ProductionCapacity = () => {
   return (
-    <section className="bg-[#f3f4f6] py-10" style={{ backgroundImage: "url('/assets/images/bg1.png')" }}>
+    // style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
+    <section className="py-10" >
       {" "}
       {/* Changed overall section bg to a very light gray for subtle contrast */}
-      <div className="mx-auto max-w-7xl bg-[#fcf8f4]/60 py-12 px-6 lg:px-8 relative rounded-2xl">
+      <div className="mx-auto max-w-7xl bg-white/80 py-12 px-6 lg:px-8 relative rounded-2xl">
         <div className="text-center">
           <h2 className="text-4xl font-medium tracking-tight text-[var(--greenShade)] sm:text-5xl ">
             Our Production Capacity

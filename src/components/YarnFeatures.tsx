@@ -46,8 +46,9 @@ const featureData: FeatureCard[] = [
 
 const YarnFeatures: React.FC = () => {
   return (
-    <section className="bg-[#f5f5f5] py-16 sm:py-24" style={{ backgroundImage: "url('/assets/images/bg1.png')" }}>
-      <div className="mx-auto max-w-[1290px] px-6 lg:px-8 bg-[#fcf8f4]/60 py-12 rounded-2xl">
+    // style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
+    <section className="py-16 sm:py-24" >
+      <div className="mx-auto max-w-[1290px] px-6 lg:px-8 bg-white/80 py-12 rounded-2xl">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center mb-16">
           <h2 className="text-4xl font-medium tracking-tight text-[var(--greenShade)] sm:text-5xl">
