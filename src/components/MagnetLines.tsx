@@ -72,11 +72,11 @@ const MagnetLines: React.FC<MagnetLinesProps> = ({
         backgroundColor: lineColor,
         width: lineWidth,
         height: lineHeight,
-        //@ts-ignore
+     
         '--rotate': `${baseAngle}deg`,
         transform: 'rotate(var(--rotate))',
         willChange: 'transform'
-      }}
+      }as React.CSSProperties & { "--rotate"?: string }}
     />
   ));
 

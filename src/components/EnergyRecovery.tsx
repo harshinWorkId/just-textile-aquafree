@@ -1,49 +1,49 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+
 import { FaSolarPanel } from "react-icons/fa"; // wind waves + solar
 import { MdAir } from "react-icons/md";
-import { GiSewingMachine, GiTurbine  } from "react-icons/gi";
+import { GiTurbine  } from "react-icons/gi";
 
-const SewingMachineAnimation: React.FC = () => {
-  const [direction, setDirection] = useState<"right" | "left">("right");
+// const SewingMachineAnimation: React.FC = () => {
+//   const [direction, _setDirection] = useState<"right" | "left">("right");
 
-  return (
-    <div className="relative w-full h-16 overflow-visible flex items-center">
-      {/* Wavy Zig-Zag Thread */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 200 20"
-        className="absolute top-1/2 -translate-y-1/2 w-full h-6 text-[var(--forestGreen)] z-0"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        preserveAspectRatio="none"
-      >
-        <motion.path
-          d="M0 10 Q 10 0, 20 10 T 40 10 T 60 10 T 80 10 T 100 10 T 120 10 T 140 10 T 160 10 T 180 10 T 200 10"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          initial={{ pathLength: 0 }}
-          animate={{ pathLength: 1 }}
-          transition={{ duration: 2, repeat: Infinity, repeatType: "mirror" }}
-        />
-      </svg>
+//   return (
+//     <div className="relative w-full h-16 overflow-visible flex items-center">
+//       {/* Wavy Zig-Zag Thread */}
+//       <svg
+//         xmlns="http://www.w3.org/2000/svg"
+//         viewBox="0 0 200 20"
+//         className="absolute top-1/2 -translate-y-1/2 w-full h-6 text-[var(--forestGreen)] z-0"
+//         fill="none"
+//         stroke="currentColor"
+//         strokeWidth="2"
+//         preserveAspectRatio="none"
+//       >
+//         <motion.path
+//           d="M0 10 Q 10 0, 20 10 T 40 10 T 60 10 T 80 10 T 100 10 T 120 10 T 140 10 T 160 10 T 180 10 T 200 10"
+//           stroke="currentColor"
+//           strokeLinecap="round"
+//           strokeLinejoin="round"
+//           initial={{ pathLength: 0 }}
+//           animate={{ pathLength: 1 }}
+//           transition={{ duration: 2, repeat: Infinity, repeatType: "mirror" }}
+//         />
+//       </svg>
 
-      {/* Moving Sewing Machine */}
-      <motion.div className="absolute z-10 -left-10">
-        <GiSewingMachine
-          className={`w-10 h-10 text-[var(--forestGreen)] transition-transform duration-500 ${
-            direction === "right" ? "rotate-0" : "rotate-180"
-          }`}
-        />
-      </motion.div>
-    </div>
-  );
-};
+//       {/* Moving Sewing Machine */}
+//       <motion.div className="absolute z-10 -left-10">
+//         <GiSewingMachine
+//           className={`w-10 h-10 text-[var(--forestGreen)] transition-transform duration-500 ${
+//             direction === "right" ? "rotate-0" : "rotate-180"
+//           }`}
+//         />
+//       </motion.div>
+//     </div>
+//   );
+// };
 
 const OurStorySection: React.FC = () => {
   return (

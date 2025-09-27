@@ -20,8 +20,6 @@ const ContentBlock: React.FC<ContentBlockProps> = ({
   subtitle,
   description,
   description2,
-  author,
-  designation,
   image,
   reverse = false,
 }) => {

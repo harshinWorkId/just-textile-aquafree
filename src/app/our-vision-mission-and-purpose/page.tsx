@@ -3,10 +3,40 @@ import ContentBlock2 from "@/components/ContentBlock2";
 import QualitySection from "@/components/QualitySection";
 import Navbar2 from "@/components/Navbar2";
 import Image from "next/image";
-
 import { FaRecycle } from "react-icons/fa";
 import { BiTestTube } from "react-icons/bi";
 import { RiWaterFlashFill } from "react-icons/ri";
+
+import { GiSewingNeedle } from "react-icons/gi";
+import { FaCogs, FaClock } from "react-icons/fa";
+import EmpowerSection from "@/components/EmpowerSection";
+import WeavingTommorrow from "@/components/WeavingTommorrow";
+type Service = {
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+};
+
+const services: Service[] = [
+  {
+    title: "Tailored Solutions",
+    description:
+      "We understand that every brand has unique requirements. Our team develops customized dyeing, finishing, and printing solutions that meet specific performance and aesthetic needs.",
+    icon: <GiSewingNeedle className="w-8 h-8 text-[var(--deepOcean)]" />,
+  },
+  {
+    title: "Technical Excellence",
+    description:
+      "Our technical expertise ensures optimal results across diverse fabric types and applications, from athletic wear to luxury textiles.",
+    icon: <FaCogs className="w-8 h-8 text-[var(--deepOcean)]" />,
+  },
+  {
+    title: "On‑Time Deliveries",
+    description:
+      "Reliable delivery schedules support your production timelines and launch dates, backed by robust supply chain management.",
+    icon: <FaClock className="w-8 h-8 text-[var(--deepOcean)]" />,
+  },
+];
 
 type Feature = {
   title: string;
@@ -19,19 +49,19 @@ const features: Feature[] = [
     title: "Water Recycling Systems",
     description:
       "Advanced water treatment and recycling technologies that dramatically reduce freshwater consumption in our processes.",
-    icon: <FaRecycle className="text-sky-600 w-8 h-8" />,
+    icon: <FaRecycle className="text-[var(--deepOcean)] w-8 h-8" />,
   },
   {
     title: "Chemical Load Reduction",
     description:
       "Innovative formulations and processes that minimize chemical usage while maintaining superior fabric quality.",
-    icon: <BiTestTube className="text-sky-600 w-8 h-8" />,
+    icon: <BiTestTube className="text-[var(--deepOcean)] w-8 h-8" />,
   },
   {
     title: "AquaFree™ Technology",
     description:
       "Our pioneering salt-free dyeing innovation that eliminates traditional salt requirements, reducing environmental impact.",
-    icon: <RiWaterFlashFill className="text-sky-600 w-8 h-8" />,
+    icon: <RiWaterFlashFill className="text-[var(--deepOcean)] w-8 h-8" />,
   },
 ];
 
@@ -86,6 +116,7 @@ export default function Page() {
 
       <QualitySection />
 
+      {/* Industry-Leading Sustainability */}
       <section className="bg-white py-20 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-7xl mx-auto px-6 text-justify !leading-snug">
@@ -151,6 +182,62 @@ export default function Page() {
         </div>
       </section>
 
+      {/* Building Lasting Partnerships */}
+      <section className="bg-[#fdf6ec] py-16">
+        <div className="max-w-7xl mx-auto flex flex-row gap-12 px-6 max-lg:grid-cols-1">
+          {/* LEFT TEXT + CARDS */}
+          <div className="w-[70%]">
+            <h2 className="text-4xl font-medium text-[var(--greenShade)] mb-6 font-serif leading-tight">
+              Building Lasting Partnerships
+            </h2>
+
+            {/* Services grid  */}
+            <div className="mt-10 grid grid-cols-3 gap-6 max-lg:grid-cols-2 max-md:grid-cols-1 font-open">
+              {services.map((s, idx) => (
+                <div
+                  key={idx}
+                  className="group border border-dashed border-gray-300 p-6 rounded-sm 
+                           flex flex-col justify-between shadow-lg hover:shadow-2xl bg-white transition"
+                >
+                  <div>
+                    <h3 className="textStyle2 !leading-snug font-semibold mb-4 font-open">
+                      {s.title}
+                    </h3>
+                    <p className="text-[var(--bodyContent)] text-base text-justify">
+                      {s.description}
+                    </p>
+                  </div>
+                  <div
+                    className="mt-4 transform transition-transform duration-500 ease-in-out 
+                         group-hover:translate-x-[160px] flex justify-start px-2"
+                  >
+                    {s.icon}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* RIGHT IMAGE + PROGRESS BAR */}
+          <div className="w-[30%] flex flex-col justify-between">
+            <div className="relative w-full h-[500px] max-lg:h-[400px]">
+              <Image
+                src="/assets/images/quality-textile.png" // replace with your textile image
+                alt="Tailored Suit"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <EmpowerSection />
+
+
+
+      {/* Our Purpose: Beyond Manufacturing */}
       <section className="bg-[#fdf6ec] py-16">
         <div className="max-w-7xl mx-auto grid grid-cols-2 gap-12 px-6 max-lg:grid-cols-1">
           {/* RIGHT CONTENT */}
@@ -163,16 +250,18 @@ export default function Page() {
               {steps.map((step, idx) => (
                 <div
                   key={idx}
-                  className="border-b border-gray-300 pb-4 flex gap-6 items-start"
+                  className="group border-b border-gray-300 pb-4 flex gap-6 items-start"
                 >
-                  <div className="text-4xl font-bold text-[var(--bodyContent)] font-serif min-w-[70px]">
+                  <div className="text-4xl group-hover:scale-[2] transform transition-transform duration-500 ease-in-out font-bold text-[var(--bodyContent)] font-serif min-w-[70px]">
                     {step.number}
                   </div>
                   <div>
                     <h3 className="textStyle2 font-open font-semibold mb-1">
                       {step.title}
                     </h3>
-                    <p className="text-[var(--bodyContent))] text-base">{step.description}</p>
+                    <p className="text-[var(--bodyContent))] text-base">
+                      {step.description}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -182,7 +271,7 @@ export default function Page() {
           {/* LEFT IMAGE */}
           <div className="relative w-full h-[550px] max-lg:h-[400px]">
             <Image
-              src="/assets/images/quality-textile.png" // replace with your image path
+              src="/assets/images/beyond-manufacturing.png" // replace with your image path
               alt="Textile Work"
               fill
               className="object-cover rounded-sm"
@@ -190,6 +279,17 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+
+
+      {/* Weaving Tommorrow  */}
+      <WeavingTommorrow/>
+
+
+      
+
+
+    
     </main>
   );
 }

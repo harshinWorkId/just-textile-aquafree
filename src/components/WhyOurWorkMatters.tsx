@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Navbar2 from "@/components/Navbar2";
 import Image from "next/image";
 import { motion } from "framer-motion";
 const WhyOurWorkMatters = () => {

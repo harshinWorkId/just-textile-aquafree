@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+
 import React from "react";
 import CardSwap, { Card } from "@/utils/CardSwap";
 
@@ -20,10 +20,7 @@ const ContentBlock2: React.FC<ContentBlockProps> = ({
   subtitle,
   description,
   description2,
-  author,
-  designation,
-  image,
-  reverse = false,
+
 }) => {
   return (
     <section className="relative py-24 mt-10">

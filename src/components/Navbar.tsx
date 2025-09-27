@@ -2,7 +2,7 @@
 // components/Navbar.tsx
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { ChevronDown, Search, ShoppingCart } from 'lucide-react';
+import { ChevronDown, Search } from 'lucide-react';
 
 interface NavItem {
   label: string;
@@ -58,7 +58,7 @@ interface NavbarProps {
   className?: string;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ className = '' }) => {
+const Navbar: React.FC<NavbarProps> = () => {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
   return (

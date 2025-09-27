@@ -1,13 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ShieldCheckIcon, UserCircleIcon } from "@heroicons/react/24/outline";
 import { GiSewingMachine } from "react-icons/gi";
 
 const SewingMachineAnimation: React.FC = () => {
-  const [direction, setDirection] = useState<"right" | "left">("right");
+  // const [direction, _setDirection] = useState<"right" | "left">("right");
+
+  const direction: "right" | "left" = "right";
 
   return (
     <div className="relative w-full h-16 overflow-visible flex items-center">

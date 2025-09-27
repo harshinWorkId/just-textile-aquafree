@@ -5,10 +5,9 @@
 "use client";
 
 import React from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import { FaBolt, FaHandsHelping } from "react-icons/fa";
 import { RiRepeatFill } from "react-icons/ri";
-import Image from "next/image";
 import SnakeLine from "./SnakeLine";
 type Card = {
   title: string;
@@ -51,10 +50,10 @@ const iconVariants = {
 
 const QualitySection: React.FC = () => {
   // Scroll-based parallax
-  const { scrollY } = useScroll();
+  // const { scrollY } = useScroll();
   // map scroll value -> subtle motion for dashed background
-  const x = useTransform(scrollY, [0, 1000], [0, 100]); // move right slightly
-  const y = useTransform(scrollY, [0, 1000], [0, -50]); // move up slightly
+  // const x = useTransform(scrollY, [0, 1000], [0, 100]); // move right slightly
+  // const y = useTransform(scrollY, [0, 1000], [0, -50]); // move up slightly
 
   return (
     <section className="relative py-20 bg-[#f7f7f7] overflow-hidden">

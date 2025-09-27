@@ -2,7 +2,7 @@
 import React from "react";
 import Navbar2 from "@/components/Navbar2";
 import Image from "next/image";
-import { motion } from "framer-motion";
+
 
 import AboutSection from "@/components/AboutSection";
 import WhyWorkMatters3 from "@/components/WhyWorkMatters3";

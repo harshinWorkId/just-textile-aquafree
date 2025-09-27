@@ -1,6 +1,6 @@
 // import AboutNavbar from "@/components/AboutNavbar";
 import Navbar2 from "@/components/Navbar2";
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 
 import Image from "next/image";
 import EnvironmentalLeadership from "@/components/EnvironmentalLeadership";
