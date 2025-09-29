@@ -5,8 +5,9 @@ type ScalingExcellenceProps = Record<string, never>;
 
 const ScalingExcellence: React.FC<ScalingExcellenceProps> = () => {
   return (
-    <section className="py-12 md:py-20 font-sans text-gray-800 relative" style={{ backgroundImage: "url('/assets/images/bg1.png')" }}>
-      <div className="max-w-7xl bg-[#fcf8f4]/60  mx-auto px-4 sm:px-6 lg:p-12 relative rounded-2xl">
+    // style={{ backgroundImage: "url('/assets/images/bg1.png')" }} 
+    <section className="py-12 md:py-20 font-sans text-gray-800 relative" >
+      <div className="max-w-7xl bg-white/80  mx-auto px-4 sm:px-6 lg:p-12 relative rounded-2xl">
        
         {/* Section Heading */}
         <h2 className="text-3xl md:text-4xl font-medium text-[var(--greenShade)] mb-8 md:mb-10">

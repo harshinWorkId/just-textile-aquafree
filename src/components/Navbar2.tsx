@@ -29,6 +29,10 @@ const navLinks = [
         name: "Leadership that Guides and Inspires",
         href: "/leadership-that-guides-and-inspires",
       },
+      {
+        name: "Our History",
+        href: "/our-history",
+      },
     ],
   },
   { name: "Blog", href: "/blog" },

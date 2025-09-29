@@ -1,16 +1,14 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-const WhyOurWorkMatters = () => {
-  return (
-    <section
-      className="bg-[#f3f4f6] py-10"
-      style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
-    >
-      <div className="mx-auto max-w-7xl bg-white/80 py-12 px-6 flex flex-row relative rounded-2xl">
-        {/* Left Section: Image */}
 
+const PlasmaTechnologySection: React.FC = () => {
+  return (
+    <section className="py-12">
+      <div className="mx-auto max-w-7xl bg-white/80 py-12 px-6 flex flex-row relative rounded-2xl max-lg:flex-col">
+        {/* Left Section: Image */}
         <motion.div
           animate={{ rotate: 360 }}
           transition={{
@@ -19,7 +17,7 @@ const WhyOurWorkMatters = () => {
             repeatType: "reverse",
             ease: "linear",
           }}
-          className="absolute top-15 left-20 w-[30%] h-[400px]"
+          className="absolute top-10 left-20 w-[30%] h-[400px]"
         >
           <div className="relative w-full h-full">
             <Image
@@ -30,41 +28,65 @@ const WhyOurWorkMatters = () => {
             ></Image>
           </div>
         </motion.div>
-        <div className="w-[40%] flex justify-center max-md:w-full py-14">
-          {/* Make sure to place your image in the `public` folder */}
 
-          <div className="relative mx-auto w-[70%] h-[24rem]">
+        <div className="w-[40%] flex justify-center max-lg:w-full py-6">
+          <div className="relative mx-auto w-[70%] h-[30rem]">
             <Image
-              src={`/assets/images/why-work-matters1.png`}
-              alt="A person sitting with a laptop, smiling."
+              src={`/assets/images/plasma-tech.jpg`} // replace with actual plasma image in /public/assets/images
+              alt="Plasma Technology"
               fill
-              className=""
+              className="object-cover rounded-md"
             />
           </div>
         </div>
 
-        {/* Right Section: Testimonial Box */}
-        <div className="w-[60%] flex justify-center max-md:w-full">
-          <div className="relative bg-white p-10 rounded-lg shadow-lg max-w-lg max-md:p-8">
-            {/* Arrow/Pointer pointing to the left */}
+        {/* Right Section: Text Content Box */}
+        <div className="w-[60%] flex justify-center max-lg:w-full">
+          <div className="relative bg-white p-10 rounded-lg shadow-lg max-w-2xl max-md:p-6">
+            {/* Arrow pointing to image (hidden on mobile) */}
             <div
               className="absolute top-1/2 -translate-y-1/2 -left-4 w-0 h-0 
-        border-t-[20px] border-t-transparent
-        border-b-[20px] border-b-transparent
-        border-r-[20px] border-r-white
-        max-md:hidden"
+              border-t-[20px] border-t-transparent
+              border-b-[20px] border-b-transparent
+              border-r-[20px] border-r-white
+              max-lg:hidden"
             ></div>
 
-            <h2>Innovation, Scale, and Responsibility in Textile Production</h2>
+            {/* Heading */}
+            <h2 className="text-4xl font-medium font-serif text-[var(--greenShade)] mb-4">
+              Next Frontier: Plasma Technology Development
+            </h2>
 
-            {/* Main Text */}
-            <p className="text-xl text-gray-700 leading-relaxed max-md:text-lg">
-              At Just Textiles, we're transforming the textile industry by
-              balancing affordable fabric production with urgent sustainability
-              needs. Our approach combines cutting-edge innovation, efficient
-              scaling, and environmental responsibility to create a new standard
-              for textile manufacturing.
+            {/* Description */}
+            <p className="text-[var(--bodyContent)] text-lg font-open leading-relaxed mb-4">
+              While AquaFree™ revolutionized wet processing, our R&D division is
+              developing Plasma Technology - a groundbreaking dry process using
+              ionized gases for fabric surface treatment at the microscopic
+              level. This cutting-edge approach requires no water and minimal
+              chemistry, representing another sustainability breakthrough.
             </p>
+
+            {/* Subheader */}
+            <h3 className="font-semibold text-2xl font-open text-[var(--bodyContent)] mb-2">Plasma Technology Benefits:</h3>
+
+            {/* Bullet points */}
+            <ul className="list-disc text-base list-inside space-y-2 font-open text-[var(--bodyContent)]">
+              <li>
+                Enhanced wettability and absorbency for superior dye uptake
+                efficiency
+              </li>
+              <li>
+                Functional properties: antimicrobial resistance, water
+                repellency, flame retardancy
+              </li>
+              <li>
+                Dramatic energy savings by eliminating water-based finishing
+                steps
+              </li>
+              <li>
+                Compatible with cotton, polyester, viscose, and nylon fibers
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -72,4 +94,4 @@ const WhyOurWorkMatters = () => {
   );
 };
 
-export default WhyOurWorkMatters;
+export default PlasmaTechnologySection;

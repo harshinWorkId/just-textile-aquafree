@@ -8,9 +8,10 @@ type EnvironmentalLeadershipProps = Record<string, never>;
 
 const EnvironmentalLeadership: React.FC<EnvironmentalLeadershipProps> = () => {
   return (
-    <section className="py-12 md:py-20 font-sans relative" style={{ backgroundImage: "url('/assets/images/bg1.png')" }}>
+    // style={{ backgroundImage: "url('/assets/images/bg1.png')" }} 
+    <section className="py-12 md:py-20 font-sans relative" >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto p-8 relative bg-[#fcf8f4]/60 rounded-2xl">
+        <div className="max-w-7xl mx-auto p-8 relative bg-white/80 rounded-2xl">
           <div
             className="absolute inset-0 bg-cover bg-center bg-[url('/assets/images/bg1.png')] opacity-40 -z-10 rounded-2xl"
             aria-hidden="true"
