@@ -8,11 +8,7 @@ import { ChevronDownIcon } from "@heroicons/react/24/outline";
 const navLinks = [
   {
     name: "Home",
-    href: "/",
-    // dropdown: [
-    //   { name: 'Our Team', href: '/team' },
-    //   { name: 'Service', href: '/service' },
-    // ],
+    href: "#",
   },
 
   {
@@ -35,7 +31,29 @@ const navLinks = [
       },
     ],
   },
-  { name: "Blog", href: "/blog" },
+
+  {
+    name: "Capabilities",
+    href: "#",
+    dropdown: [
+      { name: "Fabrics & Processes", href: "/fabrics-and-processes" },
+      { name: "Manufacturing Capacity", href: "/manufacturing-capacity" },
+    ],
+  },
+
+  {
+    name: "Technologies & Innovation",
+    href: "#",
+    dropdown: [
+      { name: "AquaFree™ Waterless Dyeing", href: "/aquafree-waterless-dyeing" },
+      { name: "Innovation with Responsibility", href: "/innovation-with-responsibility" },
+      { name: "Advanced European Machinery", href: "/advanced-european-machinery" },
+      { name: "Why These Machines Matter", href: "/why-these-machines-matter" },
+
+
+    ],
+  },
+
   { name: "Contact", href: "/contact" },
 ];
 
