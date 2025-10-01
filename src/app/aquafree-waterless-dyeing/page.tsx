@@ -1,5 +1,8 @@
 import React from "react";
 import Navbar2 from "@/components/Navbar2";
+import AquaFreeDyeingSection from "@/components/AquaFreeDyeingSection";
+import AquaFreeTechnicalProcess from "@/components/AquaFreeTechnicalProcess";
+
 const page = () => {
   return (
     <div>
@@ -21,6 +24,16 @@ const page = () => {
           </p>
         </div>
       </section>
+
+
+      <AquaFreeDyeingSection/>
+
+      <AquaFreeTechnicalProcess/>
+
+
+
+
+   
     </div>
   );
 };

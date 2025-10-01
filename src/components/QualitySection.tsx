@@ -49,26 +49,11 @@ const iconVariants = {
 };
 
 const QualitySection: React.FC = () => {
-  // Scroll-based parallax
-  // const { scrollY } = useScroll();
-  // map scroll value -> subtle motion for dashed background
-  // const x = useTransform(scrollY, [0, 1000], [0, 100]); // move right slightly
-  // const y = useTransform(scrollY, [0, 1000], [0, -50]); // move up slightly
+
 
   return (
     <section className="relative py-20 bg-[#f7f7f7] overflow-hidden">
-      {/* Parallax Dashed Background */}
-      {/* <motion.div
-        style={{ x, y }}
-        className="absolute top-30 left-0 h-[300px] w-full z-0 pointer-events-none"
-      >
-        <Image
-          src="/assets/images/dashed.png"
-          alt="dashed background"
-          fill
-          className="object-contain"
-        />
-      </motion.div> */}
+      
 
       <SnakeLine/>
 
@@ -110,7 +95,7 @@ const QualitySection: React.FC = () => {
               {card.description}
             </p>
 
-            {/* Learn More */}
+          
             <a
               href="#"
               className="mt-5 inline-block text-sm font-semibold text-sky-700 hover:underline underline-offset-4"
