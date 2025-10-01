@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const AquaFreeTechnicalProcess = () => {
   return (
-    <section className="bg-[var(--beige)]/20 w-full ">
-      <div className="max-w-7xl mx-auto py-12 px-6">
+    <section className="bg-[var(--beige)]/20 w-full overflow-hidden">
+      <div className="max-w-6xl mx-auto py-12 px-6">
         {/* heading and description  */}
         <div className="grid grid-cols-2 gap-12">
           <h2 className="text-4xl font-medium font-serif text-[var(--greenShade)] mb-6 leading-snug">
@@ -24,10 +24,10 @@ const AquaFreeTechnicalProcess = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-14 my-8">
+        <div className="flex flex-col gap-14 my-8 ">
           {/* Batch Preparation  */}
           <div className="w-full flex flex-row gap-6 group rounded-r-[180px] font-open rounded-l-[180px] bg-[var(--grayish)]/30 py-0 px-10 mt-6 relative h-[300px]">
-            <div className="w-[40%] relative -top-5 h-[350px]">
+            <div className="w-[40%] relative z-20 -top-5 h-[350px]">
               <div className="relative h-full ml-[10%] w-[80%] group-hover:-translate-x-[50px] transition-transform duration-800 ease-in-out">
                 <Image
                   fill
@@ -38,7 +38,7 @@ const AquaFreeTechnicalProcess = () => {
               </div>
             </div>
 
-            <div className="w-[40%] my-12">
+            <div className="w-[40%] my-12 z-20">
               <h3 className="text-2xl text-[var(--bodyContent)] font-semibold mb-6">
                 Batch Preparation
               </h3>
@@ -52,7 +52,7 @@ const AquaFreeTechnicalProcess = () => {
               </p>
             </div>
 
-            <div className="w-[20%] text-xl font-open text-white rounded-full h-fit my-14 py-14 px-0 bg-gradient-to-r from-[#065591] to-[#044413]">
+            <div className="w-[20%] relative z-20 text-xl font-open text-white rounded-full h-fit my-14 py-14 px-0 bg-gradient-to-r from-[#065591] to-[#044413]">
               {/* Step 01 */}
               <FuzzyText
                 baseIntensity={0.1}
@@ -70,6 +70,12 @@ const AquaFreeTechnicalProcess = () => {
                 01
               </FuzzyText>
             </div>
+
+            <div className="absolute top-[50%] -right-20 h-[190px] w-[140px] -z-10">
+              <Image fill alt="" src={`/assets/images/right-curve.png`}></Image>
+            </div>
+
+            <div className="absolute w-[92%] -bottom-10 h-[3px] bg-black"></div>
           </div>
 
           {/* Singeing  */}
@@ -116,6 +122,16 @@ const AquaFreeTechnicalProcess = () => {
                 02
               </FuzzyText>
             </div>
+
+            <div className="absolute -top-[14.5%] -left-22 h-[190px] w-[140px] -z-10">
+              <Image fill alt="" src={`/assets/images/left-curve.png`}></Image>
+            </div>
+
+            <div className="absolute top-[50%] -right-34 h-[190px] w-[140px] -z-10">
+              <Image fill alt="" src={`/assets/images/right-curve.png`}></Image>
+            </div>
+
+            <div className="absolute w-[100%] left-2 -bottom-10 h-[3px] bg-black"></div>
           </div>
 
           {/* Jet Scour (3 Baths)  */}
@@ -164,6 +180,16 @@ const AquaFreeTechnicalProcess = () => {
                 03
               </FuzzyText>
             </div>
+
+            <div className="absolute -top-[14.5%] -left-28 h-[180px] w-[120px] -z-10">
+              <Image fill alt="" src={`/assets/images/left-curve.png`}></Image>
+            </div>
+
+            <div className="absolute top-[50%] -right-20 h-[190px] w-[140px] -z-10">
+              <Image fill alt="" src={`/assets/images/right-curve.png`}></Image>
+            </div>
+
+            <div className="absolute w-[92%] -bottom-10 h-[3px] bg-black"></div>
           </div>
 
           {/* Bleaching (3 Baths)  */}
@@ -212,6 +238,19 @@ const AquaFreeTechnicalProcess = () => {
                 04
               </FuzzyText>
             </div>
+
+
+            
+
+            <div className="absolute -top-[14.5%] -left-22 h-[190px] w-[140px] -z-10">
+              <Image fill alt="" src={`/assets/images/left-curve.png`}></Image>
+            </div>
+
+            <div className="absolute top-[50%] -right-34 h-[190px] w-[140px] -z-10">
+              <Image fill alt="" src={`/assets/images/right-curve.png`}></Image>
+            </div>
+
+            <div className="absolute w-[100%] left-2 -bottom-10 h-[3px] bg-black"></div>
           </div>
 
           {/*  Dyeing (1 Bath)  */}
@@ -260,6 +299,17 @@ const AquaFreeTechnicalProcess = () => {
                 05
               </FuzzyText>
             </div>
+
+
+            <div className="absolute -top-[14.5%] -left-28 h-[180px] w-[120px] -z-10">
+              <Image fill alt="" src={`/assets/images/left-curve.png`}></Image>
+            </div>
+
+            <div className="absolute top-[50%] -right-20 h-[190px] w-[140px] -z-10">
+              <Image fill alt="" src={`/assets/images/right-curve.png`}></Image>
+            </div>
+
+            <div className="absolute w-[92%] -bottom-10 h-[3px] bg-black"></div>
           </div>
 
           {/*  Neutralizing (RFF 2)  */}
@@ -307,9 +357,14 @@ const AquaFreeTechnicalProcess = () => {
                 06
               </FuzzyText>
             </div>
+
+            
+            <div className="absolute -top-[14.5%] -left-22 h-[190px] w-[140px] -z-10">
+              <Image fill alt="" src={`/assets/images/left-curve.png`}></Image>
+            </div>
+
           </div>
         </div>
-
       </div>
     </section>
   );
