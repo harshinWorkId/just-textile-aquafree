@@ -11,6 +11,8 @@ import {
   FaHandshake,
 } from "react-icons/fa";
 
+
+
 const focuses = [
   {
     icon: <FaTasks className="w-6 h-6 text-[var(--bodyContent)]" />,
@@ -49,9 +51,10 @@ const page = () => {
               </h2>
               <div className="relative w-[40px] h-[40px] overflow-hidden">
                 {/* Use <img /> for GIF to preserve animation */}
-                <img
+                <Image
                   src="/assets/gifs/leadership-focus.gif" // replace with your GIF path
                   alt="Leadership Focus Animation"
+                  fill
                   className="w-full h-full object-cover"
                 />
               </div>

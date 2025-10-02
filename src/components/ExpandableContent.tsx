@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, ReactNode } from "react";
+import Image from "next/image";
 
 interface ContentItem {
   jsx: ReactNode;       
@@ -39,10 +40,11 @@ export default function ExpandableContent({
   return (
     <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10">
       {/* Left Image */}
-      <div className="lg:w-1/2">
-        <img
+      <div className="w-1/2 h-[200px]">
+        <Image
           src={imageUrl}
           alt={imageAlt}
+          fill
           className="rounded-xl shadow-lg object-cover w-full"
         />
       </div>

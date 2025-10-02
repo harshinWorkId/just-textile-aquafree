@@ -2,9 +2,6 @@
 import Navbar2 from "@/components/Navbar2";
 // import Navbar from "@/components/Navbar";
 
-import Image from "next/image";
-import EnvironmentalLeadership from "@/components/EnvironmentalLeadership";
-import ScalingExcellenceProps from "@/components/ScalingExcellenceProps";
 
 export default function Home() {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Navbar2 from "@/components/Navbar2";
-import ScrollStack, { ScrollStackItem } from "@/utils/ScrollStack";
+// import ScrollStack, { ScrollStackItem } from "@/utils/ScrollStack";
 import { FaCheckCircle } from "react-icons/fa";
-import ExpandableContent from "@/components/ExpandableContent";
+// import ExpandableContent from "@/components/ExpandableContent";
 import FabricsSection from "@/components/FabricsSection";
 import MetaBalls from "@/utils/MetaBalls";
 
@@ -34,83 +34,83 @@ const page = () => {
   //     },
   //   ];
 
-  const content = [
-    {
-      jsx: (
-        <>
-          <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
-          <div>
-            <strong>Applications:</strong> Apparel, shirting, trousers, home
-            textiles.
-          </div>
-        </>
-      ),
-      showInShort: true, // visible even before "Read More"
-    },
-    {
-      jsx: (
-        <>
-          <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
-          <div>
-            <strong>Processing Requirements:</strong> Pretreatment includes
-            singeing, desizing, scouring, bleaching.
-          </div>
-        </>
-      ),
-      showInShort: true,
-    },
-    {
-      jsx: (
-        <>
-          <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
-          <div>
-            <strong>Advanced Step - Mercerizing:</strong> Improves luster,
-            tensile strength, and dye affinity.
-          </div>
-        </>
-      ),
-      showInShort: false, // only visible after "Read More"
-    },
-  ];
+  // const content = [
+  //   {
+  //     jsx: (
+  //       <>
+  //         <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
+  //         <div>
+  //           <strong>Applications:</strong> Apparel, shirting, trousers, home
+  //           textiles.
+  //         </div>
+  //       </>
+  //     ),
+  //     showInShort: true, // visible even before "Read More"
+  //   },
+  //   {
+  //     jsx: (
+  //       <>
+  //         <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
+  //         <div>
+  //           <strong>Processing Requirements:</strong> Pretreatment includes
+  //           singeing, desizing, scouring, bleaching.
+  //         </div>
+  //       </>
+  //     ),
+  //     showInShort: true,
+  //   },
+  //   {
+  //     jsx: (
+  //       <>
+  //         <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
+  //         <div>
+  //           <strong>Advanced Step - Mercerizing:</strong> Improves luster,
+  //           tensile strength, and dye affinity.
+  //         </div>
+  //       </>
+  //     ),
+  //     showInShort: false, // only visible after "Read More"
+  //   },
+  // ];
 
-  const myContent = [
-    {
-      jsx: (
-        <>
-          <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
-          <div>
-            <strong>Applications:</strong> Apparel, shirting, trousers, home
-            textiles.
-          </div>
-        </>
-      ),
-      showInShort: true,
-    },
-    {
-      jsx: (
-        <>
-          <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
-          <div>
-            <strong>Processing:</strong> Pretreatment includes singeing,
-            desizing, scouring, bleaching.
-          </div>
-        </>
-      ),
-      showInShort: true,
-    },
-    {
-      jsx: (
-        <>
-          <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
-          <div>
-            <strong>Advanced Step:</strong> Mercerizing improves luster, tensile
-            strength, and dye affinity.
-          </div>
-        </>
-      ),
-      showInShort: false, // Only after "Read More"
-    },
-  ];
+  // const myContent = [
+  //   {
+  //     jsx: (
+  //       <>
+  //         <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
+  //         <div>
+  //           <strong>Applications:</strong> Apparel, shirting, trousers, home
+  //           textiles.
+  //         </div>
+  //       </>
+  //     ),
+  //     showInShort: true,
+  //   },
+  //   {
+  //     jsx: (
+  //       <>
+  //         <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
+  //         <div>
+  //           <strong>Processing:</strong> Pretreatment includes singeing,
+  //           desizing, scouring, bleaching.
+  //         </div>
+  //       </>
+  //     ),
+  //     showInShort: true,
+  //   },
+  //   {
+  //     jsx: (
+  //       <>
+  //         <FaCheckCircle className="text-green-500 mt-1 flex-shrink-0" />
+  //         <div>
+  //           <strong>Advanced Step:</strong> Mercerizing improves luster, tensile
+  //           strength, and dye affinity.
+  //         </div>
+  //       </>
+  //     ),
+  //     showInShort: false, // Only after "Read More"
+  //   },
+  // ];
 
   return (
     <div>

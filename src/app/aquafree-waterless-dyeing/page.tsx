@@ -2,10 +2,10 @@ import React from "react";
 import Navbar2 from "@/components/Navbar2";
 import AquaFreeDyeingSection from "@/components/AquaFreeDyeingSection";
 import AquaFreeTechnicalProcess from "@/components/AquaFreeTechnicalProcess";
-import WhyThisMatters from "@/components/WhyThisMatters";
+// import WhyThisMatters from "@/components/WhyThisMatters";
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+// import Link from "next/link";
+// import { ArrowRight } from "lucide-react";
 const page = () => {
   const BadgeIcon = ({ className }: { className?: string }) => (
     <svg
@@ -94,8 +94,8 @@ const page = () => {
               <p className="text-xl font-open font-bold text-[var(--bodyContent)] leading-relaxed mb-8 border-b-2 border-gray-300">
                 By condensing 12 - 14 baths into just a few, AquaFree achieves:
               </p>
-              {workItems.map((item) => (
-                <div className="flex items-center justify-between">
+              {workItems.map((item, index) => (
+                <div key={index} className="flex items-center justify-between">
                   <div className="flex gap-2">
                     <BadgeIcon className="w-8 h-8 mb-2 text-[var(--greenShade)]" />
 
