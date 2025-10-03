@@ -4,6 +4,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import { FaCheck } from "react-icons/fa";
 import { motion } from "framer-motion";
+// import { Player } from "@lottiefiles/react-lottie-player";
 const features = [
   {
     title: "AquaFree™ Waterless Dyeing - ",
@@ -23,10 +24,7 @@ const features = [
 
 const InnovationSection1: NextPage = () => {
   return (
-    <section
-      className="bg-[var(--beige)]/30 py-16 mt-20"
-      
-    >
+    <section className="bg-[var(--beige)]/30 py-16 mt-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col gap-6 max-w-5xl mx-auto">
           <div className="text-4xl font-medium font-serif text-[var(--greenShade)] text-center">
@@ -41,6 +39,15 @@ const InnovationSection1: NextPage = () => {
             larger vision: to create fabrics that are sustainable,
             high-performing, and globally trusted.
           </p>
+
+          {/* <div className="w-64 h-64">
+            <Player
+              autoplay
+              loop
+              src="/assets/images/ExclusiveSolution.lottie" // put your .lottie file in /public/animations/
+              style={{ height: "100%", width: "100%" }}
+            />
+          </div> */}
         </div>
         <div className="flex flex-row items-center mt-12 gap-0 max-lg:grid-cols-1 max-lg:gap-12">
           {/* Left Side */}
@@ -112,7 +119,6 @@ const InnovationSection1: NextPage = () => {
               act as the testing ground where concepts are refined into
               market-ready solutions.
             </p>
-           
 
             <ul className="mt-8 space-y-6 font-open leading-relaxed text-[var(--bodyContent)] text-justify text-lg">
               {features.map((feature, index) => (
@@ -127,8 +133,9 @@ const InnovationSection1: NextPage = () => {
             </ul>
 
             <p className="mt-6 font-open leading-relaxed text-[var(--bodyContent)] text-justify text-lg">
-            By running pilots in controlled environments, we perfect innovation before it reaches full - scale production - ensuring reliability, repeatability, and sustainability.
-
+              By running pilots in controlled environments, we perfect
+              innovation before it reaches full - scale production - ensuring
+              reliability, repeatability, and sustainability.
             </p>
           </div>
         </div>
