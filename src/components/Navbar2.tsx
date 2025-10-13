@@ -48,8 +48,21 @@ const navLinks = [
       { name: "AquaFree™ Waterless Dyeing", href: "/aquafree-waterless-dyeing" },
       { name: "Innovation with Responsibility", href: "/innovation-with-responsibility" },
       { name: "Advanced European Machinery", href: "/advanced-european-machinery" },
-      { name: "Why These Machines Matter", href: "/why-these-machines-matter" },
+      // { name: "Why These Machines Matter", href: "/why-these-machines-matter" },
+      { name: "Institutional & Industrial Textiles", href: "/institutional-and-industrial-textiles" },
 
+
+
+    ],
+  },
+
+  {
+    name: "Sustainability",
+    href: "#",
+    dropdown: [
+      { name: "Our Responsibility in Action", href: "/our-responsibility-in-action" },
+      { name: "Core Pillars of Our Commitment", href: "/core-pillars-of-our-commitment" },
+      { name: "Environmental Fabric Processing", href: "/environmental-fabric-processing" },
 
     ],
   },
@@ -62,7 +75,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="bg-white shadow-sm fixed top-0 w-full z-100">
-      <div className="mx-auto flex items-center justify-between px-6 py-4 lg:px-8">
+      <div className="w-full flex items-center justify-between px-6 py-4 lg:px-8">
         {/* Left Section: Logo */}
 
         <div className="relative">
@@ -119,7 +132,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Middle Section: Navigation Links (Desktop) */}
-        <div className="hidden lg:flex lg:gap-x-8">
+        <div className="flex gap-4">
           {/* <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Image
@@ -145,9 +158,8 @@ const Navbar: React.FC = () => {
                 {link.name}
                 {link.dropdown && (
                   <ChevronDownIcon
-                    className={`ml-1 h-4 w-4 text-gray-400 transition-transform ${
-                      openDropdown === link.name ? "rotate-180" : ""
-                    }`}
+                    className={`ml-1 h-4 w-4 text-gray-400 transition-transform ${openDropdown === link.name ? "rotate-180" : ""
+                      }`}
                   />
                 )}
               </Link>
@@ -172,7 +184,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Right Section: Icons and Button */}
-        <div className="flex items-center gap-x-4">
+        <div className="flex items-center w-fit gap-x-4">
           <button
             type="button"
             className="rounded-full bg-gradient-to-r from-blue-500 to-blue-700 px-6 py-2 text-base font-semibold text-white shadow-lg hover:from-blue-600 hover:to-blue-800 transition-all duration-300"
