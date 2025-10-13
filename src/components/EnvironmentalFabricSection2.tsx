@@ -109,7 +109,7 @@
 
 
 
-
+// ************************************************
 
 // components/EnergyFeatures.tsx
 'use client'
@@ -117,7 +117,7 @@
 import React, { useRef } from 'react'
 import Image from 'next/image'
 import { Sun, Wind, Rocket } from 'lucide-react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll, useTransform, useSpring } from 'framer-motion'
 
 interface Feature {
   icon: React.ElementType
@@ -146,33 +146,29 @@ const features: Feature[] = [
   },
 ]
 
-// Choose one of the two animation approaches below.
-// A) whileInView: simple one-time entrance
-// B) useScroll + useTransform: progress-based as you scroll through the section
+
 
 const EnergyFeatures = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null)
 
-  // --- Option B (progress-based) ---
-  // Comment this block if you prefer the simpler whileInView approach.
+
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ['start 85%', 'start 35%'], // start when top of section hits 85% viewport, end by 35%
+
+    offset: ['start 90%', 'start 30%'],
   })
-  // From 0 -> 1 progress, move panel from top-right into place
-  // const x = useTransform(scrollYProgress, [0, 1], [180, 0])
-  // const y = useTransform(scrollYProgress, [0, 1], [-120, 0])
-  // const opacity = useTransform(scrollYProgress, [0, 1], [0, 1])
 
 
-  // Increase the first value if you want it to start further off-screen to the right.
-const x = useTransform(scrollYProgress, [0, 1], [220, 0])
-  // ----------------------------------
+  const xRaw = useTransform(scrollYProgress, [0, 1], [240, 0])
+
+
+  const x = useSpring(xRaw, { stiffness: 40, damping: 18 })
+
 
   return (
-    <section ref={sectionRef} className="bg-white py-12 mt-10 relative overflow-hidden">
+    <section ref={sectionRef} className="bg-[#fbfdfb] py-30 mt-0 relative overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Intro */}
+
         <div className="flex flex-col gap-6 max-w-5xl mx-auto">
           <div className="text-4xl font-medium font-serif text-[var(--greenShade)] text-center max-lg:text-3xl max-md:text-2xl">
             Solar Power Installations - Harnessing the Sun
@@ -194,23 +190,24 @@ const x = useTransform(scrollYProgress, [0, 1], [220, 0])
           </div>
 
           {/* Right column (panel container) */}
-          <div className="relative h-full w-[50%] z-10 max-lg:w-full">
-            {/* GREEN PANEL */}
-            {/* Option A: Simple whileInView (uncomment this block and comment Option B below if preferred)
-            <motion.div
-              initial={{ x: 180, y: -120, opacity: 0 }}
-              whileInView={{ x: 0, y: 0, opacity: 1 }}
-              viewport={{ once: true, amount: 0.4 }}
-              transition={{ type: 'spring', stiffness: 140, damping: 20 }}
-              className="bg-[var(--greenShade)] w-full absolute top-10 -left-10 px-12 py-20 h-fit
-                         max-xl:top-8 max-xl:-left-8 max-lg:static max-lg:px-10 max-lg:py-14 max-md:px-6 max-md:py-8"
-            >
-            */}
-            {/* Option B: Scroll-progress-based (default) */}
+          <div className="relative -top-4 h-full w-[50%] z-10 max-lg:w-full">
+
+
+            <div className='h-[14rem] w-auto relative'>
+              <Image
+                src="/assets/gifs/solarInstallationGif.gif"
+                alt="Solar and factory"
+                fill
+                className="h-full w-full"
+                priority
+              />
+            </div>
+
+
             <motion.div
               style={{ x }}
-              transition={{ type: 'spring', stiffness: 140, damping: 20 }}
-              className="bg-[var(--greenShade)] w-full absolute top-10 -left-10 px-12 py-20 h-fit
+              transition={{ type: 'spring', stiffness: 40, damping: 5 }}
+              className="bg-[var(--greenShade)] w-full absolute top-54 -left-10 px-12 py-20 h-fit
                          max-xl:top-8 max-xl:-left-8 max-lg:static max-lg:px-10 max-lg:py-14 max-md:px-6 max-md:py-8"
             >
               <div className="flex flex-col gap-10">
@@ -236,7 +233,7 @@ const x = useTransform(scrollYProgress, [0, 1], [220, 0])
       </div>
 
       {/* Deep ocean band */}
-      <div className="absolute top-[40%] h-[300px] w-full z-0 bg-[var(--deepOcean)] max-lg:top-[55%] max-md:h-[220px]" />
+      <div className="absolute top-[60%] h-[300px] w-full z-0 bg-[var(--deepOcean)] max-lg:top-[55%] max-md:h-[220px]" />
     </section>
   )
 }
