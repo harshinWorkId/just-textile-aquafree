@@ -24,6 +24,14 @@ const page = () => {
     <div>
       <Navbar2></Navbar2>
 
+      <section className='w-full'>
+
+        <div className="max-w-7xl">
+
+        </div>
+
+      </section>
+
       <EnvironmentalFabricSection1 />
 
       <EnvironmentalFabricSection2 />
