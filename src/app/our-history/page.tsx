@@ -1,4 +1,5 @@
 
+
 import Navbar2 from "@/components/Navbar2";
 
 
@@ -10,7 +11,7 @@ import WhyOurWorkMatters from "@/components/WhyOurWorkMatters";
 import SpecialtyFabrics from "@/components/SpecialtyFabrics";
 export default function Home() {
   return (
-    <div className="relative bg-fixed bg-cover bg-center bg" style={{ backgroundImage: "url('/assets/images/bg1.png')" }}>
+    <div className="relative bg-fixed bg-cover bg-center bg">
       <Navbar2/>
       
       {/* Just Textiles Ltd: Pioneering Innovation in Sustainable Textile

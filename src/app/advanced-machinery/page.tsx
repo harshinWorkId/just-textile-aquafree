@@ -5,8 +5,70 @@ import Image from "next/image";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import { MdFactory } from "react-icons/md";
+import { Shirt, Globe, ShoppingCart } from 'lucide-react';
+
 
 const page = () => {
+  const steps = [
+    {
+      number: "01/",
+      title: "Consistency at Scale",
+      description:
+        "Bulk orders processed with uniform results across every meter.",
+    },
+    {
+      number: "02/",
+      title: "Faster Turnarounds",
+      description:
+        "Reduced processing times allow us to meet tight global timelines.",
+    },
+    {
+      number: "03/",
+      title: "Sustainability Built-In",
+      description:
+        "Continuous machines consume fewer resources compared to batch processes.",
+    },
+    {
+      number: "04/",
+      title: "Real-Time Monitoring",
+      description:
+        "Integrated control systems detect and correct deviations instantly, reducing errors and wastage.",
+    },
+    {
+      number: "05/",
+      title: "Future-Ready",
+      description:
+        "Designed to integrate with upcoming innovations like waterless dyeing and digital monitoring systems.",
+    },
+  ];
+
+  const features = [
+    {
+      icon: Shirt,
+      step: '01',
+      title: 'Global Export Buyers',
+      description: 'Shade continuity and reliability across millions of meters.',
+    },
+    {
+      icon: Globe,
+      step: '02',
+      title: 'Defense Orders',
+      description: 'Guaranteed precision in bulk uniform requirements.',
+    },
+    {
+      icon: ShoppingCart,
+      step: '03',
+      title: 'Fashion & Lifestyle Brands',
+      description: 'Fabrics with vibrant colors and functional finishes.',
+    },
+    {
+      icon: ShoppingCart,
+      step: '04',
+      title: 'Sustainability Partners',
+      description: 'Access to environmentally responsible fabrics made with ZLD and renewable energy.',
+    },
+  ];
   return (
     <div>
       <Navbar2></Navbar2>
@@ -21,7 +83,7 @@ const page = () => {
 
             {/* Heading */}
             <h2 className="text-4xl font-medium font-serif leading-tight text-[var(--greenShade)]">
-              Advanced European Machinery
+              Advanced Machinery
             </h2>
 
             {/* Subtext */}
@@ -558,7 +620,171 @@ const page = () => {
           </div>
         </div>
       </section>
-    </div>
+
+
+      {/* Utilities & Sustainability  */}
+      <section className="w-full bg-[var(--beige)]/30 mx-auto">
+        <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-2 gap-12 items-center mt-20 relative">
+          {/* Left Column - Image */}
+          <div className="absolute top-10 left-10 w-[35%] mx-auto h-[540px] border-6 border-sky-500 z-0"></div>
+
+          <div className="relative w-[80%] mx-auto h-[500px]">
+            <Image
+              src="/assets/images/why-work-matters1.png"
+              alt="Factory Robot"
+              fill
+              className="object-cover rounded-md"
+            />
+          </div>
+
+          {/* Right Column - Content */}
+          <div className="flex flex-col justify-center">
+            {/* Big Heading */}
+            <h2 className="text-4xl font-medium text-[var(--greenShade)] font-serif leading-snug mb-6">
+              Utilities & Sustainability
+            </h2>
+
+            {/* Description */}
+            <p className="text-[var(--bodyContent)] text-lg font-semibold font-open mb-2 max-w-xl">
+              Our utilities are designed to support scale while meeting strict sustainability commitments.
+            </p>
+
+            {/* Check list */}
+            <ul className="space-y-3 mb-8 font-open text-lg">
+              <li className="flex items-center text-gray-800">
+                <span className="text-[var(--bodyContent)] mr-2">✔</span>
+                Boilers and thermopacs provide consistent steam for processing.
+              </li>
+              <li className="flex items-center text-gray-800">
+                <span className="text-[var(--bodyContent)] mr-2">✔</span>
+                Air compressors ensure reliable pneumatic support for machinery.
+              </li>
+              <li className="flex items-center text-gray-800">
+                <span className="text-[var(--bodyContent)] mr-2">✔</span>
+                DG sets and steam turbines guarantee uninterrupted operations.
+              </li>
+
+              <li className="flex items-center text-gray-800">
+                <span className="text-[var(--bodyContent)] mr-2">✔</span>
+                <span><span className="font-semibold">Zero Liquid Discharge (ZLD): </span>
+                  Multi-effect evaporators, ATFD, CRP plants, and RO systems recycle all water used in processing.</span>
+              </li>
+
+
+              <li className="flex items-center text-gray-800">
+                <span className="text-[var(--bodyContent)] mr-2">✔</span>
+                Solar power and heat recovery systems reduce carbon footprint.
+              </li>
+
+              <li className="flex items-center text-gray-800">
+                <span className="text-[var(--bodyContent)] mr-2">✔</span>
+                Safety systems (fire pumps, transformers, breaker panels) ensure compliance and reliability.
+              </li>
+            </ul>
+
+            <p className="text-[var(--bodyContent)] text-lg font-medium font-open mb-6 max-w-xl">
+              <span className="font-semibold">Why it matters:</span> We deliver large volumes without environmental compromise, meeting global buyer's sustainability benchmarks.
+            </p>
+
+
+
+
+          </div>
+        </div>
+      </section >
+
+
+      {/* Why These Machines Matter */}
+      <section className="bg-white py-16">
+        <div className="max-w-7xl mx-auto grid grid-cols-2 gap-12 items-center px-6">
+          {/* LEFT CONTENT */}
+          <div className="flex flex-col justify-center">
+            <h2 className="text-4xl font-medium text-[var(--greenShade)] mb-8 font-serif">
+              Why These Machines Matter
+            </h2>
+
+            <p className="text-[var(--bodyContent)] font-open text-lg mb-8">At Just Textiles, machinery is more than infrastructure-it's an enabler of trust and sustainability.</p>
+
+            <div className="space-y-6">
+              {steps.map((step, idx) => (
+                <div
+                  key={idx}
+                  className="group border-b border-gray-300 pb-4 flex gap-6 items-start"
+                >
+                  <div className="text-4xl group-hover:scale-[2] transform transition-transform duration-500 ease-in-out font-bold text-[var(--bodyContent)] font-serif min-w-[70px]">
+                    {step.number}
+                  </div>
+                  <div>
+                    <h3 className="textStyle2 font-open font-semibold mb-1">
+                      {step.title}
+                    </h3>
+                    <p className="text-[var(--bodyContent))] text-base">
+                      {step.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* RIGHT IMAGE */}
+          <div className="relative w-full h-[550px] max-lg:h-[400px]">
+            <Image
+              src="/assets/images/beyond-manufacturing.png"
+              alt="Textile Work"
+              fill
+              className="object-cover rounded-sm"
+            />
+          </div>
+        </div>
+      </section>
+
+
+      {/* What It Means for Our Clients  */}
+      <section className="bg-[var(--beige)]/30">
+        <div className="container mx-auto px-12 py-24">
+          <div className="flex flex-col gap-6 max-w-5xl mx-auto">
+            <div className="text-4xl font-medium font-serif text-[var(--greenShade)] text-center">
+              What It Means for Our Clients
+            </div>
+          </div>
+          <div className="grid grid-cols-4 gap-x-16 mt-20 relative">
+            {features.map((feature, index) => (
+              <div key={index} className="flex flex-col items-center text-center z-10">
+
+                <div className="flex flex-col w-full items-center">
+
+                  <div className="flex-shrink-0 rounded-lg bg-gray-300 p-5">
+                    <feature.icon className="h-10 w-10 text-[var(--deepOcean)]" />
+                  </div>
+
+                  {/* Step Number */}
+                  <span className="text-3xl font-bold font-serif text-[var(--deepOcean)]">
+                    {feature.step}
+                  </span>
+
+                </div>
+
+
+                <div className="mt-6 md:mt-8">
+                  <h3 className="text-xl font-open font-bold text-[var(--bodyContent)]">
+                    {feature.title}
+                  </h3>
+                  <p className="mt-2 font-open text-lg text-[var(--bodyContent)]">
+                    {feature.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+
+            <div className='h-[10px] border-gray-400 rounded-4xl border w-[100%] mx-auto top-10 absolute z-0'>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div >
   );
 };
 

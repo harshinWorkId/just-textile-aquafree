@@ -1,3 +1,4 @@
+
 import React from "react";
 import Navbar2 from "@/components/Navbar2";
 import Image from "next/image";
@@ -11,7 +12,7 @@ import WhatSetsUsApart from "@/components/WhatSetsUsApart";
 
 const page = () => {
   return (
-    <div className="relative bg-fixed bg-cover bg-center bg" style={{ backgroundImage: "url('/assets/images/bg1.png')" }} >
+    <div className="relative bg-fixed bg-cover bg-center bg">
       {/* bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/assets/images/bg1.png')" }} */}
       <Navbar2 />
 
@@ -31,7 +32,7 @@ const page = () => {
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto my-12">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               The Most Important Thing
               <br />
@@ -40,7 +41,7 @@ const page = () => {
               </span>
             </h1>
 
-            <p className="text-md md:text-2xl text-gray-300 mb-12 max-w-6xl mx-auto leading-relaxed font-montserrat">
+            <p className="text-md md:text-2xl text-gray-300 max-w-6xl mx-auto leading-relaxed font-montserrat">
               Textiles are more than just fabrics. They are the invisible
               backbone of daily life—woven into fashion, homes, workplaces, and
               industries. At Just Textiles Ltd, we see textiles as a platform

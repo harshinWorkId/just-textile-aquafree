@@ -23,7 +23,7 @@ const ContentBlock2: React.FC<ContentBlockProps> = ({
 
 }) => {
   return (
-    <section className="relative py-24 mt-10">
+    <section className="relative py-20 mt-10">
       <div
         className={`max-w-7xl shadow-xl rounded-2xl mx-auto py-12 px-8 grid grid-cols-2 gap-12 items-center`}
       >
