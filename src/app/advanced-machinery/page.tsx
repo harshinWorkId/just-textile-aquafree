@@ -407,10 +407,18 @@ const page = () => {
         fullContent={
           <div className="space-y-4">
             <p>
-              Caustic soda treatment under tension swells the cotton fibers,
-              increasing dye affinity and luster.
+              Our Swastik chainless merceriser chemically modifies cotton to improve its quality and performance.
             </p>
             <div className="flex flex-col text-base w-[95%] mx-auto gap-4">
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Caustic soda treatment under tension swells the cotton fibers, increasing dye affinity and luster.
+                </p>
+              </div>
+
+
               <div className="flex flex-row gap-4">
                 <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
                 <p className="text-gray-100">
@@ -440,6 +448,289 @@ const page = () => {
               quality. It elevates shirtings, dress fabrics, and high-fashion
               cottons into the luxury category, meeting the expectations of
               international buyers.
+            </p>
+          </div>
+        }
+        extraContent={""}
+      />
+
+      <ExpandableCard
+        id={5}
+        title="Bleaching"
+        image="/assets/images/why-work-matters1.png"
+        shortContent={
+          <p className="">
+            We operate a combination of Benninger bleaching ranges, double steamers, and Menzel pad-steam machines to deliver brilliant whites.
+
+          </p>
+        }
+        fullContent={
+          <div className="space-y-4">
+            <p>
+              We operate a combination of Benninger bleaching ranges, double steamers, and Menzel pad-steam machines to deliver brilliant whites.
+            </p>
+            <div className="flex flex-col text-base w-[95%] mx-auto gap-4">
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Bleaching agents remove natural pigments, increasing whiteness.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Benninger CBR range integrates drying, reducing processing time and stabilizing results.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Double steamers ensure chemicals penetrate evenly across wide-width fabrics.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Pad-steam bleaching reduces chemical wastage and lowers water use while maintaining brightness.
+                </p>
+              </div>
+            </div>
+            <p className="mt-3">
+              Why it matters: The fabrics emerge brilliantly white, consistent across meters, and perfectly prepared for vibrant dyeing or sharp, high-definition printing.
+            </p>
+          </div>
+        }
+        extraContent={""}
+      />
+
+
+      <ExpandableCard
+        id={7}
+        title="Printing"
+        image="/assets/images/why-work-matters1.png"
+        shortContent={
+          <p className="">
+            Our printing department combines digital, rotary, and flatbed technologies for maximum flexibility.
+
+          </p>
+        }
+        fullContent={
+          <div className="space-y-4">
+            <p>
+              Our printing department combines digital, rotary, and flatbed technologies for maximum flexibility.
+            </p>
+            <div className="flex flex-col text-base w-[95%] mx-auto gap-4">
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Digital printers (Colorjet Earth Max) enable small runs, sampling, and rapid design changes without screens.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Rotary machines (Laxmi 12-color) handle bulk export orders with high precision
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Loop agers fix printed colors under steam for lasting durability.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Screen preparation machines (Embee, CST) ensure sharp motifs, repeat accuracy, and design clarity.
+                </p>
+              </div>
+            </div>
+            <p className="mt-3">
+              Why it matters: Brands get the freedom of fashion-speed sampling and the reliability of bulk exports — all under one roof.
+            </p>
+          </div>
+        }
+        extraContent={""}
+      />
+
+
+      <ExpandableCard
+        id={8}
+        title="Soaping + Reducing Clearing"
+        image="/assets/images/why-work-matters1.png"
+        shortContent={
+          <p className="">
+            After dyeing, soaping and reducing clearing are essential to stabilize shades.
+
+          </p>
+        }
+        fullContent={
+          <div className="space-y-4">
+            <p>
+              After dyeing, soaping and reducing clearing are essential to stabilize shades.
+            </p>
+            <div className="flex flex-col text-base w-[95%] mx-auto gap-4">
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Removes unfixed dyes that would otherwise bleed during washing.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Improves wash and rub fastness for longer fabric life.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Brightens shades and gives a softer finish.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Works across all dyeing machines (softflow, jet, jigger, padder).
+                </p>
+              </div>
+            </div>
+            <p className="mt-3">
+              Why it matters: Fabrics retain their vibrancy, passing global fastness standards even after repeated consumer washes.
+            </p>
+          </div>
+        }
+        extraContent={""}
+      />
+
+
+      <ExpandableCard
+        id={9}
+        title="Neutralizing (RFF 2)"
+        image="/assets/images/why-work-matters1.png"
+        shortContent={
+          <p className="">
+            Neutralization stabilizes fabric pH after alkaline or oxidative treatments.
+
+          </p>
+        }
+        fullContent={
+          <div className="space-y-4">
+            <p>
+              Neutralization stabilizes fabric pH after alkaline or oxidative treatments.
+            </p>
+            <div className="flex flex-col text-base w-[95%] mx-auto gap-4">
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Neutralizes alkali residues from mercerizing or bleaching.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Balances fabric pH to safe, skin-friendly levels.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Improves softness and avoids shade shifts during storage.
+                </p>
+              </div>
+
+
+            </div>
+            <p className="mt-3">
+              Why it matters: Ensures fabrics are safe for the skin, stable during export journeys, and ready for advanced finishes.
+            </p>
+          </div>
+        }
+        extraContent={""}
+      />
+
+
+      <ExpandableCard
+        id={10}
+        title="Finishing (Wovens & Knits)"
+        image="/assets/images/why-work-matters1.png"
+        shortContent={
+          <p className="">
+            Our finishing section adds performance, look, and feel to fabrics.
+
+          </p>
+        }
+        fullContent={
+          <div className="space-y-4">
+            <p>
+              Our finishing section adds performance, look, and feel to fabrics.
+            </p>
+            <div className="flex flex-col text-base w-[95%] mx-auto gap-4">
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  <span className="font-bold">Stenters (Yamuna, 8–10 chambers):</span> Heat-set fabrics, control width, and apply functional finishes.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  <span className="font-bold">Zero-Zero shrinking machines (Dhall, Monforts):</span> Stabilize shrinkage in cottons and blends.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  <span className="font-bold">Calenders (Kleinwefers, Kuster, Ramish, Prabhat):</span> Add gloss, smoothness, or technical compression.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  <span className="font-bold">Surface finishers (Lafer raising, shearing, peach machines):</span> Create warmth, texture, and peach-skin effects.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  <span className="font-bold">Biancalani air-finishing:</span> Adds softness and bulk without chemicals.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  <span className="font-bold">Relax dryers and compactors (Santex, TubeTex):</span> Stabilize knits, improving garment life.
+
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  <span className="font-bold">Inspection machines:</span> Ensure final quality consistency.
+                </p>
+              </div>
+
+
+            </div>
+            <p className="mt-3">
+              Why it matters: This stage transforms raw textiles into high-performance fabrics ready for fashion, uniforms, or technical applications.
             </p>
           </div>
         }
