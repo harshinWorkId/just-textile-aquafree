@@ -8,7 +8,7 @@ const photos = [
     alt: "Fabric design 1",
   },
   {
-    src: "/assets/images/impact2.jpg",
+    src: "/assets/images/Impact2.jpg",
     width: 1800,
     height: 700,
     alt: "Fabric design 2",
