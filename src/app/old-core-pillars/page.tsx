@@ -158,7 +158,7 @@ const transparencyData = [
 const commitmentData = [
   {
     title: "Proven Results",
-    desc: "90% water reduction, 60% carbon decrease, zero harmful discharge-achievements that demonstrate the viability of sustainable manufacturing.",
+    desc: "90% water reduction, 60% carbon decrease, zero harmful discharge—achievements that demonstrate the viability of sustainable manufacturing.",
   },
   {
     title: "Continuous Innovation",
@@ -206,18 +206,15 @@ export default function Page() {
   return (
     <main>
       <Navbar />
-
-
-      {/* Building a Sustainable Future in Textile Manufacturing */}
       <section
         id="section-1"
-        className="mt-24 bg-[var(--beige)]/30 py-16 sm:py-20 "
+        className="mt-24 bg-[var(--beige)]/30 py-16 sm:py-20"
       >
-        <div className="max-w-7xl mx-auto px-6 sm:px-10 grid grid-cols-1 sm:grid-cols-2 items-center justify-center gap-10 relative">
-          <div className="max-w-[80%] justify-self-center relative">
-            {/* <div className="absolute rounded-md w-[110%] h-[90%] top-[5%] left-[-5%] -z-10 bg-[var(--deepOcean)]"></div> */}
+        <div className="container mx-auto px-6 sm:px-10 grid grid-cols-1 sm:grid-cols-2 items-center justify-center gap-10">
+          <div className="max-w-xs justify-self-center relative">
+            <div className="absolute rounded-md w-[110%] h-[90%] top-[5%] left-[-5%] -z-10 bg-[var(--deepOcean)]"></div>
             <Image
-              src="/assets/images/textile-manufacturing.png"
+              src="/assets/images/why-work-matters1.png"
               alt="Business meeting"
               width={500}
               height={500}
@@ -225,66 +222,26 @@ export default function Page() {
             />
           </div>
 
-
-          {/* <div className="absolute w-3/5 h-[14rem] top-4/5 -left-30  opacity-20">
-            <Image src={`/assets/images/thread4.png`} fill alt="Building a Sustainable Future in Textile Manufacturing"></Image>
-
-          </div> */}
-
           <div className="flex flex-col gap-8">
-            <h2 className="heading">
+            <h1 className="heading">
               Building a Sustainable Future in Textile Manufacturing
-            </h2>
+            </h1>
             <p className={paraStyle}>
               Our commitment to environmental stewardship goes beyond
-              compliance - it's woven into every fiber of our operations. Through
+              compliance—it's woven into every fiber of our operations. Through
               innovative technologies and transparent practices, we're
               transforming the textile industry's environmental footprint while
               maintaining the quality and efficiency that our partners expect.
             </p>
           </div>
         </div>
-
-
-        {/* <div id="section-2" className="py-16 sm:py-20">
-          <div className="max-w-7xl mx-auto px-6 sm:px-10 flex flex-col gap-10">
-
-            <div className="flex flex-col gap-6 max-w-3xl mx-auto text-center">
-              <h1 className="heading">Six Pillars of Environmental Excellence</h1>
-              <p className={cn(paraStyle, "text-center")}>
-                Our comprehensive sustainability strategy rests on six
-                interconnected pillars, each addressing critical environmental
-                challenges in textile manufacturing.
-              </p>
-            </div>
-
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 py-6">
-              {sixPillars.map((pillar) => (
-                <div
-                  key={pillar.title}
-                  className="flex flex-col items-start rounded-2xl bg-gray-100 shadow-md hover:shadow-xl transition-shadow duration-300 p-8"
-                >
-                  <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-[var(--greenShade)]/10 text-[var(--greenShade)] mb-5">
-                    <pillar.icon className="w-8 h-8" aria-hidden="true" />
-                  </div>
-                  <h3 className="subHeading mb-2">{pillar.title}</h3>
-                  <p className={cn(`${paraStyle} text-left`)}>{pillar.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div> */}
-
       </section>
 
-
-      {/* Six Pillars of Environmental Excellence  */}
       <section id="section-2" className="py-16 sm:py-20">
-        <div className="max-w-7xl mx-auto px-6 sm:px-10 flex flex-col gap-10">
-
+        <div className="container mx-auto px-6 sm:px-10 flex flex-col gap-10">
+          {/* Heading + Description */}
           <div className="flex flex-col gap-6 max-w-3xl mx-auto text-center">
-            <h2 className="heading">Six Pillars of Environmental Excellence</h2>
+            <h1 className="heading">Six Pillars of Environmental Excellence</h1>
             <p className={cn(paraStyle, "text-center")}>
               Our comprehensive sustainability strategy rests on six
               interconnected pillars, each addressing critical environmental
@@ -292,33 +249,30 @@ export default function Page() {
             </p>
           </div>
 
-
-          <div className="w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 py-6">
+          {/* Grid of Pillars */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 py-6">
             {sixPillars.map((pillar) => (
               <div
                 key={pillar.title}
-                className="flex flex-col items-center rounded-2xl bg-gray-100 shadow-md hover:shadow-xl transition-shadow duration-300 p-8"
+                className="flex flex-col items-start rounded-2xl bg-white shadow-md hover:shadow-xl transition-shadow duration-300 p-8"
               >
-                <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-[var(--greenShade)]/10 text-[var(--greenShade)] mb-5 font-open">
+                <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-[var(--greenShade)]/10 text-[var(--greenShade)] mb-5">
                   <pillar.icon className="w-8 h-8" aria-hidden="true" />
                 </div>
                 <h3 className="subHeading mb-2">{pillar.title}</h3>
-                <p className={cn(`${paraStyle} text-center`)}>{pillar.desc}</p>
+                <p className={cn(`${paraStyle} text-left`)}>{pillar.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-
-      {/* Zero Liquid Discharge: Not a Drop Wasted  */}
-      <section id="section-3" className="bg-[var(--grayish)]/30 py-16 sm:py-20">
-        <div className="max-w-7xl mx-auto px-6 sm:px-10 grid grid-cols-1 sm:grid-cols-2 items-start gap-16">
+      <section id="section-3" className="bg-[var(--beige)]/30 py-16 sm:py-20">
+        <div className="container mx-auto px-6 sm:px-10 grid grid-cols-1 sm:grid-cols-2 items-start gap-16">
           <div className="flex flex-col gap-6">
-            <h2 className="heading">
+            <h1 className="heading">
               Zero Liquid Discharge: Not a Drop Wasted
-            </h2>
-
+            </h1>
             <p className={paraStyle}>
               A Closed-Loop Water System Traditional textile dyeing and
               finishing operations are among the most water-intensive industrial
@@ -336,7 +290,7 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="flex flex-col bg-gray-100 gap-6 rounded-2xl p-8 shadow-md">
+          <div className="flex flex-col bg-white gap-6 rounded-2xl p-8 shadow-md">
             <h2 className="subHeading">ZLD Impact Metrics</h2>
             <ul className="space-y-4">
               {zldImpactMetrics.map((metric, index) => (
@@ -357,8 +311,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* AquaFree™: Revolutionary Waterless Technology  */}
-      <section id="section-4" className="py-16 sm:py-20 bg-[var(--beige)]/30">
+      <section id="section-4" className="py-16 sm:py-20">
         <div className="container mx-auto px-6 sm:px-10 grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Icon List */}
           <div className="flex flex-col justify-center gap-5">
@@ -371,7 +324,7 @@ export default function Page() {
                   <item.icon size={40} />
                 </div>
                 <div>
-                  <h4 className="text-2xl font-medium font-serif text-[var(--deepOcean)] mb-0">{item.title}</h4>
+                  <h4 className="subHeading !text-left">{item.title}</h4>
                   <p className={paraStyle}>{item.desc}</p>
                 </div>
               </div>
@@ -380,13 +333,13 @@ export default function Page() {
 
           {/* Heading + Description */}
           <div className="flex flex-col gap-6 max-w-3xl mx-auto text-center">
-            <h2 className="heading">
+            <h1 className="heading">
               AquaFree™: Revolutionary Waterless Technology
-            </h2>
+            </h1>
             <p className={paraStyle}>
               Water scarcity is one of the defining challenges of our century.
-              The textile industry's conventional dyeing processes consume
-              approximately 200 liters of water per kilogram of fabric-an
+              The textile industry’s conventional dyeing processes consume
+              approximately 200 liters of water per kilogram of fabric—an
               unsustainable burden on global freshwater resources.
             </p>
             <p className={paraStyle}>
@@ -394,9 +347,9 @@ export default function Page() {
               breakthrough innovations in supercritical CO₂ dyeing, air-dye
               methods, and digital pigment application to achieve vibrant,
               durable coloration with up to{" "}
-              <strong>
+              <span className="text-[var(--greenShade)] font-semibold">
                 90% less water
-              </strong>{" "}
+              </span>{" "}
               than traditional methods.
             </p>
             <p className={paraStyle}>
@@ -408,14 +361,21 @@ export default function Page() {
         </div>
       </section>
 
-
-      {/* Powering Operations with Clean Energy  */}
-      <section id="section-5" className="bg-white py-16 sm:py-20">
-        <div className="max-w-7xl mx-auto px-6 sm:px-10 grid grid-cols-1 sm:grid-cols-2 items-center justify-center gap-10">
-
+      <section id="section-5" className="bg-[var(--beige)]/30 py-16 sm:py-20">
+        <div className="container mx-auto px-6 sm:px-10 grid grid-cols-1 sm:grid-cols-2 items-center justify-center gap-10">
+          <div className="max-w-sm justify-self-center relative">
+            <div className="absolute rounded-md w-[110%] h-[90%] top-[5%] left-[-5%] -z-10 bg-[var(--deepOcean)]"></div>
+            <Image
+              src="/assets/images/why-work-matters1.png"
+              alt="Business meeting"
+              width={500}
+              height={500}
+              className="object-cover w-full rounded-md hover:scale-105 transition-all"
+            />
+          </div>
 
           <div className="flex flex-col gap-8">
-            <h2 className="heading">Powering Operations with Clean Energy</h2>
+            <h1 className="heading">Powering Operations with Clean Energy</h1>
             <div>
               <h3 className="subHeading">A Two-Pronged Energy Strategy</h3>
               <p className={paraStyle}>
@@ -439,17 +399,6 @@ export default function Page() {
                 while avoiding fossil fuel combustion.
               </p>
             </div>
-          </div>
-
-          <div className="w-[80%] h-[100%] justify-self-center relative">
-
-            <Image
-              src="/assets/images/Powering-Operations.png"
-              alt="Business meeting"
-              width={500}
-              height={500}
-              className="object-cover w-full h-[100%] rounded-md hover:scale-105 duration-500 transition-all"
-            />
           </div>
 
           <div className="sm:col-span-2 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
@@ -499,31 +448,29 @@ export default function Page() {
         </div>
       </section>
 
-
-      {/* Green Chemistry: Safer Materials, Healthier Planet  */}
-      <section id="section-6" className="py-16 sm:py-24 bg-[var(--grayish)]/30">
+      <section id="section-6" className="py-16 sm:py-24">
         <div className="container mx-auto px-6 sm:px-10 grid grid-cols-1 sm:grid-cols-2 items-center gap-10">
           <div className="sm:col-span-2 flex flex-col gap-6">
-            <h2 className="heading">
+            <h1 className="heading">
               Green Chemistry: Safer Materials, Healthier Planet
-            </h2>
-            <p className={cn(paraStyle, "max-w-5xl mx-auto text-center")}>
-              The chemicals used in textile processing-dyes, fixatives,
-              softeners, and finishing agents-have historically included
+            </h1>
+            <p className={paraStyle}>
+              The chemicals used in textile processing—dyes, fixatives,
+              softeners, and finishing agents—have historically included
               substances harmful to ecosystems and human health. We're changing
               that narrative through strategic partnerships with chemistry
               innovators and strict material standards.
             </p>
           </div>
           {/* Left Image */}
-          <div className="relative justify-self-center">
+          <div className="relative max-w-md justify-self-center">
             <div className="absolute rounded-md w-[110%] h-[90%] top-[5%] left-[-5%] -z-10 bg-[var(--deepOcean)]"></div>
             <Image
               src="/assets/images/why-work-matters1.png"
               alt="Green chemistry lab"
               width={500}
               height={500}
-              className="object-cover w-full h-[26rem] rounded-md hover:scale-105 transition-all duration-500"
+              className="object-cover w-full rounded-md hover:scale-105 transition-all duration-500"
             />
           </div>
 
@@ -535,7 +482,7 @@ export default function Page() {
                   key={item.number}
                   className="border-t border-[var(--deepOcean)] pt-4"
                 >
-                  <h3 className="text-[var(--deepOcean)] text-2xl font-open font-semibold flex gap-x-3 mb-2 items-center">
+                  <h3 className="subHeading flex gap-x-3 items-center">
                     <span>{item.number}</span>
                     <span>{item.title}</span>
                   </h3>
@@ -547,15 +494,13 @@ export default function Page() {
         </div>
       </section>
 
-
-      {/* Embracing Circularity: From Waste to Resource */}
       <section id="section-7" className="bg-[var(--beige)]/30 py-16 sm:py-24">
         <div className="container mx-auto px-6 sm:px-10 grid grid-cols-1 gap-10 items-center">
           {/* Left Content */}
           <div className="flex flex-col gap-6">
-            <h2 className="heading">
+            <h1 className="heading">
               Embracing Circularity: From Waste to Resource
-            </h2>
+            </h1>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 text-[var(--bodyContent)]">
               {/* Column 1 */}
@@ -610,19 +555,60 @@ export default function Page() {
             </div>
           </div>
 
+          {/* Right Circular Diagram */}
+          <div className="flex flex-col items-center justify-center relative">
+            <Image
+              src="/assets/images/why-work-matters1.png"
+              alt="Circularity Process Diagram"
+              width={400}
+              height={400}
+              className="object-contain w-full max-w-sm"
+            />
 
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-10">
+              {/* Pillar 1 */}
+              <div className="flex flex-col items-center justify-center bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 text-center">
+                <div className="flex items-center justify-center w-14 h-14 rounded-full bg-[var(--deepOcean)]/20 text-[var(--deepOcean)] mb-4 shadow-inner">
+                  <Leaf size={28} strokeWidth={1.6} />
+                </div>
+                <span className="subHeading">Sustainable Sourcing</span>
+              </div>
+
+              {/* Pillar 2 */}
+              <div className="flex flex-col items-center justify-center bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 text-center">
+                <div className="flex items-center justify-center w-14 h-14 rounded-full bg-[var(--deepOcean)]/20 text-[var(--deepOcean)] mb-4 shadow-inner">
+                  <Factory size={28} strokeWidth={1.6} />
+                </div>
+                <span className="subHeading">Efficient Production</span>
+              </div>
+
+              {/* Pillar 3 */}
+              <div className="flex flex-col items-center justify-center bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 text-center">
+                <div className="flex items-center justify-center w-14 h-14 rounded-full bg-[var(--deepOcean)]/20 text-[var(--deepOcean)] mb-4 shadow-inner">
+                  <Recycle size={28} strokeWidth={1.6} />
+                </div>
+                <span className="subHeading">Material Recovery</span>
+              </div>
+
+              {/* Pillar 4 */}
+              <div className="flex flex-col items-center justify-center bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 text-center">
+                <div className="flex items-center justify-center w-14 h-14 rounded-full bg-[var(--deepOcean)]/20 text-[var(--deepOcean)] mb-4 shadow-inner">
+                  <ShieldCheck size={28} strokeWidth={1.6} />
+                </div>
+                <span className="subHeading">Durable Products</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-
-      {/* Transparency: Accountability Through Measurement  */}
       <section id="section-8" className="py-16 sm:py-24">
-        <div className="max-w-7xl mx-auto px-6 sm:px-10 flex flex-col gap-10">
+        <div className="container mx-auto px-6 sm:px-10 flex flex-col gap-10">
           {/* Section Header */}
           <div className="flex flex-col gap-6">
-            <h2 className="heading">
+            <h1 className="heading">
               Transparency: Accountability Through Measurement
-            </h2>
+            </h1>
             <p className={cn(paraStyle, "text-center")}>
               Sustainability claims without verification are simply marketing.
               We believe meaningful environmental progress requires rigorous
@@ -636,7 +622,7 @@ export default function Page() {
             {transparencyData.map((item) => (
               <div
                 key={item.title}
-                className="flex flex-col items-center text-center bg-gray-100 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-8 relative border-t-8 border-[var(--deepOcean)]"
+                className="flex flex-col items-center text-center bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-8 relative border-t-8 border-[var(--deepOcean)]"
               >
                 {/* Top Divider + Icon */}
                 <div className="absolute top-0 left-0 w-full flex justify-center -translate-y-1/2">
@@ -664,17 +650,16 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Aligned with Global Sustainability Goals  */}
-      <section id="section-9" className="bg-[var(--grayish)]/30 py-16 sm:py-24">
+      <section id="section-9" className="bg-[var(--beige)]/30 py-16 sm:py-24">
         <div className="container mx-auto px-6 sm:px-10 flex flex-col gap-10 text-center">
           {/* Header */}
           <div className="flex flex-col gap-6">
-            <h2 className="heading">
+            <h1 className="heading">
               Aligned with Global Sustainability Goals
-            </h2>
-            <p className={cn(paraStyle, "max-w-7xl mx-auto")}>
+            </h1>
+            <p className={paraStyle}>
               Our environmental initiatives directly support the United Nations
-              Sustainable Development Goals-a universal framework for addressing
+              Sustainable Development Goals—a universal framework for addressing
               humanity's most pressing challenges. By aligning our operations
               with these globally-recognized targets, we ensure our efforts
               contribute to systemic, meaningful change.
@@ -682,11 +667,11 @@ export default function Page() {
           </div>
 
           {/* SDG Cards */}
-          <div className={`max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center col-span-2`}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center">
             {sdgGoals.map((goal, idx) => (
               <div
                 key={idx}
-                className={`flex flex-col items-center text-center bg-gray-100 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 max-w-sm w-full overflow-hidden justify-self-center`}
+                className="flex flex-col items-center text-center bg-white rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 max-w-sm w-full overflow-hidden"
               >
                 {/* Content */}
                 <div className="flex flex-col gap-4 p-6">
@@ -716,16 +701,18 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Our Commitment: Action, Impact, Accountability  */}
-      <section id="section-10" className="py-16 sm:py-24 bg-[var(--beige)]/30">
+      <section id="section-10" className="py-16 sm:py-24">
         <div className="container mx-auto px-6 sm:px-10 flex flex-col gap-10">
           {/* Section Header */}
           <div className="flex flex-col gap-6">
-            <h2 className="heading">
-              Our Commitment: Action, Impact, Accountability
-            </h2>
-            <p className={cn(paraStyle, "text-center max-w-7xl mx-auto")}>
-              Sustainability isn't a destination-it's a continuous journey of
+            <h1 className="heading">
+              Our Commitment:{" "}
+              <span className="text-[var(--deepOcean)]">
+                Action, Impact, Accountability
+              </span>
+            </h1>
+            <p className={cn(paraStyle, "text-center")}>
+              Sustainability isn't a destination—it's a continuous journey of
               improvement, innovation, and integrity. Our six core pillars
               represent more than environmental initiatives; they embody our
               fundamental belief that profitable business and planetary health
@@ -734,23 +721,23 @@ export default function Page() {
           </div>
 
           {/* Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-4 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-4">
             {commitmentData.map((item) => (
               <div
                 key={item.title}
-                className="flex flex-col items-center text-center bg-gray-100 border border-gray-200 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-8"
+                className="flex flex-col items-center text-center border border-gray-200 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-8"
               >
-                <h3 className="text-[var(--deepOcean)] text-2xl font-semibold font-open mb-4">{item.title}</h3>
+                <h3 className="subHeading">{item.title}</h3>
                 <p className={paraStyle}>{item.desc}</p>
               </div>
             ))}
           </div>
 
-          <p className={cn(paraStyle, "max-w-7xl mx-auto")}>
+          <p className={cn(paraStyle, "")}>
             We invite partners, investors, and industry peers to join us in
             transforming textile manufacturing. Together, we can prove that
             environmental responsibility and business excellence are not
-            competing priorities-they're the same goal
+            competing priorities—they're the same goal
           </p>
 
           {/* CTA Buttons */}
