@@ -12,7 +12,7 @@ import Image from 'next/image';
 
 
 
-import { DraftingCompass, Layers, User, SwatchBook } from 'lucide-react';
+import { DraftingCompass, User } from 'lucide-react';
 
 
 type Service = {
@@ -242,7 +242,7 @@ const page = () => {
 
                                 <ul className='mt-4 text-lg'>
                                     {service?.listItem?.map((item, index) => (
-                                        <li className={`list-disc list-inside ${service.highlight
+                                        <li key={index} className={`list-disc list-inside ${service.highlight
                                             ? "text-white"
                                             : "text-lg group-hover:text-gray-300"
                                             }`}>

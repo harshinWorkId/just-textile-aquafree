@@ -15,77 +15,77 @@ import { BsLightningCharge } from "react-icons/bs";
 
 import { LiaAwardSolid } from "react-icons/lia";
 
-import { DraftingCompass, Layers, User, SwatchBook } from 'lucide-react';
+
 // import Image from 'next/image';
-import CorePillars from '@/components/CorePillars';
-
-interface WorkStep {
-  icon: React.ElementType;
-  title: string;
-  description: string;
-}
 
 
-const steps: WorkStep[] = [
-  {
-    icon: DraftingCompass,
-    title: 'Planet',
-    description: 'Protecting natural resources, reducing emissions, eliminating waste.',
-  },
-  {
-    icon: Layers,
-    title: 'People',
-    description: 'Empowering farmers, creating safe employment, supporting communities.',
-  },
-  {
-    icon: User,
-    title: 'Performance',
-    description: 'Delivering quality fabrics that help global brands meet their own sustainability goals.',
-  },
-
-];
+// interface WorkStep {
+//   icon: React.ElementType;
+//   title: string;
+//   description: string;
+// }
 
 
+// const steps: WorkStep[] = [
+//   {
+//     icon: DraftingCompass,
+//     title: 'Planet',
+//     description: 'Protecting natural resources, reducing emissions, eliminating waste.',
+//   },
+//   {
+//     icon: Layers,
+//     title: 'People',
+//     description: 'Empowering farmers, creating safe employment, supporting communities.',
+//   },
+//   {
+//     icon: User,
+//     title: 'Performance',
+//     description: 'Delivering quality fabrics that help global brands meet their own sustainability goals.',
+//   },
+
+// ];
 
 
-const corePillars = [
-  {
-    number: "01/",
-    title: "Zero Liquid Discharge (ZLD)",
-    description:
-      "Every drop of wastewater is treated, recycled, and reused. Nothing leaves our plant untreated.",
-  },
-  {
-    number: "02/",
-    title: "Waterless Innovation (AquaFree™)",
-    description:
-      "Pioneering technologies that cut water use by up to 90% compared to conventional dyeing.",
-  },
-  {
-    number: "03/",
-    title: "Clean Energy",
-    description:
-      "Solar power and agro-based boilers reduce dependence on fossil fuels.",
-  },
-  {
-    number: "04/",
-    title: "Green Chemistry",
-    description:
-      "Partnering with innovators to adopt eco-certified dyes and auxiliaries.",
-  },
-  {
-    number: "05/",
-    title: "Circularity",
-    description:
-      "Textile waste minimization, recycling, and trials with bio-based fabrics.",
-  },
-  {
-    number: "06/",
-    title: "Transparency",
-    description:
-      "Annual sustainability reports, measurable impact metrics, and independent validations.",
-  },
-];
+
+
+// const corePillars = [
+//   {
+//     number: "01/",
+//     title: "Zero Liquid Discharge (ZLD)",
+//     description:
+//       "Every drop of wastewater is treated, recycled, and reused. Nothing leaves our plant untreated.",
+//   },
+//   {
+//     number: "02/",
+//     title: "Waterless Innovation (AquaFree™)",
+//     description:
+//       "Pioneering technologies that cut water use by up to 90% compared to conventional dyeing.",
+//   },
+//   {
+//     number: "03/",
+//     title: "Clean Energy",
+//     description:
+//       "Solar power and agro-based boilers reduce dependence on fossil fuels.",
+//   },
+//   {
+//     number: "04/",
+//     title: "Green Chemistry",
+//     description:
+//       "Partnering with innovators to adopt eco-certified dyes and auxiliaries.",
+//   },
+//   {
+//     number: "05/",
+//     title: "Circularity",
+//     description:
+//       "Textile waste minimization, recycling, and trials with bio-based fabrics.",
+//   },
+//   {
+//     number: "06/",
+//     title: "Transparency",
+//     description:
+//       "Annual sustainability reports, measurable impact metrics, and independent validations.",
+//   },
+// ];
 
 
 

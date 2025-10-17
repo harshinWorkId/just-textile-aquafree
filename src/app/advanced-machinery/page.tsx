@@ -5,7 +5,6 @@ import Image from "next/image";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
 import { FaCircleArrowRight } from "react-icons/fa6";
-import { MdFactory } from "react-icons/md";
 import { Shirt, Globe, ShoppingCart } from 'lucide-react';
 
 
@@ -504,6 +503,168 @@ const page = () => {
           </div>
         }
         extraContent={""}
+      />
+
+
+      <ExpandableCard
+        id={6}
+        title="Dyeing (Softflow, Jet, Jigger, Padder, Thermosol)"
+        image="/assets/images/why-work-matters1.png"
+        shortContent={
+          <p className="">
+            Dyeing is at the heart of Just Textiles. Our dyehouse is designed for flexibility - handling knits, wovens, small lots, and large defense orders with equal confidence.
+          </p>
+        }
+        fullContent={
+          <div className="space-y-4">
+            <p className="flex flex-row gap-3">
+              {/* <FaCircleArrowRight className="font-open text-white text-4xl -mt-1" /> */}
+              Dyeing is at the heart of Just Textiles. Our dyehouse is designed for flexibility - handling knits, wovens, small lots, and large defense orders with equal confidence.
+            </p>
+            <div className="flex flex-col text-base w-[95%] mx-auto gap-4">
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Softflow dyeing machines (MCS, Thies, Then Airflow, Pranav, Deverekha) allow liquor to circulate smoothly around the fabric, avoiding crease marks. They achieve shade reproducibility and softness, ideal for fashion and activewear.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Jigger dyeing (Yamuna, Tepa, Calico) immerses woven fabrics in controlled liquor baths repeatedly, achieving deep shade penetration and high fastness.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Padders (Kuster, Menzel E-Control) apply dyes uniformly in continuous processes, reducing liquor ratios and increasing productivity.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Thermosol ranges (Monforts, Inautex) heat-fix disperse dyes on polyester and blends, ensuring shade stability even in heavy-duty applications.
+                </p>
+              </div>
+
+              <div className="flex flex-row gap-4">
+                <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                <p className="text-gray-100">
+                  Sample machines guarantee lab-to-bulk reproducibility.
+                </p>
+              </div>
+            </div>
+            <p className="mt-3">
+              Why it matters: Whether it's millions of meters of defense fabric, vibrant fashion shades, or delicate blends, our dyehouse ensures absolute consistency and speed.
+            </p>
+          </div>
+        }
+        extraContent={
+          <div className="flex flex-col gap-6">
+
+            <div className="space-y-4">
+              <p className="text-white flex flex-row gap-3">
+                <FaCircleArrowRight className="text-2xl" />
+                Continuous Dyeing Machines for Cotton & Polyester
+              </p>
+              <div className="flex flex-col text-base w-[95%] mx-auto gap-4">
+                <div className="flex flex-row gap-4">
+                  <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                  <p className="text-gray-100">
+                    Color continuity is the single most critical requirement in bulk orders for exports and defense. Our continuous dyeing machines are designed to handle this challenge:
+                  </p>
+                </div>
+
+                <div className="flex flex-row gap-4">
+                  <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                  <p className="text-gray-100">
+                    Ensures bulk shade uniformity across millions of meters.
+                  </p>
+                </div>
+
+                <div className="flex flex-row gap-4">
+                  <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                  <p className="text-gray-100">
+                    Advanced control systems maintain temperature, pH, and dye dosage in real time.
+
+                  </p>
+                </div>
+
+                <div className="flex flex-row gap-4">
+                  <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                  <p className="text-gray-100">
+                    Uses less steam and water compared to traditional dyeing machines.
+                  </p>
+                </div>
+
+                <div className="flex flex-row gap-4">
+                  <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                  <p className="text-gray-100">
+                    Highly efficient even for blends, guaranteeing precision in mixed fiber fabrics.
+                  </p>
+                </div>
+              </div>
+              <p className="mt-3">
+                Why it matters: Whether it's defense uniforms requiring strict shade matching or fashion orders demanding exact color reproduction, our machines deliver perfectly matched fabrics every single time.
+
+              </p>
+            </div>
+
+
+            <div className="space-y-4">
+              <p className="text-white flex flex-row gap-3">
+                <FaCircleArrowRight className="text-2xl" />
+                Pad-Steam Dyeing Ranges for Cotton
+              </p>
+              <div className="flex flex-col text-base w-[95%] mx-auto gap-4">
+                <div className="flex flex-row gap-4">
+                  <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                  <p className="text-gray-100">
+                    Cotton remains one of the most widely used fibers globally, but achieving deep, vibrant, and even shades on cotton is not simple. Our pad-steam dyeing ranges bridge that gap:
+                  </p>
+                </div>
+
+                <div className="flex flex-row gap-4">
+                  <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                  <p className="text-gray-100">
+                    Uses a combination of padding (for even application) and steaming (for fixation).
+                  </p>
+                </div>
+
+                <div className="flex flex-row gap-4">
+                  <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                  <p className="text-gray-100">
+                    Delivers intense, brilliant shades with superior fastness to washing, rubbing, and light.
+
+                  </p>
+                </div>
+
+                <div className="flex flex-row gap-4">
+                  <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                  <p className="text-gray-100">
+                    Eliminates streaks, patches, and shade variations that often occur in batch dyeing.
+                  </p>
+                </div>
+
+                <div className="flex flex-row gap-4">
+                  <FaCheck className="mt-1 h-4 w-4 flex-shrink-0 text-white" />
+                  <p className="text-gray-100">
+                    Optimized to reduce chemical wastage and improve fabric handle.
+                  </p>
+                </div>
+              </div>
+              <p className="mt-3">
+                Why it matters: Global buyers expect cotton fabrics that stand out in color vibrancy and durability-our pad-steam ranges make that possible at scale.
+
+              </p>
+            </div>
+
+          </div>
+
+        }
       />
 
 

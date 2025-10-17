@@ -53,7 +53,7 @@ const HomeFurnishingFabrics = ({ imgSrc, listItem, title, direction }: WorkStep)
 
                     {
                         listItem.map((item, index) => (
-                            <p className='text-xl text-[var(--bodyContent)] flex gap-2'><BadgeIcon className="w-6 h-6 mb-2 text-[var(--greenShade)]" />
+                            <p key={index} className='text-xl text-[var(--bodyContent)] flex gap-2'><BadgeIcon className="w-6 h-6 mb-2 text-[var(--greenShade)]" />
                                 {item}
                             </p>
                         ))

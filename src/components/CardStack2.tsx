@@ -5,7 +5,7 @@ import { FaShieldAlt, FaHospital, FaTruck, FaCheck } from "react-icons/fa";
 
 export default function CardStack2() {
   const { scrollYProgress } = useScroll();
-  const y1 = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
+  // const y1 = useTransform(scrollYProgress, [0, 1], ["0%", "-50%"]);
   const y2 = useTransform(scrollYProgress, [0, 1], ["50%", "-20%"]);
 
   return (

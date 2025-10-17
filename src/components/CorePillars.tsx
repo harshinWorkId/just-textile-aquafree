@@ -59,7 +59,7 @@ const CorePillars = () => {
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-24 sm:grid-cols-2 lg:grid-cols-3">
           {steps.map((step, index) => (
-            <div key={step.number} className="relative">
+            <div key={index} className="relative">
 
               <div
                 className={`absolute left-1/2 flex -translate-x-1/2 items-center gap-2

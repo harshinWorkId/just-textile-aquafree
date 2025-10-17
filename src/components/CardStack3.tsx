@@ -1,6 +1,5 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
-import Image from "next/image";
 import { FaCheck } from "react-icons/fa";
 import { IoTriangleSharp } from "react-icons/io5";
 
