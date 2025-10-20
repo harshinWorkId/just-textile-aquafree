@@ -6,18 +6,18 @@ import { motion } from "framer-motion";
 
 const PlasmaTechnologySection: React.FC = () => {
   return (
-    <section className="py-12">
-      <div className="mx-auto max-w-7xl bg-white/80 py-12 px-6 flex flex-row relative rounded-2xl max-lg:flex-col">
+    <section className="py-12 bg-[var(--beige)]/30">
+      <div className="mx-auto max-w-7xl  py-12 px-6 flex flex-row items-center relative rounded-2xl max-lg:flex-col">
         {/* Left Section: Image */}
         <motion.div
-          animate={{ rotate: 360 }}
+          animate={{ rotate: 180 }}
           transition={{
-            duration: 15,
+            duration: 60,
             repeat: Infinity,
             repeatType: "reverse",
             ease: "linear",
           }}
-          className="absolute top-10 left-20 w-[30%] h-[400px]"
+          className="absolute top-20 left-20 w-[30%] h-[400px]"
         >
           <div className="relative w-full h-full">
             <Image
@@ -30,7 +30,7 @@ const PlasmaTechnologySection: React.FC = () => {
         </motion.div>
 
         <div className="w-[40%] flex justify-center max-lg:w-full py-6">
-          <div className="relative mx-auto w-[70%] h-[30rem]">
+          <div className="relative mx-auto w-[70%] h-[25rem]">
             <Image
               src={`/assets/images/plasma-tech.jpg`} // replace with actual plasma image in /public/assets/images
               alt="Plasma Technology"

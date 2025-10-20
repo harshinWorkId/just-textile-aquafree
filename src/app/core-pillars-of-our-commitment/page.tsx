@@ -682,60 +682,60 @@ export default function Page() {
           </div>
 
           {/* SDG Cards */}
-        {/* SDG Cards */}
-<div className="max-w-7xl mx-auto flex flex-col items-center gap-10">
-  {/* First 3 cards */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-full justify-items-center">
-    {sdgGoals.slice(0, 3).map((goal, idx) => (
-      <div
-        key={idx}
-        className="flex flex-col items-center text-center bg-gray-100 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 max-w-sm w-full overflow-hidden"
-      >
-        <div className="flex flex-col gap-4 p-6">
-          <h3 className="subHeading text-lg font-semibold text-[var(--deepOcean)] leading-snug !mb-0">
-            {goal.title}
-          </h3>
-          <div className="w-28 mx-auto rounded-md shadow-md overflow-hidden">
-            <img
-              src={goal.img}
-              alt={goal.title}
-              className="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
-            />
-          </div>
-          <p className="text-sm text-[var(--bodyContent)] leading-relaxed">
-            {goal.desc}
-          </p>
-        </div>
-      </div>
-    ))}
-  </div>
+          {/* SDG Cards */}
+          <div className="max-w-7xl mx-auto flex flex-col items-center gap-10">
+            {/* First 3 cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 w-full justify-items-center">
+              {sdgGoals.slice(0, 3).map((goal, idx) => (
+                <div
+                  key={idx}
+                  className="flex flex-col items-center text-center bg-gray-100 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 max-w-sm w-full overflow-hidden"
+                >
+                  <div className="flex flex-col gap-4 p-6">
+                    <h3 className="subHeading text-lg font-semibold text-[var(--deepOcean)] leading-snug !mb-0">
+                      {goal.title}
+                    </h3>
+                    <div className="w-28 mx-auto rounded-md shadow-md overflow-hidden">
+                      <img
+                        src={goal.img}
+                        alt={goal.title}
+                        className="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
+                      />
+                    </div>
+                    <p className="text-sm text-[var(--bodyContent)] leading-relaxed">
+                      {goal.desc}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
 
-  {/* Last 2 cards centered */}
-  <div className="flex justify-center flex-wrap gap-10 w-full">
-    {sdgGoals.slice(3).map((goal, idx) => (
-      <div
-        key={idx}
-        className="flex flex-col items-center text-center bg-gray-100 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 max-w-sm w-full sm:w-auto overflow-hidden"
-      >
-        <div className="flex flex-col gap-4 p-6">
-          <h3 className="subHeading text-lg font-semibold text-[var(--deepOcean)] leading-snug !mb-0">
-            {goal.title}
-          </h3>
-          <div className="w-28 mx-auto rounded-md shadow-md overflow-hidden">
-            <img
-              src={goal.img}
-              alt={goal.title}
-              className="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
-            />
+            {/* Last 2 cards centered */}
+            <div className="flex justify-center flex-wrap gap-10 w-full">
+              {sdgGoals.slice(3).map((goal, idx) => (
+                <div
+                  key={idx}
+                  className="flex flex-col items-center text-center bg-gray-100 rounded-2xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 max-w-sm w-full sm:w-auto overflow-hidden"
+                >
+                  <div className="flex flex-col gap-4 p-6">
+                    <h3 className="subHeading text-lg font-semibold text-[var(--deepOcean)] leading-snug !mb-0">
+                      {goal.title}
+                    </h3>
+                    <div className="w-28 mx-auto rounded-md shadow-md overflow-hidden">
+                      <img
+                        src={goal.img}
+                        alt={goal.title}
+                        className="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
+                      />
+                    </div>
+                    <p className="text-sm text-[var(--bodyContent)] leading-relaxed">
+                      {goal.desc}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
-          <p className="text-sm text-[var(--bodyContent)] leading-relaxed">
-            {goal.desc}
-          </p>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
 
         </div>
       </section>

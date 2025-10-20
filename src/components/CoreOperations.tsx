@@ -169,7 +169,7 @@ const CoreOperations: React.FC = () => {
         <section ref={sectionRef} className="py-20 overflow-x-hidden" >
             <div className="mx-auto max-w-7xl px-6 lg:px-8 relative bg-white/80 py-12 rounded-2xl">
                 <div className="mx-auto max-w-2xl text-center mb-16">
-                    <h2 className="text-4xl font-medium tracking-tight text-[var(--bodyContent)] sm:text-5xl">
+                    <h2 className="text-4xl font-medium tracking-tight text-[var(--greenShade)] font-serif max-md:text-2xl">
                         Our Core Operations
                     </h2>
                 </div>
@@ -179,14 +179,14 @@ const CoreOperations: React.FC = () => {
                     {operationsData.map((operation) => {
                         const IconComponent = operation.icon;
                         return (
-                            <div key={operation.title} className="text-center">
+                            <div key={operation.title} className="text-center font-open">
                                 <div className={`mx-auto flex h-16 w-16 items-center justify-center rounded-lg ${operation.iconBgColor}`}>
                                     <IconComponent className={`h-8 w-8 ${operation.iconTextColor}`} aria-hidden="true" />
                                 </div>
-                                <h3 className="mt-6 text-lg font-semibold leading-7 text-gray-900">
+                                <h3 className="mt-6 text-lg max-md:text-xl font-semibold leading-7 text-gray-900">
                                     {operation.title}
                                 </h3>
-                                <p className="mt-2 text-base leading-7 text-[var(--bodyContent)]">
+                                <p className="mt-2 text-base max-md:text-lg leading-7 text-[var(--bodyContent)]">
                                     {operation.description}
                                 </p>
                                 <a href="#" className="mt-4 inline-block font-semibold text-[var(--deepOcean)] transition hover:text-indigo-800">

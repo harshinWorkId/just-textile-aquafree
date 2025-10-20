@@ -80,7 +80,7 @@
 //                         aria-hidden="true"
 //                       />
 //                     </div>
-                   
+
 //                   </div>
 //                   <h3 className="ml-4 text-xl font-semibold leading-7 text-gray-900">
 //                       {item.title}
@@ -132,7 +132,7 @@ type MarketItem = {
 
 // Content for the four market segments
 const marketsData: MarketItem[] = [
-    {
+  {
     icon: ShieldCheckIcon,
     title: "Defense Programs",
     description:
@@ -166,12 +166,22 @@ const MarketsWeServe = () => {
   return (
     // style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
     <section className="py-20" >
-      <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-16 gap-y-12 px-6 lg:flex-row lg:px-8 bg-white/80 rounded-2xl py-12">
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-16 gap-y-12 px-6 lg:flex-row lg:px-8 bg-white/80 rounded-2xl py-12 max-md:py-0">
         {/* Left Column: Text Content and Feature Boxes */}
         <div className="w-full lg:w-3/5">
-          <h2 className="mt-4 text-4xl font-medium tracking-tight text-[var(--greenShade)] sm:text-5xl">
+          <h2 className="mt-4 text-4xl font-medium tracking-tight text-[var(--greenShade)] max-md:text-3xl max-md:text-center">
             Markets We Serve
           </h2>
+
+
+          <div className="relative h-[16rem] w-full lg:col-span-2 hidden max-md:block mt-6">
+            <Image
+              src="/assets/images/textile-factory.png"
+              alt="High-quality yarn spools on a manufacturing machine"
+              fill
+              className="rounded-xl shadow-2xl w-full h-full object-cover"
+            />
+          </div>
 
           <p className="mt-6 text-[22px] leading-8 text-[var(--bodyContent)] text-justify">
             We are dedicated to supporting a diverse range of industries with
@@ -215,7 +225,7 @@ const MarketsWeServe = () => {
         </div>
 
         {/* Right Column: Large Image */}
-        <div className="relative h-[480px] w-full lg:w-2/5 overflow-hidden rounded-xl bg-gray-100 shadow-xl lg:h-[600px] mt-50">
+        <div className="relative max-md:hidden h-[480px] w-full lg:w-2/5 overflow-hidden rounded-xl bg-gray-100 shadow-xl lg:h-[600px] mt-50">
           <Image
             src="/assets/images/textile-factory.png"
             alt="Textile manufacturing process with various applications"

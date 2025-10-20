@@ -48,34 +48,31 @@ const CapacityCard: React.FC<{ card: CapacityCardProps }> = ({ card }) => {
   return (
     <div
       ref={ref}
-      // Card Background: White
-      // Shadow: Added a larger shadow
-      // Transition: Scale up on hover, and slight translateY for modern feel
-      className="relative overflow-hidden rounded-lg bg-white p-8 text-gray-800 shadow-lg 
-                 transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-xl hover:-translate-y-1"
+
+      className="relative overflow-hidden rounded-lg bg-white p-8 text-gray-800 shadow-lg transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-xl hover:-translate-y-1"
     >
-      {/* The blue accent bar at the top */}
-      {/* Added rounded-b-md to the blue bar for a subtle visual separation at the bottom */}
+
       <div className="absolute top-0 left-0 h-1.5 w-full bg-[var(--deepOcean)] rounded-b-md"></div>
       <div className="text-5xl font-bold text-gray-900 mb-2">
         {" "}
-        {/* Text color adjusted for white bg */}
-        {inView && ( // Only render CountUp when the component is in view
+
+        {inView && (
           <CountUp
             end={card.value}
             duration={2.75}
             separator=","
             suffix={card.suffix}
             decimals={card.decimals}
+            className="font-open"
           />
         )}
       </div>
-      <p className="mb-4 font-semibold text-gray-700">{card.title}</p>{" "}
-      {/* Text color adjusted */}
-      <p className="text-[var(--bodyContent))] text-sm leading-relaxed">
+      <p className="mb-4 font-semibold text-[var(--bodyContent)] font-open max-md:text-xl">{card.title}</p>{" "}
+
+      <p className="text-[var(--bodyContent))] text-sm max-md:text-lg leading-relaxed">
         {card.description}
       </p>{" "}
-      {/* Text color adjusted */}
+
     </div>
   );
 };
@@ -87,26 +84,26 @@ const ProductionCapacity = () => {
     <section className="py-10" >
       {" "}
       {/* Changed overall section bg to a very light gray for subtle contrast */}
-      <div className="mx-auto max-w-7xl bg-white/80 py-12 px-6 lg:px-8 relative rounded-2xl">
+      <div className="mx-auto max-w-7xl bg-white/80 py-12 px-6 lg:px-8 relative rounded-2xl ">
         <div className="text-center">
-          <h2 className="text-4xl font-medium tracking-tight text-[var(--greenShade)] sm:text-5xl ">
+          <h2 className="text-4xl font-medium font-serif tracking-tight text-[var(--greenShade)] max-md:text-2xl">
             Our Production Capacity
           </h2>
         </div>
 
-        <div className="absolute right-0 -top-5">
-          <div className="relative w-[240px] h-[180px]">
+        <div className="absolute right-0 -top-5 max-md">
+          <div className="relative w-[240px] h-[180px] max-md:h-34 max-md:w-44">
             <Image
               src="/assets/images/thread2.png"
               alt="Thread"
               fill
               objectFit="cover"
-              className="h-full w-full opacity-20"
+              className="h-full w-full opacity-20 overflow-hidden"
             />
           </div>
         </div>
 
-        <div className="absolute left-10 bottom-0">
+        <div className="absolute left-10 bottom-0 max-md:-bottom-10">
           <div className="relative w-[100px] h-[100px]">
             <Image
               fill

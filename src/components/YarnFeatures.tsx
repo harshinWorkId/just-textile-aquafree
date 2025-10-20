@@ -47,21 +47,31 @@ const featureData: FeatureCard[] = [
 const YarnFeatures: React.FC = () => {
   return (
     // style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
-    <section className="py-16 sm:py-24" >
-      <div className="mx-auto max-w-[1290px] px-6 lg:px-8 bg-white/80 py-12 rounded-2xl">
+    <section className="">
+      <div className="mx-auto max-w-[1290px] px-6 bg-white/80 py-12 rounded-2xl">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center mb-16">
-          <h2 className="text-4xl font-medium tracking-tight text-[var(--greenShade)] sm:text-5xl">
+          <h2 className="text-4xl font-medium tracking-tight text-[var(--greenShade)] max-md:text-3xl">
             Our Journey
           </h2>
-          <p className="mt-6 text-[22px] leading-8 text-[var(--bodyContent)]">
+
+          <div className="relative h-[16rem] w-full lg:col-span-2 hidden max-md:block mt-6">
+            <Image
+              src="/assets/images/textile-factory.png"
+              alt="High-quality yarn spools on a manufacturing machine"
+              fill
+              className="rounded-xl shadow-2xl w-full h-full object-cover"
+            />
+          </div>
+
+          <p className="mt-6 text-[22px] max-md:text-lg leading-6 text-[var(--bodyContent)]">
             Textiles are materials made from fibers or yarn, and they are used
             to create the widest range of products such as clothing and
             industrial goods.
           </p>
         </div>
 
-        {/* UPDATED: Main grid to hold cards on the left and the image on the right */}
+
         <div className="grid grid-cols-1 items-center gap-x-12 gap-y-16 lg:grid-cols-5">
           {/* Left Column: Container for the four feature cards */}
           <div className="lg:col-span-3">
@@ -94,9 +104,9 @@ const YarnFeatures: React.FC = () => {
           </div>
 
           {/* Right Column: Large Image */}
-          <div className="relative h-[38rem] w-full lg:col-span-2">
+          <div className="relative h-full w-full lg:col-span-2 max-md:hidden">
             <Image
-              src="/assets/images/textile-factory.png" // IMPORTANT: Replace with your image path in /public
+              src="/assets/images/textile-factory.png"
               alt="High-quality yarn spools on a manufacturing machine"
               width={500}
               height={750}

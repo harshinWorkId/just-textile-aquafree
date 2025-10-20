@@ -37,7 +37,7 @@ const StrategicRoadmapSection: React.FC = () => {
         </h2>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-4 border border-gray-200 max-lg:grid-cols-2 max-md:grid-cols-1">
+        <div className="grid grid-cols-4 border border-gray-200 max-lg:grid-cols-2 max-md:grid-cols-1 font-open">
           {roadmap.map((item, idx) => (
             <div
               key={idx}
@@ -47,13 +47,13 @@ const StrategicRoadmapSection: React.FC = () => {
                 {/* Icon */}
                 {item.icon}
                 {/* Title */}
-                <h3 className="font-semibold text-lg text-[var(--bodyContent)]">
+                <h3 className="font-semibold text-lg max-md:text-xl text-[var(--bodyContent)]">
                   {item.title}
                 </h3>
               </div>
 
               {/* Description */}
-              <p className="text-[var(--bodyContent)] text-base leading-relaxed mt-4">
+              <p className="text-[var(--bodyContent)] text-base max-md:text-xl leading-relaxed mt-4">
                 {item.desc}
               </p>
             </div>
@@ -61,7 +61,7 @@ const StrategicRoadmapSection: React.FC = () => {
         </div>
 
         {/* Footer note */}
-        <p className="mt-10 text-gray-700 text-lg max-w-4xl mx-auto leading-relaxed">
+        <p className="mt-10 text-gray-700 max-md:text-xl text-lg max-w-4xl mx-auto leading-relaxed">
           Our timeline doesn't end here - these strategic initiatives represent
           our unwavering commitment to leading the textile industry toward a
           more sustainable, efficient, and innovative future.

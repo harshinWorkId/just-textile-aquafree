@@ -28,10 +28,10 @@ const sectionContent = {
 const SustainabilitySection: React.FC = () => {
   return (
     // style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
-    <section className="py-16 sm:py-24 " >
+    <section className="py-16 max-md:p-0" >
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-x-16 gap-y-12 lg:grid-cols-2 bg-white/80 overflow-hidden rounded-2xl">
         {/* Left Column: Image */}
-        <div className="relative overflow-hidden rounded-xl bg-gray-100 shadow-xl">
+        <div className="relative overflow-hidden rounded-xl bg-gray-100 shadow-xl max-md:hidden">
           {/* Using Next.js Image component for optimization */}
           <Image
             src={sectionContent.imageUrl}
@@ -44,28 +44,36 @@ const SustainabilitySection: React.FC = () => {
         </div>
 
         {/* Right Column: Content */}
-        <div className="px-6">
-          {/* Eyebrow Text */}
-          {/* <p className="text-sm font-semibold uppercase tracking-wide text-orange-600">
-          
-            <span className="inline-block h-1 w-4 bg-orange-500 align-middle mr-2 rounded-full"></span>
-            {sectionContent.eyebrowText}
-          </p> */}
+        <div className="px-4">
+
 
           {/* Main Title */}
-          <h2 className="mt-4 text-4xl font-medium tracking-tight text-[var(--greenShade)] sm:text-5xl">
+          <h2 className="mt-4 text-4xl font-medium tracking-tight text-[var(--greenShade)] text-center max-md:text-2xl font-serif">
             {sectionContent.title}
           </h2>
 
+          <div className="hidden max-md:block h-full w-[80%] relative mx-auto mt-10">
+
+            <Image
+              src={sectionContent.imageUrl}
+              alt={sectionContent.imageAlt}
+              width={700}
+              height={500}
+              layout="responsive"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+
           {/* Paragraph Description */}
-          <p className="mt-6 text-lg leading-8 text-[var(--bodyContent)] text-justify">
+          <p className="mt-6 text-lg leading-8 font-open text-[var(--bodyContent)] text-justify">
             {sectionContent.paragraph}
           </p>
 
-          {/* List of points (like checkboxes in Image 1) */}
+          {/* List of points ( */}
           <ul className="mt-8 space-y-4">
             {sectionContent.listItems.map((item, index) => (
-              <li key={index} className="flex items-start">
+              <li key={index} className="flex items-start font-open">
                 <CheckCircleIcon
                   className="h-6 w-6 flex-shrink-0 text-[var(--forestGreen)] mr-2"
                   aria-hidden="true"

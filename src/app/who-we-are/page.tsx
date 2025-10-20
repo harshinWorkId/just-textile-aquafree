@@ -18,7 +18,7 @@ const page = () => {
 
       {/* banner section  */}
       <section
-        className={`relative h-[80vh] flex items-center justify-center z-10 mt-20`}
+        className={`relative h-[80vh] max-md:h-full max-md:py-12 flex items-center justify-center z-10 mt-20`}
       >
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-800/60">
@@ -31,19 +31,19 @@ const page = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-8 max-md:px-4 text-center">
           <div className="max-w-4xl mx-auto my-12">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            <h2 className="text-7xl max-md:text-2xl font-bold text-white mb-6 leading-tight font-serif">
               The Most Important Thing
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                 In World is Trust
               </span>
-            </h1>
+            </h2>
 
-            <p className="text-md md:text-2xl text-gray-300 max-w-6xl mx-auto leading-relaxed font-montserrat">
+            <p className="text-2xl max-md:text-lg text-gray-300 max-w-6xl mx-auto leading-relaxed font-open">
               Textiles are more than just fabrics. They are the invisible
-              backbone of daily life—woven into fashion, homes, workplaces, and
+              backbone of daily life-woven into fashion, homes, workplaces, and
               industries. At Just Textiles Ltd, we see textiles as a platform
               for innovation, sustainability, and trust. Every fabric we create
               carries a responsibility: it must serve its purpose with
@@ -62,7 +62,7 @@ const page = () => {
       {/* who we are  */}
       <div
         className="p-4 flex items-center justify-center"
-        // style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
+      // style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
       >
         <section className="relative mx-auto my-12 max-w-7xl bg-white/80 rounded-2xl">
           <div className="overflow-hidden rounded-lg relativee shadow-lg lg:grid lg:grid-cols-2 lg:gap-4">
@@ -81,21 +81,21 @@ const page = () => {
                 className="h-full w-full"
               />
               <div className="absolute bottom-8 left-8 max-w-sm rounded-lg bg-gray-900/90 p-6 text-white backdrop-blur-sm">
-                <h3 className="text-3xl font-bold leading-tight">
+                <h3 className="text-3xl max-md:text-base font-bold leading-tight">
                   Market leadership since 2002
                 </h3>
               </div>
             </div>
 
             {/* Right Column: Content */}
-            <div className="p-8 sm:p-12 lg:p-16">
+            <div className="p-16 max-md:px-4 max-md:py-8">
               {/* <p className="text-sm font-semibold uppercase tracking-wider text-gray-500">
                 EXCELLENT PRODUCTS
               </p> */}
-              <h2 className="mt-2 text-4xl font-medium tracking-tight text-[var(--greenShade)] sm:text-5xl">
+              <h2 className="mt-2 text-4xl font-medium font-serif tracking-tight text-[var(--greenShade)] max-md:text-2xl">
                 Who We Are
               </h2>
-              <p className="mt-6 text-lg text-[var(--bodyContent)] text-justify">
+              <p className="mt-6 text-lg max-md:text-lg text-[var(--bodyContent)] text-justify font-open">
                 Since our inception, Just Textiles Ltd has specialized in
                 dyeing, finishing, and printing fabrics for both woven and knit
                 categories. We've evolved from a modest setup into a fully
@@ -103,7 +103,7 @@ const page = () => {
                 the few in India with this scale and scope.
               </p>
 
-              <p className="mt-6 text-lg text-[var(--bodyContent)] text-justify">
+              <p className="mt-6 text-lg max-md:text-lg text-[var(--bodyContent)] text-justify font-open">
                 Our expertise ranges across natural fibers, manmade fibers, and
                 blended fabrics, making us a trusted partner for both domestic
                 buyers and international clients with bulk requirements,
@@ -146,16 +146,24 @@ const page = () => {
       {/* Our Production Capacity  */}
       <ProductionCapacity />
 
+
+      {/* Our Core Operations  */}
       <CoreOperations />
 
+      {/* Our Commitment to Sustainability  */}
       <SustainabilitySection />
 
+      {/* Our Journey  */}
       <YarnFeatures />
 
+      {/* Our Expertise Across Fibers  */}
       <FabricComponent />
 
+
+      {/* Markets we serve  */}
       <MarketsWeServe />
 
+      {/* What sets us apart  */}
       <WhatSetsUsApart />
     </div>
   );

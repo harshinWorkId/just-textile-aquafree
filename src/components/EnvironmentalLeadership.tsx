@@ -10,14 +10,11 @@ const EnvironmentalLeadership: React.FC<EnvironmentalLeadershipProps> = () => {
   return (
     // style={{ backgroundImage: "url('/assets/images/bg1.png')" }} 
     <section className="py-12 md:py-20 font-sans relative" >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto p-8 relative bg-white/80 rounded-2xl">
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-[url('/assets/images/bg1.png')] opacity-40 -z-10 rounded-2xl"
-            aria-hidden="true"
-          ></div>
+      <div className="container mx-auto px-4 max-md:px-4">
+        <div className="max-w-7xl mx-auto p-8 relative rounded-2xl max-md:p-0">
+
           {/* Section Heading */}
-          <h2 className="text-3xl md:text-4xl font-medium text-[var(--greenShade)] mb-10 md:mb-12">
+          <h2 className="text-4xl max-md:text-3xl max-md:text-center font-medium text-[var(--greenShade)] mb-10 md:mb-12">
             Environmental Leadership: World-Class Wastewater Management
           </h2>
 
@@ -25,7 +22,7 @@ const EnvironmentalLeadership: React.FC<EnvironmentalLeadershipProps> = () => {
           <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center mb-12">
             {/* Left Column: Image */}
             <div className="w-full md:w-2/5">
-              <div className="w-[70%] mx-auto h-[20rem] relative">
+              <div className="w-[70%] max-md:w-[80%] mx-auto h-[20rem] relative">
                 <Image
                   src="/assets/images/12.jpg"
                   alt="Smiling girl representing foundation impact"
@@ -36,15 +33,15 @@ const EnvironmentalLeadership: React.FC<EnvironmentalLeadershipProps> = () => {
             </div>
 
             {/* Right Column: Text Content */}
-            <div className="w-full md:w-3/5 text-[var(--bodyContent)] text-justify">
-              <p className="text-base md:text-[22px] leading-relaxed mb-6">
+            <div className="w-full md:w-3/5 font-open text-[var(--bodyContent)] text-justify">
+              <p className="text-xl leading-snug mb-6">
                 Recognizing textiles as one of the world's most water-intensive
                 industries, we chose to treat environmental responsibility as a
                 core business principle, not merely a compliance requirement.
                 Our world-class wastewater treatment plant represents
                 industry-leading innovation in sustainable manufacturing.
               </p>
-              <ul className="space-y-4 text-base md:text-[22px] text-[var(--bodyContent)]">
+              <ul className="space-y-4 text-xl text-[var(--bodyContent)]">
                 <li className="flex items-start">
                   <span className="text-[#0b3b1e] mr-3 mt-0">&#9642;</span>
                   <span>
@@ -72,7 +69,7 @@ const EnvironmentalLeadership: React.FC<EnvironmentalLeadershipProps> = () => {
           {/* Highlight Box / Alert */}
           <div className="bg-[#e9f5ee] rounded-lg p-5 flex items-center gap-4">
             {/* Icon */}
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-0 max-md:hidden">
               <svg
                 className="w-7 h-7 text-[#157347]"
                 xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +84,7 @@ const EnvironmentalLeadership: React.FC<EnvironmentalLeadershipProps> = () => {
               </svg>
             </div>
             {/* Text */}
-            <p className="text-sm md:text-base text-[#0b3b1e] leading-relaxed">
+            <p className="text-xl text-[#0b3b1e] max-md:text-justify leading-relaxed font-open">
               Our efforts earned Zero Liquid Discharge (ZLD) consent from
               Maharashtra Pollution Control Board, placing Just Textiles among
               India's leading sustainable textile manufacturers.
