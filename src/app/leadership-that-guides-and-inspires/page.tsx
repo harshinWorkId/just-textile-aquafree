@@ -49,7 +49,7 @@ const page = () => {
               <h2 className="text-4xl font-medium font-srif text-[var(--greenShade)] mb-10 leading-snug">
                 Mr. Modi's Leadership Focus
               </h2>
-              <div className="relative w-[40px] h-[40px] overflow-hidden">
+              <div className="relative w-[40px] max-md:w-[50px] h-[40px] overflow-hidden">
                 {/* Use <img /> for GIF to preserve animation */}
                 <Image
                   src="/assets/gifs/leadership-focus.gif" // replace with your GIF path
@@ -82,7 +82,7 @@ const page = () => {
                   <div className="flex-shrink-0">{f.icon}</div>
                   <div className="text-[var(--bodyContent)] font-open">
                     <h3 className="text-lg font-semibold  mb-1">{f.title}</h3>
-                    <p className="text-base font-medium max-w-[80%] text-justify">
+                    <p className="text-base font-medium max-w-[80%] max-md:max-w-[90%] text-justify">
                       {f.desc}
                     </p>
                   </div>
@@ -103,7 +103,7 @@ const page = () => {
             </div>
 
             {/* Overlay Card - like Google Review */}
-            <div className="absolute w-[90%] -bottom-10 -left-30 bg-white p-6 shadow-xl rounded-md ">
+            <div className="absolute w-[90%] -bottom-10 -left-30 max-md:left-0 bg-white p-6 shadow-xl rounded-md ">
               <h3 className="text-2xl font-medium text-[var(--greenShade)] font-serif mb-4">
                 " The Modi Approach
               </h3>

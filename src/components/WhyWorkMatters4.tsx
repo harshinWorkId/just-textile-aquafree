@@ -49,7 +49,7 @@ const WhyWorkMatters4 = () => {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Column: Images */}
-          <div className="relative h-[550px] flex items-center justify-center">
+          <div className="relative h-[550px] max-md:hidden flex items-center justify-center">
             {/* Background Image */}
             <div className="absolute left-0 top-0 w-[60%] h-[100%]">
               <Image
@@ -76,9 +76,34 @@ const WhyWorkMatters4 = () => {
 
           {/* Right Column: Content */}
           <div>
-            <h2 className="text-4xl font-medium font-serif text-[var(--greenShade)] mb-4 tracking-tight">
+            <h2 className="text-4xl max-md:text-3xl max-md:text-center max-md:mb-10 font-medium font-serif text-[var(--greenShade)] mb-4 tracking-tight">
               AquaFree Technology: Revolutionary Water Conservation
             </h2>
+
+            <div className="hidden  relative h-[450px] max-md:flex max-md:mb-10  items-center justify-center">
+              {/* Background Image */}
+              <div className="absolute left-0 top-0 w-[60%] h-[100%]">
+                <Image
+                  src="/assets/images/why-work-matters3.png"
+                  alt="Textile worker cutting blue fabric"
+                  layout="fill"
+                  objectFit="cover"
+                  className="shadow-md"
+                />
+              </div>
+              {/* Foreground Image */}
+              <div className="absolute right-0 bottom-5 w-[70%] h-[85%] bg-white p-3">
+                <div className="relative w-[95%] mx-auto h-[95%] mt-3">
+                  <Image
+                    src="/assets/images/why-work-matters-2.png"
+                    alt="Hands operating a sewing machine"
+                    layout="fill"
+                    objectFit="cover"
+                    className=""
+                  />
+                </div>
+              </div>
+            </div>
 
             <p className="textStyle2 font-open text-justify mb-8">
               Our revolutionary AquaFree method has transformed traditional
@@ -91,17 +116,16 @@ const WhyWorkMatters4 = () => {
               <div className="bg-gray-800 text-white rounded-lg p-8 text-center flex flex-col items-center justify-center shadow-lg min-w-[200px]">
                 <BadgeIcon className="w-12 h-12 mb-2 text-teal-400" />
                 <p className="text-5xl font-bold">
-                <CountUp
-                  from={0}
-                  to={70}
-                  separator=","
-                  direction="up"
-                  duration={1}
-                  className="count-up-text"
-                />
+                  <CountUp
+                    from={0}
+                    to={70}
+                    separator=","
+                    direction="up"
+                    duration={1}
+                    className="count-up-text"
+                  />
 
-                <span>%</span>
-
+                  <span>%</span>
                 </p>
                 <p className="text-gray-300">Water Reduction</p>
               </div>

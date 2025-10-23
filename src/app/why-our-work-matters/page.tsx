@@ -1,8 +1,6 @@
-
 import React from "react";
 import Navbar2 from "@/components/Navbar2";
 import Image from "next/image";
-
 
 import AboutSection from "@/components/AboutSection";
 import WhyWorkMatters3 from "@/components/WhyWorkMatters3";
@@ -12,16 +10,14 @@ import ServicesGrid from "@/components/ServicesGrid";
 import ZeroLiquidDischarge from "@/components/ZeroLiquidDischarge";
 import EnergyRecovery from "@/components/EnergyRecovery";
 
-
-
-
 const page = () => {
   return (
     <>
       <div className="relative">
-      {/* bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/assets/images/bg1.png')" }} */}
+        {/* bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/assets/images/bg1.png')" }} */}
         <Navbar2></Navbar2>
 
+        {/* Innovation, Scale, and Responsibility in Textile Production  */}
         <div
           className="p-4 flex items-center justify-center mt-20"
           // style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
@@ -104,9 +100,9 @@ const page = () => {
 
         <WhyWorkMatters3></WhyWorkMatters3>
         <WhyWorkMatters4></WhyWorkMatters4>
-        <ZeroLiquidDischarge/>
-        <EnergyRecovery/>
-        <ServicesGrid/>
+        <ZeroLiquidDischarge />
+        <EnergyRecovery />
+        <ServicesGrid />
       </div>
     </>
   );

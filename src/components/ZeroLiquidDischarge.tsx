@@ -41,7 +41,7 @@ const ServicesSection: React.FC = () => {
       <div className="max-w-6xl mx-auto flex justify-between items-start mb-12 max-lg:flex-col max-lg:gap-8">
         {/* Left */}
         <div className="max-w-lg">
-          <h2 className="text-4xl font-medium text-[var(--greenShade)] font-serif leading-snug">
+          <h2 className="text-4xl max-md:text-3xl font-medium text-[var(--greenShade)] font-serif leading-snug">
             Zero Liquid Discharge: Closing the Water Loop
           </h2>
         </div>
@@ -60,7 +60,7 @@ const ServicesSection: React.FC = () => {
             key={index}
             className={`relative group overflow-hidden p-8 font-open shadow-sm transition-colors duration-500 ${
               service.highlight
-                ? "bg-slate-900 text-white"
+                ? "bg-slate-900 max-md:bg-white text-white"
                 : "bg-white text-gray-800"
             }`}
           >
@@ -74,7 +74,7 @@ const ServicesSection: React.FC = () => {
               <div>{service.icon}</div>
 
               <h3
-                className={`mt-4 text-xl font-semibold transition-colors duration-500 ${
+                className={`mt-4 text-xl font-semibold transition-colors max-md:text-[var(--bodyContent)] duration-500 ${
                   service.highlight
                     ? "text-white"
                     : "textStyle2 group-hover:text-white"
@@ -84,9 +84,9 @@ const ServicesSection: React.FC = () => {
               </h3>
 
               <p
-                className={`mt-3 textStyle2 transition-colors duration-500 ${
+                className={`mt-3 font-open transition-colors  duration-500 ${
                   service.highlight
-                    ? "!text-gray-300"
+                    ? "text-gray-300 max-md:text-[var(--bodyContent)]"
                     : "group-hover:text-gray-300"
                 }`}
               >
