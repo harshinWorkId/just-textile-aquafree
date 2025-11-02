@@ -6,17 +6,28 @@ import { GiSteam } from "react-icons/gi";
 import { GiRotaryPhone } from "react-icons/gi";
 const ZeroLiquidDischarge2 = () => {
     return (
-        <section className="py-12 mt-10">
+        <section className="py-12 mt-10 max-md:mt-0">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-2 items-center gap-12">
+                <div className="grid grid-cols-2 max-md:grid-cols-1 items-center gap-12 max-md:gap-0">
 
 
 
                     {/* Content Column */}
                     <div className="flex flex-col justify-center">
-                        <h2 className="text-4xl font-medium text-[var(--greenShade)] font-serif leading-snug">
+                        <h2 className="text-4xl max-md:text-3xl max-md:text-center max-md:leading-tight font-medium text-[var(--greenShade)] font-serif leading-snug">
                             Zero Liquid Discharge (ZLD) - Closed-Loop Water System
                         </h2>
+
+
+                        <Image
+                            src="/assets/images/zld-water-system.png" // Replace with your image path
+                            alt="Sewing machine in a textile factory"
+                            width={700}
+                            height={500}
+                            className="h-[65%] w-full hidden max-md:block max-md:mt-6 object-fill"
+                        />
+
+
                         <p className="mt-6 max-w-xl text-lg leading-relaxed text-[var(--bodyContent)] font-open text-justify">
                             Water pollution is one of the textile industry's biggest environmental challenges. At Just Textiles, we've taken bold steps to ensure no untreated wastewater leaves our premises.
                         </p>
@@ -150,7 +161,7 @@ const ZeroLiquidDischarge2 = () => {
                             alt="Sewing machine in a textile factory"
                             width={700}
                             height={500}
-                            className="h-[65%] w-full object-fill"
+                            className="h-[65%] w-full max-md:hidden object-fill"
                         />
 
 

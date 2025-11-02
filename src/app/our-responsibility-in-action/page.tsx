@@ -90,11 +90,11 @@ const page = () => {
             {/* Our Responsibility in Action  */}
             <section className="w-full mt-20 py-20 bg-[var(--beige)]/30">
                 <div className="flex flex-col gap-6 max-w-5xl mx-auto">
-                    <div className="text-4xl font-medium font-serif text-[var(--greenShade)] text-center">
+                    <div className="text-4xl max-md:text-3xl font-medium font-serif text-[var(--greenShade)] text-center">
                         [Our Responsibility in Action]
                     </div>
 
-                    <p className="font-open text-xl font-semibold text-[var(--bodyContent)] text-center">
+                    <p className="font-open max-md:px-4 text-xl font-semibold text-[var(--bodyContent)] text-center">
                         At Just Textiles, sustainability isn't a marketing line-it's our foundation. Every meter of fabric represents industrial excellence that protects, not harms, the environment.
 
                     </p>
@@ -106,7 +106,7 @@ const page = () => {
 
 
                 <div className="mx-auto max-w-7xl px-8">
-                    <div className="grid grid-cols-2 gap-x-20 items-center gap-y-16">
+                    <div className="grid grid-cols-2 max-md:grid-cols-1 gap-x-20 items-center gap-y-16">
 
                         {/* left Column: Text Content */}
 
@@ -114,7 +114,7 @@ const page = () => {
                         <div className='flex flex-col'>
                             <div>
 
-                                <h2 className="mt-4 text-4xl font-medium text-[var(--greenShade)] font-serif">
+                                <h2 className="mt-4 text-4xl max-md:text-3xl max-md:text-center font-medium text-[var(--greenShade)] font-serif">
                                     The Challenge We're Solving
                                 </h2>
 
@@ -127,7 +127,7 @@ const page = () => {
                                         width={400}
                                         height={800}
                                         priority
-                                        className="w-full h-[400px] object-fill rounded-3xl"
+                                        className="w-full h-[400px] max-md:h-[18rem] object-fill rounded-3xl"
                                     />
 
 
@@ -153,7 +153,7 @@ const page = () => {
 
                         <div className="flex flex-col space-y-4">
 
-                            <h2 className='text-[var(--greenShade)] font-medium font-serif text-4xl'>
+                            <h2 className='text-[var(--greenShade)] font-medium font-serif text-4xl max-md:text-3xl max-md:text-center'>
                                 Environmental Fabric Processing
 
                             </h2>
@@ -266,16 +266,32 @@ const page = () => {
 
             <section className="py-12 mt-10">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-2 items-center gap-12">
+                    <div className="grid grid-cols-2 max-md:grid-cols-1 items-center gap-12">
 
 
 
                         {/* Content Column */}
                         <div className="flex flex-col justify-center">
-                            <h2 className="text-4xl font-medium text-[var(--greenShade)] font-serif leading-snug">
+                            <h2 className="text-4xl max-md:text-3xl max-md:text-center max-md:leading-tight font-medium text-[var(--greenShade)] font-serif leading-snug">
                                 Real Actions, Measurable Results
 
                             </h2>
+
+                            <div className="relative hidden h-[100%] w-full max-md:flex flex-col max-md:mt-6">
+                                <Image
+                                    src="/assets/images/zld-water-system.png" // Replace with your image path
+                                    alt="Sewing machine in a textile factory"
+                                    width={300}
+                                    height={600}
+                                    className="h-[100%] w-full object-fill"
+                                />
+
+
+
+
+
+                            </div>
+
                             <p className="mt-6 max-w-xl text-lg leading-relaxed text-[var(--bodyContent)] font-open text-justify">
                                 Our commitment goes beyond promises. Every initiative is tracked, verified, and reported with complete transparency. We work with third-party certifiers, invest in cutting-edge technology, and continuously improve our processes.
 
@@ -293,7 +309,7 @@ const page = () => {
 
 
                         {/* Image Column */}
-                        <div className="relative h-[100%] w-full flex flex-col">
+                        <div className="relative max-md:hidden h-[100%] w-full flex flex-col">
                             <Image
                                 src="/assets/images/zld-water-system.png" // Replace with your image path
                                 alt="Sewing machine in a textile factory"
@@ -318,19 +334,24 @@ const page = () => {
 
 
             {/* Partnership for Change  */}
-            <div className='h-[24rem] w-full relative'>
+            <div className='h-[24rem] max-md:h-full w-full relative max-md:mb-10'>
 
-                <div className="max-w-7xl mx-auto h-[50%] relative top-10">
+                <div className="max-w-7xl mx-auto h-[50%] relative top-10 max-md:top-0 max-md:mb-6">
                     <h3 className='text-center font-serif font-semibold text-2xl text-[var(--deepOcean)]'>Partnership for Change
                     </h3>
                 </div>
 
 
-                <div className='w-full h-[50%] bg-[var(--grayish)]'></div>
+                <div className='w-full h-[50%] max-md:hidden bg-[var(--grayish)]'></div>
 
-                <div className='absolute top-[20%] w-full'>
+                <div className='absolute max-md:hidden top-[20%] max-md:h-full w-full'>
                     <PartnershipForChange />
 
+                </div>
+
+                <div className='hidden max-md:block'>
+
+                    <PartnershipForChange />
                 </div>
 
 

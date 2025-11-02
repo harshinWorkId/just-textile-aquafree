@@ -166,11 +166,11 @@ const EnergyFeatures = () => {
 
 
   return (
-    <section ref={sectionRef} className="bg-[#fbfdfb] py-30 mt-0 relative overflow-hidden">
+    <section ref={sectionRef} className="bg-[#fbfdfb] py-30 max-md:py-20 mt-0 relative overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         <div className="flex flex-col gap-6 max-w-5xl mx-auto">
-          <div className="text-4xl font-medium font-serif text-[var(--greenShade)] text-center max-lg:text-3xl max-md:text-2xl">
+          <div className="text-4xl max-md:text-3xl max-md:text-center font-medium font-serif text-[var(--greenShade)] text-center max-lg:text-3xl">
             Solar Power Installations - Harnessing the Sun
           </div>
         </div>
@@ -193,7 +193,7 @@ const EnergyFeatures = () => {
           <div className="relative -top-4 h-full w-[50%] z-10 max-lg:w-full">
 
 
-            <div className='h-[14rem] w-auto relative'>
+            <div className='h-[14rem] max-md:h-[10rem] w-auto relative'>
               <Image
                 src="/assets/gifs/solarInstallationGif.gif"
                 alt="Solar and factory"

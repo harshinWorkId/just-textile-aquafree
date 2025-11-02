@@ -116,11 +116,11 @@ const page = () => {
     <div>
       <Navbar2></Navbar2>
 
-      <section className="max-w-7xl mx-auto px-12 py-0 flex flex-col lg:flex-row items-center justify-between gap-12 mt-30">
+      <section className="max-w-7xl mx-auto px-12 max-md:w-full max-md:px-4 py-0 flex flex-col lg:flex-row items-center justify-between gap-12 mt-30">
         {/* Left - Image with Blue Border Effect */}
-        <div className="w-1/2 relative flex justify-center">
+        <div className="w-1/2 max-md:w-full relative flex justify-center">
           <div className="absolute top-6 left-6 w-[90%] h-[90%] bg-[var(--deepOcean)] -z-10 rounded-md"></div>
-          <div className="w-full max-w-md h-[28rem] relative rounded-md shadow-lg overflow-hidden">
+          <div className="w-full max-w-md max-md:w-[80%] bg-red-500 h-[28rem] max-md:h-[16rem] relative rounded-md shadow-lg overflow-hidden">
             <Image
               src="/assets/images/why-work-matters1.png" // Place your image in public folder
               alt="Business meeting"
@@ -131,7 +131,7 @@ const page = () => {
         </div>
 
         {/* Right - Text Content */}
-        <div className="w-1/2 text-left relative">
+        <div className="w-1/2 max-md:w-full text-left relative">
           <h2 className="text-4xl font-medium text-[var(--greenShade)] mb-6 leading-snug font-serif">
             Fabrics We Specialize In
           </h2>

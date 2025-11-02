@@ -26,11 +26,11 @@ const page = () => {
       <Navbar2></Navbar2>
       {/* Daily Processing Capacity: 150,000+ Meters  */}
       <section className="w-full bg-[var(--beige)]/30 mx-auto">
-        <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-2 gap-12 items-center mt-20 relative">
+        <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-2 max-md:grid-cols-1 gap-12 items-center mt-20 relative">
           {/* Left Column - Image */}
-          <div className="absolute top-10 left-10 w-[35%] mx-auto h-[540px] border-6 border-sky-500 z-0"></div>
+          <div className="absolute top-10 left-10 w-[35%] mx-auto h-[540px] max-md:h-[18rem] border-6 border-sky-500 z-0"></div>
 
-          <div className="relative w-[80%] mx-auto h-[500px]">
+          <div className="relative w-[80%] mx-auto h-[500px] max-md:h-[16rem]">
             <Image
               src="/assets/images/why-work-matters1.png"
               alt="Factory Robot"
@@ -42,7 +42,7 @@ const page = () => {
           {/* Right Column - Content */}
           <div className="flex flex-col justify-center">
             {/* Big Heading */}
-            <h2 className="text-4xl font-medium text-[var(--greenShade)] font-serif leading-snug mb-6">
+            <h2 className="text-4xl max-md:text-3xl max-md:text-center max-md:leading-tight font-medium text-[var(--greenShade)] font-serif leading-snug mb-6">
               Daily Processing Capacity: 150,000+ Meters
             </h2>
 
@@ -116,21 +116,35 @@ const page = () => {
       </section>
 
       {/* Monthly Output: Woven Fabrics  */}
-      <section className="max-w-7xl mx-auto px-6 py-16 flex flex-row gap-12 items-center">
+      <section className="max-w-7xl mx-auto px-6 py-16 flex flex-row max-md:flex-col-reverse gap-12 items-center">
         {/* Left Image with Blue Frame */}
-        <div className="flex flex-col justify-center w-[60%]">
+        <div className="flex flex-col justify-center w-[60%] max-md:w-full">
           {/* Heading */}
-          <h2 className="text-4xl font-medium  text-[var(--greenShade)] font-serif leading-snug mb-6">
+          <h2 className="text-4xl max-md:text-3xl max-md:text-center max-md:leading-tight font-medium  text-[var(--greenShade)] font-serif leading-snug mb-6">
             Monthly Output: Woven Fabrics
           </h2>
 
+
+          <div className="relative hidden max-md:w-[80%] max-md:mx-auto h-[400px] max-md:h-[16rem] max-md:flex justify-center">
+            {/* Blue Frame */}
+            <div className="absolute top-6 left-6 w-full h-full bg-[var(--deepOcean)] rounded-md -z-10" />
+
+            {/* Main Image */}
+            <Image
+              src="/assets/images/why-work-matters1.png"
+              alt="Business Meeting"
+              fill
+              className="object-cover rounded-md shadow-lg"
+            />
+          </div>
+
           {/* Description */}
-          <p className="text-[var(--bodyContent)] font-semibold text-xl font-open mb-2">
+          <p className="text-[var(--bodyContent)] font-semibold text-xl font-open mb-2 max-md:mt-10">
             We process more than 4.5 million meters of woven fabric every month.
           </p>
 
-          <div className="flex flex-row gap-8 mt-4">
-            <div className="bg-gray-800 text-white rounded-lg p-8 text-center flex flex-col items-center justify-center shadow-lg min-w-[200px] font-open">
+          <div className="flex flex-row max-md:flex-col max-md:items-center gap-8 max-md:gap-0 mt-4">
+            <div className="bg-gray-800 max-md:h-54 max-md:w-[50%] text-white rounded-lg p-8 text-center flex flex-col items-center justify-center shadow-lg min-w-[200px] font-open">
               <BadgeIcon className="w-12 h-12 mb-2 text-teal-400" />
               <p className="text-5xl font-bold">
                 <CountUp
@@ -148,7 +162,7 @@ const page = () => {
               <p className="text-gray-300 font-semibold">meters</p>
             </div>
             {/* Checklist */}
-            <ul className="space-y-4 mb-8">
+            <ul className="space-y-4 mb-8 max-md:mt-6">
               <li className="flex items-start text-[var(--bodyContent)] text-xl font-open">
                 <span className="text-[var(--greenShade)] text-xl mr-3">✔</span>
                 Serving industries from apparel and uniforms to industrial and
@@ -173,7 +187,7 @@ const page = () => {
         </div>
 
         {/* Right Content */}
-        <div className="relative w-[40%] h-[400px] flex justify-center">
+        <div className="relative w-[40%] max-md:hidden max-md:w-[80%] max-md:mx-auto h-[400px] max-md:h-[16rem] flex justify-center">
           {/* Blue Frame */}
           <div className="absolute top-6 left-6 w-full h-full bg-[var(--deepOcean)] rounded-md -z-10" />
 
@@ -189,9 +203,9 @@ const page = () => {
 
       {/* Monthly Output: Knit Fabrics  */}
       <section className="w-full bg-[var(--grayish)]/30 mx-auto overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-6 max-md:px-4 py-16 grid grid-cols-2 max-md:grid-cols-1 gap-12 items-center">
           {/* Left Image with Blue Frame */}
-          <div className="relative w-full h-[400px] flex justify-center">
+          <div className="relative max-md:hidden w-[90%] h-[400px] flex justify-center">
             {/* Blue Frame */}
             <div className="absolute top-6 left-6 w-full h-full bg-[var(--deepOcean)] rounded-md -z-10" />
 
@@ -207,12 +221,25 @@ const page = () => {
           {/* Right Content */}
           <div className="relative flex flex-col justify-center">
             {/* Heading */}
-            <h2 className="text-4xl font-medium  text-[var(--greenShade)] font-serif leading-snug mb-6">
+            <h2 className="text-4xl max-md:text-3xl max-md:text-center font-medium text-[var(--greenShade)] font-serif leading-snug mb-6">
               Monthly Output: Knit Fabrics
             </h2>
 
+            <div className="relative hidden max-md:flex w-[80%] mx-auto h-[18rem] justify-center">
+              {/* Blue Frame */}
+              <div className="absolute top-6 left-6 w-full h-full bg-[var(--deepOcean)] rounded-md -z-10" />
+
+              {/* Main Image */}
+              <Image
+                src="/assets/images/why-work-matters1.png"
+                alt="Business Meeting"
+                fill
+                className="object-cover rounded-md shadow-lg"
+              />
+            </div>
+
             {/* Description */}
-            <p className="text-[var(--bodyContent)] font-semibold text-xl font-open mb-2">
+            <p className="text-[var(--bodyContent)] font-semibold text-xl font-open mb-2 max-md:mt-10">
               Knitted fabrics demand extra care - and we deliver it with
               precision.
             </p>

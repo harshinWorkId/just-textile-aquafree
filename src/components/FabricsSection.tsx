@@ -196,8 +196,8 @@ const FabricsSection: React.FC = () => {
 
   return (
     <section className="bg-[var(--beige)]/20 my-12">
-      <div className="container mx-auto px-6 max-w-7xl py-20">
-        <div className="flex flex-row gap-20 items-center relative">
+      <div className="container mx-auto px-6 max-md:w-full max-md:px-4 max-w-7xl py-20">
+        <div className="flex flex-row max-md:flex-col-reverse gap-20 max-md:gap-4 items-center relative">
           <div className="absolute -top-20 -left-40 w-[300px] h-[150px] opacity-20">
             <Image
               src={`/assets/images/blackStrip.png`}
@@ -207,7 +207,7 @@ const FabricsSection: React.FC = () => {
             />
           </div>
           {/* --- left column content --- */}
-          <div className="lg:order-1 w-[60%]">
+          <div className="lg:order-1 w-[60%] max-md:w-full">
             <h2 className="text-4xl font-serif font-medium text-[var(--greenShade)] leading-tight mb-5">
               {activeFabric.title}
             </h2>
@@ -244,7 +244,7 @@ const FabricsSection: React.FC = () => {
           </div>
 
           {/* --- right column buttons and image --- */}
-          <div className="lg:order-2 w-[40%] relative">
+          <div className="lg:order-2 w-[40%] max-md:w-full relative">
             <div className="flex flex-wrap gap-3 mb-6">
               {fabricData.map((fabric) => (
                 <button

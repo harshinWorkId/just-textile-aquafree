@@ -29,31 +29,31 @@ const steps: ProcessStep[] = [
 
 const ProcessSteps = () => {
     return (
-        <section className="relative w-full">
+        <section className="relative w-full max-md:w-[90%] max-md:mx-auto max-md:my-10">
             <div className="mx-auto max-w-6xl px-4">
                 <div className="relative">
-                    
+
                     <div
                         className="absolute left-0 top-5 hidden h-px w-full"
                         aria-hidden="true"
                     />
 
-                   
-                    <div className="relative grid grid-cols-3 gap-y-16 md:gap-x-8">
+
+                    <div className="relative grid grid-cols-3 max-md:grid-cols-1 gap-y-16 max-md:gap-y-6 md:gap-x-8">
                         {steps.map((step) => (
-                            <div key={step.number} className="relative pt-10">
-                               
+                            <div key={step.number} className="relative pt-10 max-md:p-0">
+
                                 <div
                                     className="absolute top-12 -left-5 flex h-10 w-10 items-center 
                              justify-center rounded-md bg-[var(--vibrantGreen)] text-lg 
                              font-bold text-white"
-                                  
+
                                 >
                                     {step.number}
                                 </div>
 
                                 {/* Card with title and description */}
-                                <div className="rounded-md bg-white h-54 p-6 text-[var(--bodyContent)] font-open" style={{ boxShadow: "0 -4px 6px -1px rgba(0,0,0,0.1)" }}>
+                                <div className="rounded-md bg-white max-md:bg-gray-100 h-54 max-md:h-60 p-6 text-[var(--bodyContent)] font-open" style={{ boxShadow: "0 -4px 6px -1px rgba(0,0,0,0.1)" }}>
                                     <h3 className="text-xl font-semibold ">{step.title}</h3>
                                     <p className="mt-2 text-lg">{step.description}</p>
                                 </div>

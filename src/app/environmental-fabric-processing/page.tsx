@@ -218,16 +218,22 @@ const page = () => {
 
 
       {/* Why it matters  */}
-      <div className='h-[24rem] w-full relative'>
+      <div className='h-[24rem] max-md:h-full w-full relative'>
 
-        <div className="w-full h-[50%] relative top-10">
+        <div className="w-full h-[50%] relative top-10 max-md:top-6">
           <h3 className='text-center font-serif font-semibold text-2xl text-[var(--deepOcean)]'>Why it Matters</h3>
         </div>
 
 
-        <div className='w-full h-[50%] bg-[var(--grayish)]'></div>
+        <div className='w-full h-[50%] max-md:hidden bg-[var(--grayish)]'></div>
 
-        <div className='absolute top-[20%] w-full'>
+        <div className='absolute max-md:hidden top-[20%] w-full'>
+          <ProcessSteps />
+
+        </div>
+
+
+        <div className='hidden max-md:block mt-6'>
           <ProcessSteps />
 
         </div>
@@ -241,7 +247,7 @@ const page = () => {
 
         <div className='max-w-7xl mx-auto py-30 space-y-12'>
 
-          <h2 className='font-serif text-4xl text-center font-medium text-[var(--greenShade)]'>
+          <h2 className='font-serif text-4xl max-md:text-3xl text-center font-medium text-[var(--greenShade)]'>
             Case Studies & Impact Stories
 
           </h2>
@@ -259,11 +265,11 @@ const page = () => {
       {/* Success Metrics & Infographics  */}
       <div className='bg-[var(--grayish)]'>
 
-        <div className='max-w-7xl mx-auto py-20'>
-          <h2 className='text-white text-center text-4xl font-serif font-medium'>Success Metrics & Infographics</h2>
+        <div className='max-w-7xl mx-auto py-20 max-md:px-4'>
+          <h2 className='text-white text-center text-4xl max-md:text-3xl font-serif font-medium'>Success Metrics & Infographics</h2>
           <p className='text-gray-200 text-xl font-semibold font-open mt-10 text-center'>Our sustainability journey is backed by measurable results.</p>
 
-          <div className='mt-10 grid grid-cols-3 gap-8 w-[80%] mx-auto'>
+          <div className='mt-10 grid grid-cols-3 max-md:grid-cols-1 gap-8 w-[80%] mx-auto'>
 
             {/* Water Saved  */}
             <div className='bg-white rounded-xl p-6 flex flex-col justify-center items-center font-open'>
@@ -448,7 +454,7 @@ const page = () => {
 
 
 
-              <p className='text-[var(--bodyContent)] font-semibold'>
+              <p className='text-[var(--bodyContent)] max-md:text-center font-semibold'>
                 jobs in safe, compliant conditions.
               </p>
 
@@ -488,7 +494,7 @@ const page = () => {
 
 
 
-              <p className='text-[var(--bodyContent)] font-semibold'>
+              <p className='text-[var(--bodyContent)] max-md:text-center font-semibold'>
                 national & international recognitions.
               </p>
 
