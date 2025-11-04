@@ -235,7 +235,7 @@ import { AnimatePresence, motion, Variants } from "framer-motion";
 const navLinks = [
   {
     name: "Home",
-    href: "#",
+    href: "/",
   },
 
   {
