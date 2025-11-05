@@ -51,27 +51,27 @@ const HomeSection2: React.FC = () => {
             className="pt-12 px-8 max-md:px-4 max-md:py-20 bg-[var(--beige)]/30 relative overflow-hidden"
 
         >
-            <div className="max-w-[1290px] p-12 max-md:p-0 rounded-2xl mx-auto grid grid-cols-2 items-center gap-16 max-lg:grid-cols-1 max-lg:gap-12 relative">
+            <div className="max-w-[1290px] p-12 max-md:p-0 rounded-2xl mx-auto grid grid-cols-2 items-center gap-16 max-xl:grid-cols-1 max-lg:gap-12 relative">
                 {/* Left Column: Image */}
 
                 <div className="relative pl-12 max-lg:pl-0 max-md:flex max-md:flex-col max-md:items-center">
 
 
-                    <div className="relative max-md:mb-10">
-                        <p className="text-4xl max-w-md max-md:text-3xl font-medium font-serif text-[var(--greenShade))] mt-2 mb-6 max-lg:text-3xl max-md:text-center">
+                    <div className="relative max-md:mb-10 max-xl:flex max-xl:flex-row">
+                        <p className="text-4xl max-w-md max-xl:text-3xl font-medium font-serif text-[var(--greenShade))] mt-2 mb-6 max-lg:text-3xl max-md:text-center max-xl:mb-0">
                             Textiles That Make a Difference
 
                         </p>
 
                         {/* Animated Heading */}
-                        <div className="flex items-center mb-4 absolute top-7 right-16 max-md:right-0 max-md:left-10 max-md:top-12">
+                        <div className="flex items-center mb-4 absolute max-md:absolute max-xl:relative top-7  right-16 max-md:right-0 max-md:left-1/4 max-md:top-16 max-xl:-top-2 max-xl:-right-20">
                             <div className="w-52">
                                 <SewingMachineAnimation />
                             </div>
                         </div>
                     </div>
 
-                    <div className="relative w-full h-[500px] hidden max-md:block max-md:mb-10 rounded-2xl overflow-hidden max-lg:h-[400px] max-md:h-[300px]">
+                    <div className="relative w-full max-md:w-full max-xl:w-[70%] max-xl:mx-auto h-[500px] hidden max-xl:block max-md:mb-10 rounded-2xl overflow-hidden max-xl:h-[400px] max-md:h-[300px] max-xl:my-6">
                         {/* Decorative vertical line */}
                         <div className="absolute -left-20 top-0 bottom-0 w-px bg-gray-400 max-lg:hidden"></div>
                         <Image
@@ -104,7 +104,7 @@ const HomeSection2: React.FC = () => {
                 </div>
 
                 {/* Right Column: Text Content */}
-                <div className="relative w-full h-[500px] max-md:hidden rounded-2xl overflow-hidden max-lg:h-[400px] max-md:h-[300px]">
+                <div className="relative w-full h-[500px] max-xl:hidden rounded-2xl overflow-hidden max-lg:h-[400px] max-md:h-[300px]">
                     {/* Decorative vertical line */}
                     <div className="absolute -left-20 top-0 bottom-0 w-px bg-gray-400 max-lg:hidden"></div>
                     <Image

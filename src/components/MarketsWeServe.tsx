@@ -166,7 +166,7 @@ const MarketsWeServe = () => {
   return (
     // style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
     <section className="py-20" >
-      <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-16 gap-y-12 px-6 lg:flex-row lg:px-8 bg-white/80 rounded-2xl py-12 max-md:py-0">
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-16 gap-y-12 px-6 lg:flex-row lg:px-8 bg-white/80 rounded-2xl py-0 max-md:py-0 max-xl:py-0">
         {/* Left Column: Text Content and Feature Boxes */}
         <div className="w-full lg:w-3/5">
           <h2 className="mt-4 text-4xl font-medium tracking-tight text-[var(--greenShade)] max-md:text-3xl max-md:text-center">
@@ -190,7 +190,7 @@ const MarketsWeServe = () => {
           </p>
 
           {/* Grid for the four feature boxes */}
-          <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2">
+          <div className="mt-10 grid grid-cols-1 gap-8 max-md:gap-8 max-xl:gap-8 sm:grid-cols-2">
             {marketsData.map((item) => {
               const IconComponent = item.icon;
               return (

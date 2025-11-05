@@ -36,9 +36,8 @@ const SewingMachineAnimation: React.FC = () => {
       {/* Moving Sewing Machine */}
       <motion.div className="absolute z-10 -left-10">
         <GiSewingMachine
-          className={`w-10 h-10 text-[var(--forestGreen)] transition-transform duration-500 ${
-            direction === "right" ? "rotate-0" : "rotate-180"
-          }`}
+          className={`w-10 h-10 text-[var(--forestGreen)] transition-transform duration-500 ${direction === "right" ? "rotate-0" : "rotate-180"
+            }`}
         />
       </motion.div>
     </div>
@@ -49,10 +48,10 @@ const WhyWorkMatters3: React.FC = () => {
   return (
     // py-24
     <section
-      className="py-12 px-8 max-md:px-4 max-md:py-20"
-      //   style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
+      className="py-12 px-8 max-md:px-4 max-md:py-20 bg-[var(--beige)]/30"
+    //   style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
     >
-      <div className="max-w-[1290px] bg-white/70 p-12 max-md:p-0 rounded-2xl mx-auto grid grid-cols-2 items-center gap-16 max-lg:grid-cols-1 max-lg:gap-12">
+      <div className="max-w-[1290px] p-12 max-md:p-0 max-xl:py-12 max-xl:px-0 rounded-2xl mx-auto grid grid-cols-2 items-center gap-16 max-lg:grid-cols-1 max-lg:gap-12">
         {/* Left Column: Image */}
 
         <div className="relative pl-12 max-lg:pl-0">
@@ -69,14 +68,14 @@ const WhyWorkMatters3: React.FC = () => {
             </p>
 
             {/* Animated Heading */}
-            <div className="flex items-center mb-4 absolute top-7 right-16 max-md:right-0 max-md:left-10 max-md:top-12">
+            <div className="flex items-center mb-4 absolute top-7 right-16 max-md:right-0 max-md:left-10 max-md:top-12 max-lg:-right-5 max-lg:-top-4 max-xl:top-16 max-xl:-right-20">
               <div className="w-52">
                 <SewingMachineAnimation />
               </div>
             </div>
           </div>
 
-          <div className="relative w-full h-[500px] hidden max-md:block max-md:mb-10 rounded-2xl overflow-hidden max-lg:h-[400px] max-md:h-[300px]">
+          <div className="relative max-md:w-full max-lg:w-[60%] mx-auto h-[500px] hidden max-lg:block max-md:mb-10 rounded-2xl overflow-hidden max-lg:h-[400px] max-md:h-[300px]">
             {/* Decorative vertical line */}
             <div className="absolute -left-20 top-0 bottom-0 w-px bg-gray-400 max-lg:hidden"></div>
             <Image
@@ -112,7 +111,7 @@ const WhyWorkMatters3: React.FC = () => {
         </div>
 
         {/* Right Column: Text Content */}
-        <div className="relative w-full h-[500px] max-md:hidden rounded-2xl overflow-hidden max-lg:h-[400px] max-md:h-[300px]">
+        <div className="relative w-full h-[500px] max-lg:hidden rounded-2xl overflow-hidden max-lg:h-[400px] max-md:h-[300px]">
           {/* Decorative vertical line */}
           <div className="absolute -left-20 top-0 bottom-0 w-px bg-gray-400 max-lg:hidden"></div>
           <Image

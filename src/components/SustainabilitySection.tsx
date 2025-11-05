@@ -28,7 +28,7 @@ const sectionContent = {
 const SustainabilitySection: React.FC = () => {
   return (
     // style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
-    <section className="py-16 max-md:p-0" >
+    <section className="py-16 max-md:p-0 max-xl:px-8" >
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-x-16 gap-y-12 lg:grid-cols-2 bg-white/80 overflow-hidden rounded-2xl">
         {/* Left Column: Image */}
         <div className="relative overflow-hidden rounded-xl bg-gray-100 shadow-xl max-md:hidden">
@@ -44,7 +44,7 @@ const SustainabilitySection: React.FC = () => {
         </div>
 
         {/* Right Column: Content */}
-        <div className="px-4">
+        <div className="px-4 max-md:py-20">
 
 
           {/* Main Title */}

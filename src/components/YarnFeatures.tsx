@@ -47,24 +47,24 @@ const featureData: FeatureCard[] = [
 const YarnFeatures: React.FC = () => {
   return (
     // style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
-    <section className="">
-      <div className="mx-auto max-w-[1290px] px-6 bg-white/80 py-12 rounded-2xl">
+    <section className="bg-[var(--beige)]/30">
+      <div className="mx-auto max-w-[1290px] px-6 py-12 rounded-2xl">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center mb-16">
-          <h2 className="text-4xl font-medium tracking-tight text-[var(--greenShade)] max-md:text-3xl">
+          <h2 className="text-4xl hidden max-xl:block font-medium tracking-tight text-[var(--greenShade)] max-md:text-3xl">
             Our Journey
           </h2>
 
-          <div className="relative h-[16rem] w-full lg:col-span-2 hidden max-md:block mt-6">
+          <div className="relative max-md:h-[16rem] max-lg:h-[20rem] max-md:w-full max-lg:w-[80%] mx-auto lg:col-span-2 hidden max-lg:block mt-6">
             <Image
               src="/assets/images/textile-factory.png"
               alt="High-quality yarn spools on a manufacturing machine"
               fill
-              className="rounded-xl shadow-2xl w-full h-full object-cover"
+              className="rounded-xl shadow-2xl w-full max-lg:w-[80%] max-lg:mx-auto h-full object-cover"
             />
           </div>
 
-          <p className="mt-6 text-[22px] max-md:text-lg leading-6 text-[var(--bodyContent)]">
+          <p className="mt-6 text-[22px] hidden max-xl:block max-md:text-lg leading-6 text-[var(--bodyContent)]">
             Textiles are materials made from fibers or yarn, and they are used
             to create the widest range of products such as clothing and
             industrial goods.
@@ -74,7 +74,22 @@ const YarnFeatures: React.FC = () => {
 
         <div className="grid grid-cols-1 items-center gap-x-12 gap-y-16 lg:grid-cols-5">
           {/* Left Column: Container for the four feature cards */}
+
+
+
           <div className="lg:col-span-3">
+            <div className="mx-auto max-w-3xl text-center mb-16 max-xl:hidden">
+              <h2 className="text-4xl font-medium tracking-tight text-[var(--greenShade)] max-md:text-3xl">
+                Our Journey
+              </h2>
+
+
+              <p className="mt-6 text-[22px] max-md:text-lg leading-6 text-[var(--bodyContent)]">
+                Textiles are materials made from fibers or yarn, and they are used
+                to create the widest range of products such as clothing and
+                industrial goods.
+              </p>
+            </div>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
               {featureData.map((feature) => {
                 const IconComponent = feature.icon;
@@ -104,7 +119,7 @@ const YarnFeatures: React.FC = () => {
           </div>
 
           {/* Right Column: Large Image */}
-          <div className="relative h-full w-full lg:col-span-2 max-md:hidden">
+          <div className="relative h-full w-full lg:col-span-2 max-lg:hidden">
             <Image
               src="/assets/images/textile-factory.png"
               alt="High-quality yarn spools on a manufacturing machine"

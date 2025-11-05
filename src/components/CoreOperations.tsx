@@ -166,8 +166,8 @@ const CoreOperations: React.FC = () => {
 
     return (
         // style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
-        <section ref={sectionRef} className="py-20 overflow-x-hidden" >
-            <div className="mx-auto max-w-7xl px-6 lg:px-8 relative bg-white/80 py-12 rounded-2xl">
+        <section ref={sectionRef} className="py-20 overflow-x-hidden bg-[var(--grayish)]/30" >
+            <div className="mx-auto max-w-7xl px-6 lg:px-8 relative py-0 max-md:py-0 max-xl:py-0 rounded-2xl">
                 <div className="mx-auto max-w-2xl text-center mb-16">
                     <h2 className="text-4xl font-medium tracking-tight text-[var(--greenShade)] font-serif max-md:text-2xl">
                         Our Core Operations

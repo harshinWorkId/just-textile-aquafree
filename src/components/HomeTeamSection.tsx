@@ -5,7 +5,7 @@ const HomeTeamSection = () => {
         <div className="h-auto bg-[#0a4833] pt-20 px-4 sm:px-6 lg:px-8 flex flex-col space-y-12 items-center justify-center">
             <h2 className='text-gray-100 text-4xl max-md:text-3xl font-serif text-center'>Leadership That Drives Excellence
             </h2>
-            <div className="container w-[80%] py-16 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-md:gap-30">
+            <div className="container w-[80%] max-md:w-[80%] max-xl:w-[100%] py-16 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-md:gap-30">
                 <TeamMemberCard
                     imageSrc="/assets/images/leader1.jpg" // Placeholder
                     name="Mr. Pradeep Modi"

@@ -48,14 +48,14 @@ const fiberData: FiberCard[] = [
 const FabricComponent: React.FC = () => {
   return (
     // style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
-    <section className="py-16 sm:py-24" >
-      <div className="mx-auto max-w-7xl px-6 bg-white/80 rounded-2xl py-12 max-md:py-0">
+    <section className="py-16 sm:py-24 bg-[var(--grayish)]/30" >
+      <div className="mx-auto max-w-7xl px-6 rounded-2xl py-0 max-md:py-0 max-xl:py-0">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center mb-16">
-          <h2 className="mt-2 text-4xl font-medium tracking-tight text-[var(--greenShade)] sm:text-5xl">
+          <h2 className="mt-2 text-4xl font-serif font-medium tracking-tight text-[var(--greenShade)] max-md:text-3xl max-xl:text-4xl">
             Our Expertise Across Fibers
           </h2>
-          <p className="mt-6 text-[22px] leading-8 text-[var(--bodyContent)]">
+          <p className="mt-6 text-lg font-open max-xl:text-lg leading-8 text-[var(--bodyContent)]">
             From raw natural materials to advanced synthetics, our process
             ensures the highest quality at every stage, tailored to your
             specific needs.

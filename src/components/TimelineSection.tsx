@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const TimelineSection = () => {
   return (
-    <div className="w-[100%] py-12 mx-auto relative overflow-hidden max-md:hidden">
+    <div className="w-[100%] py-20 mx-auto relative overflow-hidden max-md:hidden">
       <div className="absolute h-[300px] w-[300px] top-0 -right-10 opacity-70">
         <Image
           fill

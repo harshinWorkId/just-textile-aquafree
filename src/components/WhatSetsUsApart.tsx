@@ -157,8 +157,8 @@ const featuresData: FeatureItem[] = [
 const WhatSetsUsApart: React.FC = () => {
   return (
     // style={{ backgroundImage: "url('/assets/images/bg1.png')" }} 
-    <section className="py-16 max-md:py-20" >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 bg-white/80 rounded-2xl py-12 max-md:py-0">
+    <section className="py-16 max-md:py-20 bg-[var(--beige)]/30" >
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 rounded-2xl py-12 max-md:py-0 max-xl:py-0">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center mb-16">
           <h2 className="mt-2 text-4xl font-medium tracking-tight text-[var(--greenShade)] max-md:text-3xl">

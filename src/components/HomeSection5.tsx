@@ -20,24 +20,24 @@ const HomeSection5 = () => {
                 </div>
                 <div>
                     <h3 className={`font-semibold text-lg ${textColorClass}`}>{title}</h3>
-                    <p className="text-gray-600 text-md">{description}</p>
+                    <p className="text-gray-600 text-md max-md:text-md max-xl:text-lg">{description}</p>
                 </div>
             </div>
         );
     };
     return (
         <div className="h-auto bg-[var(--grayish)]/30 py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto flex max-md:flex-col items-center gap-12 overflow-hidden">
+            <div className="max-w-7xl mx-auto flex max-md:flex-col max-xl:flex-col items-center gap-12 overflow-hidden">
                 {/* Left Section - Image and Call to Action */}
-                <div className='max-md:space-y-6'>
+                <div className='max-md:space-y-6 w-[40%] max-md:w-[100%] max-xl:w-[50%]'>
 
-                    <h2 className="text-4xl max-md:text-3xl max-md:text-center font-serif font-medium text-[var(--greenShade)] mb-8 leading-tight hidden max-md:block">
+                    <h2 className="text-4xl max-md:text-3xl max-xl:text-center font-serif font-medium text-[var(--greenShade)] mb-8 leading-tight hidden max-xl:block">
                         Comprehensive Fabric Capabilities
 
                     </h2>
 
-                    <div className="relative w-[40%] max-md:w-[80%] max-md:mx-auto">
-                        <div className="relative w-[100%] h-[34rem] max-md:h-[16rem]">
+                    <div className="relative w-[100%] max-md:w-[80%] max-xl:w-[100%] max-md:mx-auto">
+                        <div className="relative w-[100%] h-[30rem] max-md:h-[16rem] max-xl:h-[24rem]">
                             <Image fill src={`/assets/images/home4.jpg`} alt="" className="w-full h-full"></Image>
                         </div>
 
@@ -46,15 +46,15 @@ const HomeSection5 = () => {
 
 
                 {/* Right Section - How It Works */}
-                <div className="py-12 max-md:py-0 px-8 max-md:px-0 w-[60%] max-md:w-[100%]">
+                <div className="py-12 max-xl:py-0 px-8 max-md:px-0 w-[60%] max-md:w-[100%] max-xl:w-[100%] max-xl:px-0">
 
-                    <h2 className="text-4xl max-md:text-3xl max-md:text-center font-serif font-medium text-[var(--greenShade)] mb-8 leading-tight max-md:hidden">
+                    <h2 className="text-4xl max-md:text-3xl max-md:text-center font-serif font-medium text-[var(--greenShade)] mb-8 leading-tight max-xl:hidden">
                         Comprehensive Fabric Capabilities
 
                     </h2>
 
 
-                    <div className="space-y-6">
+                    <div className="space-y-6 max-md:flex max-md:flex-col max-xl:grid max-xl:grid-cols-2 max-xl:gap-6">
                         <ServiceStep
                             icon={<svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>}
                             title="Cotton & Natural Fibers"

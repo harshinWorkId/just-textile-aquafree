@@ -19,10 +19,8 @@ const page = () => {
 
         {/* Innovation, Scale, and Responsibility in Textile Production  */}
         <div
-          className="p-4 flex items-center justify-center mt-20"
-          // style={{ backgroundImage: "url('/assets/images/bg1.png')" }}
-        >
-          <section className="relative mx-auto my-12 max-w-7xl bg-white/100 rounded-2xl">
+          className="p-4 flex items-center justify-center mt-20">
+          <section className="relative mx-auto my-12 max-w-7xl bg-gray-100 rounded-2xl">
             <div className="overflow-hidden rounded-lg relativee shadow-lg lg:grid lg:grid-cols-2 lg:gap-4">
               {/* Left Column: Image */}
               <div
@@ -50,7 +48,7 @@ const page = () => {
                 {/* <p className="text-sm font-semibold uppercase tracking-wider text-gray-500">
                 EXCELLENT PRODUCTS
               </p> */}
-                <h2 className="mt-2 text-4xl font-medium tracking-tight text-[var(--greenShade)] sm:text-5xl">
+                <h2 className="mt-2 text-4xl font-medium tracking-tight text-[var(--greenShade)] max-xl:text-3xl">
                   Innovation, Scale, and Responsibility in Textile Production
                 </h2>
                 <p className="mt-6 text-lg text-[var(--bodyContent)] text-justify">
