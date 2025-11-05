@@ -49,10 +49,10 @@ const ProductionScale = () => {
             <div className="mx-auto max-w-6xl px-4">
                 <div className="relative max-md:w-[90%] max-md:mx-auto">
 
-                    <div
-                        className="absolute left-0 top-5 hidden h-px w-full"
+                    {/* <div
+                        className="absolute left-0 top-0 hidden h-px w-full"
                         aria-hidden="true"
-                    />
+                    /> */}
 
 
                     <div className="relative grid grid-cols-3 max-md:grid-cols-1 gap-y-16 max-md:gap-y-10 md:gap-x-8">

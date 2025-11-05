@@ -8,7 +8,7 @@ const AquaFreeTechnicalProcess = () => {
             <div className="max-w-6xl mx-auto py-12 px-6">
                 {/* heading and description  */}
                 <div className="w-full">
-                    <h2 className="text-4xl text-center font-medium font-serif text-[var(--greenShade)] mb-6 leading-snug">
+                    <h2 className="text-4xl max-md:text-3xl text-center font-medium font-serif text-[var(--greenShade)] mb-6 leading-snug">
                         Trusted by Global Leaders
                     </h2>
                 </div>
@@ -17,10 +17,11 @@ const AquaFreeTechnicalProcess = () => {
                 {/* Fashion & Lifestyle Brands  */}
                 <div className="flex flex-col gap-14 my-8 ">
 
-                    <div className="w-full flex flex-row gap-6 group rounded-r-[180px] font-open rounded-l-[180px] bg-[var(--grayish)]/30 px-10 mt-6 relative h-[400px] py-10">
-                        <div className="w-[40%] relative h-[100%]">
+                    <div className="w-full flex flex-row max-md:flex-col gap-6 group rounded-r-[180px] font-open rounded-l-[180px] bg-[var(--grayish)]/30 px-10 max-md:px-4 mt-6 relative h-[400px] max-md:h-auto py-10">
+                        <div className="w-[40%] relative h-[100%] max-md:h-[16rem] max-md:w-[100%]">
                             <div className="relative h-full w-[80%] mx-auto">
                                 <Image
+
                                     fill
                                     src={`/assets/images/step1.jpg`}
                                     alt=""
@@ -29,7 +30,7 @@ const AquaFreeTechnicalProcess = () => {
                             </div>
                         </div>
 
-                        <div className="w-[50%] my-12 z-20">
+                        <div className="w-[50%] max-md:w-[100%] my-12 z-20">
                             <h3 className="text-2xl text-[var(--bodyContent)] font-semibold mb-6">
                                 Fashion & Lifestyle Brands
                             </h3>
@@ -67,10 +68,10 @@ const AquaFreeTechnicalProcess = () => {
                 </div>
 
                 {/* Defense & Industrial  */}
-                <div className="flex flex-col gap-14 my-8 ">
+                <div className="flex flex-col gap-14 my-8">
 
-                    <div className="w-full flex flex-row-reverse gap-6 group rounded-r-[180px] font-open rounded-l-[180px] bg-[var(--grayish)]/30 px-10 mt-6 relative h-[400px] py-10">
-                        <div className="w-[40%] relative h-[100%]">
+                    <div className="w-full flex flex-row-reverse max-md:flex-col gap-6 group rounded-r-[180px] font-open rounded-l-[180px] bg-[var(--grayish)]/30 px-10 mt-6 relative h-[400px] max-md:h-auto py-10">
+                        <div className="w-[40%] relative h-[100%] max-md:h-[16rem] max-md:w-[100%]">
                             <div className="relative h-full w-[80%] mx-auto">
                                 <Image
                                     fill
@@ -81,7 +82,7 @@ const AquaFreeTechnicalProcess = () => {
                             </div>
                         </div>
 
-                        <div className="w-[50%] my-12 z-20">
+                        <div className="w-[50%] max-md:w-[100%] my-12 z-20">
                             <h3 className="text-2xl text-[var(--bodyContent)] font-semibold mb-6">
                                 Defense & Industrial
                             </h3>

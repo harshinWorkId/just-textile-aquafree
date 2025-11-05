@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                     </div>
 
                     {/* Column 2: About Links */}
-                    <div className='flex flex-col items-center'>
+                    <div className='flex flex-col items-center max-md:items-start'>
                         <h3 className="text-lg font-semibold text-purple-400 mb-5 uppercase tracking-wider">
                             About
                         </h3>

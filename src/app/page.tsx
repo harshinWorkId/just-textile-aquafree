@@ -58,10 +58,10 @@ export default function Home() {
       <HomeSection5></HomeSection5>
 
       {/* Production Scale That Delivers  */}
-      <div className='h-[24rem] max-md:h-full w-full relative max-md:mb-10 bg-[var(--grayish)]/30'>
+      <div className='h-[24rem] max-md:h-full max-md:px-4 w-full relative max-md:py-12 bg-[var(--grayish)]/30'>
 
         <div className="max-w-7xl mx-auto h-[50%] relative top-10 max-md:top-0 max-md:mb-6">
-          <h3 className='text-center font-serif font-medium text-4xl text-[var(--greenShade)]'>Production Scale That Delivers</h3>
+          <h3 className='text-center font-serif font-medium text-4xl max-md:text-3xl text-[var(--greenShade)]'>Production Scale That Delivers</h3>
         </div>
 
 
@@ -83,16 +83,27 @@ export default function Home() {
 
       {/* European Technology Excellence */}
       <section className="bg-[#fdf6ec] py-24">
+
         <div className="max-w-7xl mx-auto grid grid-cols-2 items-center gap-12 px-6 max-lg:grid-cols-1">
           {/* RIGHT CONTENT */}
           <div className="flex flex-col justify-center">
-            <h2 className="text-4xl font-medium text-[var(--greenShade)] mb-8 font-serif">
+            <h2 className="text-4xl max-md:text-3xl max-md:text-center font-medium text-[var(--greenShade)] mb-8 font-serif">
               European Technology Excellence
 
             </h2>
 
 
-            <p className="text-xl text-[var(--bodyContent)] font-open mb-8">Our investment in cutting-edge European machinery sets us apart in quality, speed, and sustainability.
+            <div className="relative hidden w-full h-[16rem] max-md:block mb-8">
+              <Image
+                src="/assets/images/beyond-manufacturing.png" // replace with your image path
+                alt="Textile Work"
+                fill
+                className="object-cover rounded-sm"
+              />
+            </div>
+
+
+            <p className="text-xl text-[var(--bodyContent)] max-md:text-justify font-open mb-8">Our investment in cutting-edge European machinery sets us apart in quality, speed, and sustainability.
             </p>
 
             <div className="space-y-6">
@@ -118,7 +129,7 @@ export default function Home() {
           </div>
 
           {/* LEFT IMAGE */}
-          <div className="relative w-full h-[550px] max-lg:h-[400px]">
+          <div className="relative w-full h-[550px] max-lg:h-[400px] max-md:hidden">
             <Image
               src="/assets/images/beyond-manufacturing.png" // replace with your image path
               alt="Textile Work"
@@ -134,11 +145,11 @@ export default function Home() {
 
           <div className="py-0 mt-20 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
             <div className="max-w-7xl mx-auto ">
-              <h2 className="text-4xl text-center font-medium text-[var(--greenShade)] mb-8 font-serif">
+              <h2 className="text-4xl max-md:text-3xl text-center font-medium text-[var(--greenShade)] mb-8 max-md:my-8 font-serif">
                 Environmental Leadership
               </h2>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-md:gap-0">
 
                 <FeatureCard
                   number="01"

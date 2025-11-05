@@ -30,9 +30,9 @@ const HomeParallaxSection: React.FC = () => {
 
           </h2>
 
-          <div className='grid grid-cols-4 gap-8 text-[var(--bodyContent)]'>
+          <div className='grid grid-cols-4 max-md:grid-cols-1 gap-8 text-[var(--bodyContent)]'>
 
-            <div className='font-open space-y-4 border-r border-gray-800 py-0'>
+            <div className='font-open space-y-4 border-r max-md:border-r-0 max-md:border-b max-md:pb-2 border-gray-800 py-0'>
               <div className='text-center text-4xl font-bold text-[var(--bodyContent)] font-serif mt-2'>
                 <CountUp
                   from={0}
@@ -53,7 +53,7 @@ const HomeParallaxSection: React.FC = () => {
 
 
 
-            <div className='font-open space-y-4 border-r border-gray-800 py-0'>
+            <div className='font-open space-y-4 border-r max-md:border-r-0 max-md:border-b max-md:pb-2 border-gray-800 py-0'>
               <div className='text-center text-4xl font-bold text-[var(--bodyContent)] font-serif mt-2'>
                 <CountUp
                   from={0}
@@ -71,7 +71,7 @@ const HomeParallaxSection: React.FC = () => {
 
 
 
-            <div className='font-open space-y-4 border-r border-gray-800 py-0'>
+            <div className='font-open space-y-4 border-r max-md:border-r-0 max-md:border-b max-md:pb-2 border-gray-800 py-0'>
               <div className='text-center text-4xl font-bold text-[var(--bodyContent)] font-serif mt-2'>
                 <CountUp
                   from={0}
@@ -112,7 +112,7 @@ const HomeParallaxSection: React.FC = () => {
           </div>
 
 
-          <p className="text-lg sm:text-xl font-open w-[95%] mx-auto text-[var(--bodyContent)] my-8 border-l text-left border-gray-800 px-4">
+          <p className="text-lg sm:text-xl font-open w-[95%] max-md:w-[100%] max-md:pl-4 max-md:text-justify mx-auto text-[var(--bodyContent)] my-8 border-l text-left border-gray-800 px-4">
             " Certified Excellence: ISO 14001, OEKO-TEX Standard 100, MPCB ZLD Consent, and multiple national awards recognize our commitment to quality and sustainability.
 
           </p>

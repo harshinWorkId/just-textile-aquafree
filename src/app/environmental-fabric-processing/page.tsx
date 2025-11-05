@@ -245,7 +245,7 @@ const page = () => {
       {/* Case Studies & Impact Stories  */}
       <div className='w-full bg-[var(--beige)]/30'>
 
-        <div className='max-w-7xl mx-auto py-30 space-y-12'>
+        <div className='max-w-7xl mx-auto py-30 space-y-12 max-md:space-y-0'>
 
           <h2 className='font-serif text-4xl max-md:text-3xl text-center font-medium text-[var(--greenShade)]'>
             Case Studies & Impact Stories
@@ -506,25 +506,6 @@ const page = () => {
         </div>
 
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

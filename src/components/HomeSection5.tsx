@@ -27,19 +27,28 @@ const HomeSection5 = () => {
     };
     return (
         <div className="h-auto bg-[var(--grayish)]/30 py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto flex items-center gap-12 overflow-hidden">
+            <div className="max-w-7xl mx-auto flex max-md:flex-col items-center gap-12 overflow-hidden">
                 {/* Left Section - Image and Call to Action */}
-                <div className="relative w-[40%]">
-                    <div className="relative w-[100%] h-[34rem]">
-                        <Image fill src={`/assets/images/home4.jpg`} alt="" className="w-full h-full"></Image>
-                    </div>
+                <div className='max-md:space-y-6'>
 
+                    <h2 className="text-4xl max-md:text-3xl max-md:text-center font-serif font-medium text-[var(--greenShade)] mb-8 leading-tight hidden max-md:block">
+                        Comprehensive Fabric Capabilities
+
+                    </h2>
+
+                    <div className="relative w-[40%] max-md:w-[80%] max-md:mx-auto">
+                        <div className="relative w-[100%] h-[34rem] max-md:h-[16rem]">
+                            <Image fill src={`/assets/images/home4.jpg`} alt="" className="w-full h-full"></Image>
+                        </div>
+
+                    </div>
                 </div>
 
-                {/* Right Section - How It Works */}
-                <div className="py-12 px-8 w-[60%]">
 
-                    <h2 className="text-4xl font-serif font-medium text-[var(--greenShade)] mb-8 leading-tight">
+                {/* Right Section - How It Works */}
+                <div className="py-12 max-md:py-0 px-8 max-md:px-0 w-[60%] max-md:w-[100%]">
+
+                    <h2 className="text-4xl max-md:text-3xl max-md:text-center font-serif font-medium text-[var(--greenShade)] mb-8 leading-tight max-md:hidden">
                         Comprehensive Fabric Capabilities
 
                     </h2>
@@ -73,7 +82,7 @@ const HomeSection5 = () => {
                     </div>
 
 
-                    
+
                 </div>
             </div>
         </div>

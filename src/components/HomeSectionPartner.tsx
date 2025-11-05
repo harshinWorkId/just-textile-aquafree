@@ -3,7 +3,7 @@
 // components/HomeSectionPartner.tsx
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import Button from './Button'; 
+import Button from './Button';
 
 
 const timelineItems = [
@@ -62,26 +62,36 @@ const HomeSectionPartner: React.FC = () => {
     return (
         <section className="bg-[var(--beige)]/30 py-12 sm:py-20 px-4 sm:px-6 lg:px-8">
             <div className='max-w-7xl mx-auto space-y-10'>
-                <h2 className='text-4xl text-center text-[var(--greenShade)] font-serif'>
+                <h2 className='text-4xl max-md:text-3xl text-center text-[var(--greenShade)] font-serif'>
                     Partner With Industry Leaders
                 </h2>
 
                 <div className='space-y-0'>
-                    <h3 className='text-3xl font-semibold text-[var(--deepOcean)]'>
+                    <h3 className='text-3xl font-semibold text-[var(--deepOcean)] max-md:mb-6'>
                         Why Choose Just Textiles?
                     </h3>
+
+
+                    <Image
+                        src="/assets/images/HomePartner.png"
+                        alt="Abstract technology"
+                        width={600}
+                        height={700}
+                        className="rounded-2xl h-[16rem] hidden mb-6 max-md:block object-cover w-[90%] mx-auto shadow-lg"
+                    />
+
                     <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         {/* Left Side: Timeline Content */}
                         <div className="relative">
                             <ul ref={containerRef} className="space-y-16">
                                 <div className="absolute left-2 top-2 h-full w-0.5 bg-gray-200" />
 
-                             
+
                                 <div
                                     className="absolute left-2 top-2 w-0.5 bg-[var(--greenShade)] transition-height duration-300 ease-linear"
                                     style={{ height: `${scrollPercent}%` }}
                                 />
-                        
+
 
                                 {timelineItems.map((item, index) => {
                                     const isActive = scrollPercent >= item.activePercent;
@@ -114,7 +124,7 @@ const HomeSectionPartner: React.FC = () => {
                                 alt="Abstract technology"
                                 width={600}
                                 height={700}
-                                className="rounded-2xl h-[24rem] object-cover w-full shadow-lg"
+                                className="rounded-2xl h-[24rem] max-md:hidden object-cover w-full shadow-lg"
                             />
                             <div className='space-y-10'>
                                 <p className='border-l border-[var(--bodyContent)] font-open px-4 text-lg'>"At Just Textiles, every fabric tells a story of quality, innovation, and responsibility. Let's create yours together."

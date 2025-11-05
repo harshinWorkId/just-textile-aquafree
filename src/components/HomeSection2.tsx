@@ -54,16 +54,11 @@ const HomeSection2: React.FC = () => {
             <div className="max-w-[1290px] p-12 max-md:p-0 rounded-2xl mx-auto grid grid-cols-2 items-center gap-16 max-lg:grid-cols-1 max-lg:gap-12 relative">
                 {/* Left Column: Image */}
 
-                <div className="relative pl-12 max-lg:pl-0">
-                    {/* Decorative shape - top right */}
-                    {/* <div className="absolute -top-16 -right-8 w-24 h-24 border-t-2 border-r-2 border-gray-900 max-md:hidden"></div>
+                <div className="relative pl-12 max-lg:pl-0 max-md:flex max-md:flex-col max-md:items-center">
 
-                    <p className="text-8xl font-serif text-gray-900 leading-none max-lg:text-7xl">
-            98<span className="text-orange-500">%</span>
-          </p> */}
 
                     <div className="relative max-md:mb-10">
-                        <p className="text-4xl max-w-md max-md:text-3xl font-medium font-serif text-[var(--greenShade))] mt-2 mb-6 max-lg:text-3xl">
+                        <p className="text-4xl max-w-md max-md:text-3xl font-medium font-serif text-[var(--greenShade))] mt-2 mb-6 max-lg:text-3xl max-md:text-center">
                             Textiles That Make a Difference
 
                         </p>

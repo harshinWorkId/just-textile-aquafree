@@ -6,67 +6,67 @@ import { motion } from "framer-motion"
 
 const HomeSection1 = () => {
     return (
-        <div className='w-full bg-[var(--forestGreen)] px-12'>
+        <div className='w-full bg-[var(--forestGreen)] px-12 max-md:px-4'>
 
             <section className="max-w-[1536px] mx-auto h-auto mt-20">
 
-              
 
-                    <div className="w-full flex flex-row py-30">
 
-                        <div className="flex flex-col w-[30%] relative">
-                            <div className="relative w-[80%] h-[28rem]">
-                                <Image fill src={`/assets/images/home4.jpg`} alt="" className="w-full h-full"></Image>
-                            </div>
+                <div className="w-full flex flex-row max-md:flex max-md:flex-col-reverse py-30 max-md:py-20">
 
-                            <div className="absolute bottom-10 -right-0 w-[60%] h-[20rem]">
-                                <Image fill src={`/assets/images/home3.jpg`} alt="" className="w-full h-full"></Image>
-                            </div>
+                    <div className="flex flex-col w-[30%] max-md:w-[90%] max-md:mx-auto relative max-md:hidden">
+                        <div className="relative w-[80%] max-md:w-[80%] h-[28rem]">
+                            <Image fill src={`/assets/images/home4.jpg`} alt="" className="w-full h-full"></Image>
                         </div>
 
-                        <div className="flex w-[40%] mt-20">
+                        <div className="absolute bottom-10 -right-0 w-[60%] max-md:w-[80%] h-[20rem]">
+                            <Image fill src={`/assets/images/home3.jpg`} alt="" className="w-full h-full"></Image>
+                        </div>
+                    </div>
 
-                            <div className="w-[70%] mx-auto flex flex-col gap-6">
+                    <div className="flex w-[40%] max-md:w-full mt-20">
+
+                        <div className="w-[70%] max-md:w-full max-md:px-0 mx-auto flex flex-col gap-6">
 
 
-                                <h2 className="text-white font-serif text-6xl">Just Textiles Ltd</h2>
+                            <h2 className="text-white font-serif text-6xl max-md:text-4xl max-md:text-center">Just Textiles Ltd.</h2>
 
-                                <div className="text-white text-xl font-open space-y-6">
-                                    <p>Where innovation meets responsibility in textile manufacturing
-                                    </p>
+                            <div className="text-white text-xl font-open space-y-6 max-md:text-center">
+                                <p>Where innovation meets responsibility in textile manufacturing
+                                </p>
 
-                                    <div className="space-x-5">
+                                <div className="space-x-5">
 
-                                        <Button name={"Partner With Us"} color={"text-white"} bgColor={"bg-[var(--bodyContent)]"}></Button>
-                                        <Button name={"Our Impact"} color={"text-[var(--deepOcean)]"} bgColor={"bg-gray-100"}></Button>
-
-                                    </div>
+                                    <Button name={"Partner With Us"} color={"text-white"} bgColor={"bg-[var(--bodyContent)]"}></Button>
+                                    <Button name={"Our Impact"} color={"text-[var(--deepOcean)]"} bgColor={"bg-gray-100"}></Button>
 
                                 </div>
 
                             </div>
 
-
                         </div>
 
-
-                        <div className="flex flex-col w-[30%] relative">
-
-                            <div className="relative w-[80%] h-[28rem]">
-                                <Image fill src={`/assets/images/home2.jpg`} alt="" className="w-full h-full"></Image>
-                            </div>
-
-
-                            <div className="absolute -bottom-10 -right-0 w-[60%] h-[20rem]">
-                                <Image fill src={`/assets/images/home5.jpg`} alt="" className="w-full h-full"></Image>
-                            </div>
-
-                            <motion.div animate={{ rotate: 360 }} transition={{ duration: 30, repeat: Infinity }} className="absolute -left-10 -bottom-10 w-[160px] h-[10rem]">
-                                <Image fill src={`/assets/images/home1.png`} alt="" className="w-full h-full"></Image>
-                            </motion.div>
-                        </div>
 
                     </div>
+
+
+                    <div className="flex flex-col w-[30%] max-md:w-[90%] max-md:mx-auto relative">
+
+                        <div className="relative w-[80%] max-md:w-[90%] h-[28rem]">
+                            <Image fill src={`/assets/images/home2.jpg`} alt="" className="w-full h-full"></Image>
+                        </div>
+
+
+                        <div className="absolute -bottom-10 -right-0 w-[60%] max-md:w-[80%] h-[20rem]">
+                            <Image fill src={`/assets/images/home5.jpg`} alt="" className="w-full h-full"></Image>
+                        </div>
+
+                        <motion.div animate={{ rotate: 360 }} transition={{ duration: 30, repeat: Infinity }} className="absolute -left-10 max-md:left-0 -bottom-10 w-[160px] h-[10rem]">
+                            <Image fill src={`/assets/images/home1.png`} alt="" className="w-full h-full"></Image>
+                        </motion.div>
+                    </div>
+
+                </div>
 
 
 
