@@ -1,6 +1,6 @@
 "use client";
 
-import { motion,Variants , useAnimation } from "framer-motion";
+import { motion, Variants, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { FaUsers } from "react-icons/fa";
@@ -44,7 +44,7 @@ const cardContainer = {
   },
 };
 
-const cardItem : Variants = {
+const cardItem: Variants = {
   hidden: { opacity: 0, scale: 0.9, y: 40 },
   visible: {
     opacity: 1,
@@ -68,7 +68,7 @@ export default function EmpowerSection() {
     <section ref={ref} className="bg-white py-16">
       {/* Heading */}
       <div className="max-w-6xl mx-auto px-6 text-center mb-12">
-        <h2 className="text-4xl font-medium text-[var(--greenShade)] font-serif">
+        <h2 className="text-4xl max-lg:text-3xl max-lg:text-center font-medium text-[var(--greenShade)] font-serif">
           Empowering Our People
         </h2>
       </div>
@@ -95,7 +95,7 @@ export default function EmpowerSection() {
             <motion.div
               key={idx}
               variants={cardItem}
-              className="bg-white shadow-lg p-8 flex flex-col items-center text-center min-h-[300px] rounded-md"
+              className={`bg-white shadow-lg p-8 flex flex-col items-center text-center min-h-[300px] rounded-md`}
             >
               <div className="mb-4">{feature.icon}</div>
               <h3 className="textStyle2 font-open font-semibold mb-2">

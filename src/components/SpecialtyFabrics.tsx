@@ -9,7 +9,7 @@ const SpecialtyFabrics: React.FC = () => {
     <section className="py-20">
       <div className="max-w-7xl bg-white/80 py-12 rounded-2xl mx-auto grid grid-cols-[45%_55%] px-6 max-lg:grid-cols-1 items-center">
         {/* LEFT IMAGE */}
-        <div className="relative w-[90%] mx-auto h-[450px] rounded-md overflow-hidden">
+        <div className="relative w-[90%] mx-auto h-[450px] max-md:h-[16rem] rounded-md overflow-hidden">
           <Image
             src="/assets/images/why-work-matters1.png" // replace with your actual image
             alt="Specialty Fabrics"
@@ -20,7 +20,7 @@ const SpecialtyFabrics: React.FC = () => {
 
         {/* RIGHT CONTENT */}
         <div className="px-6">
-          <h2 className="text-4xl w-full font-medium text-[var(--greenShade)] mb-6 font-serif">
+          <h2 className="text-4xl max-lg:text-3xl max-lg:text-center max-lg:mt-4 w-full font-medium text-[var(--greenShade)] mb-6 font-serif">
             Mastering Specialty Fabrics: Blends and Lycra Expertise
           </h2>
 

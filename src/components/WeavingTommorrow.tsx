@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 
 const WeavingTommorrow = () => {
   return (
@@ -30,7 +30,7 @@ const WeavingTommorrow = () => {
         {/* RIGHT CONTENT */}
         <div className="flex flex-col gap-8 justify-center">
           <div>
-            <h2 className="text-4xl font-medium text-[var(--greenShade)] mb-4 font-serif">
+            <h2 className="text-4xl max-lg:text-3xl max-lg:text-center font-medium text-[var(--greenShade)] mb-4 font-serif">
               Weaving Tomorrow's Textiles Today
             </h2>
             <p className="text-[var(--bodyContent)] font-open leading-relaxed">
@@ -50,15 +50,15 @@ const WeavingTommorrow = () => {
 
           <div className="flex fex-row w-full relative">
             <div className="w-[50%] h-[140px]">
-              <div className="relative w-[50%] h-full flex justify-start z-0">
+              <div className="relative w-[50%] max-md:w-[80%] h-full flex justify-start z-0">
                 <Image
                   fill
                   alt=""
                   src={`/assets/images/machine-house2.png`}
-                  className="opacity-30 object-cover w-[50%] h-full"
+                  className="opacity-30 object-cover w-[50%] max-md:w-[100%] h-full"
                 ></Image>
 
-                <motion.div animate={{rotate:360}} transition={{duration:10, repeat:Infinity}} className="w-[60px] h-[60px] absolute top-2 right-5 z-0">
+                <motion.div animate={{ rotate: 360 }} transition={{ duration: 10, repeat: Infinity }} className="w-[60px] h-[60px] absolute top-2 right-5 z-0">
                   <Image
                     fill
                     alt=""
@@ -72,8 +72,8 @@ const WeavingTommorrow = () => {
             {/* CTA BOX */}
             <div className="bg-[var(--deepOcean)] w-[50%] text-white px-8 py-4 rounded-md relative overflow-hidden flex flex-col items-start justify-between gap-6">
               <h3 className="textStyle font-open font-semibold z-10">
-              Have a project? Let's Talk!
-            </h3>
+                Have a project? Let's Talk!
+              </h3>
 
               {/* faint decorative circle behind */}
 

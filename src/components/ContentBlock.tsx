@@ -26,21 +26,20 @@ const ContentBlock: React.FC<ContentBlockProps> = ({
   return (
     <section className="relative py-12">
       <div
-        className={`max-w-7xl shadow-xl rounded-2xl mx-auto py-12 px-8 grid reverse grid-cols-2 gap-4 items-center ${
-          reverse ? "lg:flex-row-reverse" : ""
-        }`}
+        className={`max-w-7xl shadow-xl rounded-2xl mx-auto py-12 px-8 grid reverse grid-cols-2 max-lg:grid-cols-1 gap-4 items-center overflow-hidden ${reverse ? "lg:flex-row-reverse" : ""
+          }`}
       >
         {/* LEFT: Image with fancy frame */}
 
         <div className="relative flex px-10">
           {/* Blue frame effect */}
-          <div className="absolute -top-6 left-10 w-[60%] mx-auto h-full border-6 border-sky-500 z-10"></div>
+          <div className="absolute -top-6 left-10 w-[60%] max-md:w-[80%]  mx-auto h-full border-6 border-sky-500 z-10"></div>
           <Image
             src={`${image}`}
             alt={title}
             width={500}
             height={400}
-            className="shadow-lg object-cover w-[80%] ml-10  h-[32rem] relative z-20"
+            className="shadow-lg object-cover w-[80%] ml-10 h-[32rem] max-md:h-[16rem] max-md:w-[100%] relative z-20"
           />
 
           <div className="absolute -top-6 left-30 w-[80%] mx-auto h-full">

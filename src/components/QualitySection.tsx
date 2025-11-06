@@ -59,7 +59,7 @@ const QualitySection: React.FC = () => {
 
       {/* Title */}
       <div className="max-w-7xl mx-auto px-6 text-center mb-14 relative z-20">
-        <h2 className="text-4xl text-[var(--greenShade)] font-medium font-serif">
+        <h2 className="text-4xl max-lg:text-center max-lg:text-3xl text-[var(--greenShade)] font-medium font-serif">
           Industries & Production
         </h2>
       </div>

@@ -23,14 +23,14 @@ export default function Home() {
           {/* Left Section (Your content remains unchanged and fully opaque) */}
           <section className="flex flex-col justify-center w-[60%] h-full py-20 max-md:py-12 max-md:w-full max-xl:w-full text-[#044413] max-md:px-4 px-20">
             <div className="max-w-3xl mx-auto max-md:w-full">
-              <h2 className="text-4xl max-md:text-3xl max-md:text-center font-serif font-medium mb-10 text-[#044413] relative group hover:cursor-pointer">
+              <h2 className="text-4xl max-lg:text-3xl max-lg:text-center font-serif font-medium mb-10 text-[#044413] relative group hover:cursor-pointer">
                 Just Textiles Ltd: Pioneering Innovation in Sustainable Textile
                 Manufacturing
                 <span className="absolute left-0 bottom-0 h-0.5 bg-[#044413] w-0 group-hover:cursor-pointer transition-all duration-500 ease-in-out group-hover:w-68"></span>
               </h2>
 
               <div className="relative border-l-0 border-[#e4d8c7] pl-[0] space-y-12">
-                <div className="relative text-xl text-[#06304F] flex items-start gap-4 pl-[-10] font-open max-md:text-justify max-md:text-lg">
+                <div className="relative text-xl text-[#06304F] flex items-start gap-4 pl-[-10] font-open max-lg:text-justify max-md:text-lg">
                   Our story is not simply one of growth - it's a journey marked
                   by continuous innovation, conscious choices, and bold steps
                   toward a sustainable future. Every milestone reflects our
@@ -57,18 +57,18 @@ export default function Home() {
 
       {/* Foundation: Setting the Standard  */}
       <div
-        className="container mx-auto max-md:p-0 relative mt-20">
-        <section className="px-12 py-10 max-md:px-4 bg-[var(--beige)]/30 max-md:py-12 w-[100%] mx-auto relative">
+        className="bg-[var(--beige)]/30 max-md:p-0 relative mt-20">
+        <section className="px-12 py-10 container mx-auto max-md:px-4 max-lg:px-0  max-md:py-12 w-[100%] relative">
           <div className="w-[90%] mx-auto">
             <div className="flex max-md:flex-col gap-6 max-md:gap-8 items-center w-full relative">
               {/* Text Content */}
-              <div className="space-y-6 w-[70%] max-md:w-full font-open">
-                <h2 className="text-4xl max-md:text-3xl max-md:text-center font-serif font-medium text-[var(--greenShade)] leading-tight">
+              <div className="space-y-6 w-[70%] max-md:w-full max-lg:w-full font-open">
+                <h2 className="text-4xl max-lg:text-3xl max-lg:text-center font-serif font-medium text-[var(--greenShade)] leading-tight">
                   Foundation: Setting the Standard
                 </h2>
 
 
-                <div className="relative w-[100%] h-[16rem] hidden max-md:block">
+                <div className="relative max-md:w-[100%] max-lg:w-[80%] mx-auto max-md:h-[16rem] max-lg:h-[20rem] hidden max-lg:block">
                   <Image
                     src="/assets/images/4.jpg"
                     alt="Laboratory technician conducting quality control testing"
@@ -96,7 +96,7 @@ export default function Home() {
               </div>
 
               {/* Image */}
-              <div className="relative w-[40%] h-[30rem] max-md:hidden">
+              <div className="relative w-[40%] h-[30rem] max-lg:hidden">
                 <div className="relative w-[100%] h-[100%]">
                   <Image
                     src="/assets/images/4.jpg"
@@ -113,11 +113,11 @@ export default function Home() {
 
       {/* Strategic Vertical Integration  */}
       <div
-        className="p-20 max-md:p-0">
+        className="p-20 max-md:p-0 max-lg:py-20 max-lg:px-6">
         <section className="w-[90%] bg-white/80 mx-auto py-16 px-12 max-md:px-4 max-lg:px-8 rounded-2xl relative">
           <div className="w-full mx-auto relative">
             {/* Main Heading */}
-            <h2 className="text-4xl max-md:text-3xl max-md:text-center font-serif font-medium text-[var(--greenShade)] mb-12 max-md:mb-8">
+            <h2 className="text-4xl max-lg:text-3xl max-lg:text-center font-serif font-medium text-[var(--greenShade)] mb-12 max-md:mb-8">
               Strategic Vertical Integration
             </h2>
 
@@ -200,17 +200,17 @@ export default function Home() {
 
       {/* Technology as Our Differentiator  */}
       <div
-        className="p-20 bg-[var(--beige)]/30 max-md:p-0 max-md:py-20">
+        className="p-20 bg-[var(--beige)]/30 max-md:px-0 maxmd:py-20 max-lg:py-20 max-lg:px-6">
         <section className="rounded-2xl container mx-auto overflow-hidden">
 
           <h2 className="text-4xl hidden max-md:w-[80%] font-serif max-md:mx-auto max-md:text-center max-md:block max-md:text-3xl font-medium text-[var(--greenShade)] leading-tight">
             Technology as Our Differentiator
           </h2>
-          <div className="flex flex-row gap-4 max-md:flex-col items-center w-full h-full">
+          <div className="flex flex-row gap-4 max-lg:flex-col items-center w-full h-full">
             {/* Left Image */}
 
 
-            <div className="relative w-[40%] max-md:w-[80%] h-[34rem] max-md:h-[20rem] max-md:mt-6 overflow-hidden rounded-2xl">
+            <div className="relative w-[40%] max-md:w-[80%] max-lg:w-[60%] h-[34rem] max-lg:h-[20rem] max-md:mt-6 overflow-hidden rounded-2xl">
               <Image
                 src="/assets/images/TechnologyOurHistoryImage.png"
                 alt="Advanced textile manufacturing facility with colorful fabric production"
@@ -223,9 +223,9 @@ export default function Home() {
 
 
             {/* Right Content */}
-            <div className="space-y-8 w-[60%] max-md:w-full max-md:space-y-6 py-0 px-6">
+            <div className="space-y-8 w-[60%] max-lg:w-full max-md:space-y-6 py-0 px-6">
               {/* Main Heading */}
-              <h2 className="text-4xl max-md:hidden max-md:text-3xl font-medium text-[var(--greenShade)] leading-tight">
+              <h2 className="text-4xl max-md:hidden max-lg:text-3xl max-lg:text-center font-medium text-[var(--greenShade)] leading-tight">
                 Technology as Our Differentiator
               </h2>
 

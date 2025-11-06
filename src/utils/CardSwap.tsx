@@ -36,7 +36,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
     <div
       ref={ref}
       {...rest}
-      className={`absolute top-1/2 left-1/2 rounded-4xl bg-cover bg-no-repeat border border-white bg-gray-400 [transform-style:preserve-3d] [will-change:transform] [backface-visibility:hidden] ${
+      className={`absolute top-1/2 left-1/2 max-md:top-0 max-md:-left-20 max-lg:left-10 rounded-4xl bg-cover bg-no-repeat border border-white bg-gray-400 [transform-style:preserve-3d] [will-change:transform] [backface-visibility:hidden] ${
         customClass ?? ""
       } ${rest.className ?? ""}`.trim()}
     />

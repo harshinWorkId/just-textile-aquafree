@@ -169,12 +169,12 @@ const MarketsWeServe = () => {
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-16 gap-y-12 px-6 lg:flex-row lg:px-8 bg-white/80 rounded-2xl py-0 max-md:py-0 max-xl:py-0">
         {/* Left Column: Text Content and Feature Boxes */}
         <div className="w-full lg:w-3/5">
-          <h2 className="mt-4 text-4xl font-medium tracking-tight text-[var(--greenShade)] max-md:text-3xl max-md:text-center">
+          <h2 className="mt-4 text-4xl font-medium tracking-tight text-[var(--greenShade)] max-md:text-3xl max-lg:text-center">
             Markets We Serve
           </h2>
 
 
-          <div className="relative h-[16rem] w-full lg:col-span-2 hidden max-md:block mt-6">
+          <div className="relative h-[16rem] max-md:w-full max-lg:w-[60%] mx-auto lg:col-span-2 hidden max-lg:block mt-6">
             <Image
               src="/assets/images/textile-factory.png"
               alt="High-quality yarn spools on a manufacturing machine"
@@ -225,7 +225,7 @@ const MarketsWeServe = () => {
         </div>
 
         {/* Right Column: Large Image */}
-        <div className="relative max-md:hidden h-[480px] w-full lg:w-2/5 overflow-hidden rounded-xl bg-gray-100 shadow-xl lg:h-[600px] mt-50">
+        <div className="relative max-lg:hidden h-[480px] w-full lg:w-2/5 overflow-hidden rounded-xl bg-gray-100 shadow-xl lg:h-[600px] mt-50">
           <Image
             src="/assets/images/textile-factory.png"
             alt="Textile manufacturing process with various applications"

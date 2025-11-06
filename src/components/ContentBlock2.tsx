@@ -23,13 +23,13 @@ const ContentBlock2: React.FC<ContentBlockProps> = ({
 
 }) => {
   return (
-    <section className="relative py-20 mt-10">
+    <section className="relative py-20 mt-10 max-md:mt-10 max-lg:mt-30 overflow-hidden">
       <div
-        className={`max-w-7xl shadow-xl rounded-2xl mx-auto py-12 px-8 grid grid-cols-2 gap-12 items-center`}
+        className={`max-w-7xl shadow-xl rounded-2xl mx-auto py-12 px-8 grid grid-cols-2 max-lg:grid-cols-1 max-md:px-4 gap-12 max-md:gap-12 max-lg:gap-40 items-center`}
       >
         {/* LEFT: Text */}
-        <div className="px-6 lg:px-0">
-          <h2 className="text-4xl font-medium font-serif leading-tight text-[var(--greenShade)] mb-1">
+        <div className="px-6 lg:px-0 max-lg:order-2">
+          <h2 className="text-4xl max-md:text-3xl font-medium font-serif leading-tight text-[var(--greenShade)] mb-1">
             {title}
           </h2>
           {subtitle && (
@@ -45,7 +45,7 @@ const ContentBlock2: React.FC<ContentBlockProps> = ({
         </div>
 
         {/* RIGHT: Image with fancy frame */}
-        <div className="relative flex px-10">
+        <div className="relative flex px-10 max-lg:order-1">
           {/* Blue frame effect */}
           {/* <div className="absolute -top-6 left-10 w-[60%] mx-auto h-full border-6 border-sky-500 z-10"></div> */}
 

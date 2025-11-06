@@ -17,7 +17,7 @@ const PlasmaTechnologySection: React.FC = () => {
             repeatType: "reverse",
             ease: "linear",
           }}
-          className="absolute top-20 left-20 w-[30%] h-[400px]"
+          className="absolute top-20 left-20 w-[30%] h-[400px] max-lg:hidden"
         >
           <div className="relative w-full h-full">
             <Image
@@ -30,7 +30,7 @@ const PlasmaTechnologySection: React.FC = () => {
         </motion.div>
 
         <div className="w-[40%] flex justify-center max-lg:w-full py-6">
-          <div className="relative mx-auto w-[70%] h-[25rem]">
+          <div className="relative mx-auto w-[70%] h-[25rem] max-md:h-[16rem]">
             <Image
               src={`/assets/images/plasma-tech.jpg`} // replace with actual plasma image in /public/assets/images
               alt="Plasma Technology"
@@ -53,7 +53,7 @@ const PlasmaTechnologySection: React.FC = () => {
             ></div>
 
             {/* Heading */}
-            <h2 className="text-4xl font-medium font-serif text-[var(--greenShade)] mb-4">
+            <h2 className="text-4xl max-lg:text-3xl max-lg:text-center font-medium font-serif text-[var(--greenShade)] mb-4">
               Next Frontier: Plasma Technology Development
             </h2>
 

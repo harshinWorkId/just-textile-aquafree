@@ -120,7 +120,7 @@ export default function Page() {
       <section className="bg-white py-20 overflow-hidden">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-7xl mx-auto px-6 text-justify !leading-snug">
-            <h2 className=" text-4xl font-medium text-[var(--greenShade)] font-serif leading-tight mb-6">
+            <h2 className="text-4xl max-lg:text-3xl max-lg:text-center font-medium text-[var(--greenShade)] font-serif leading-tight mb-6">
               Cutting-Edge Technology & R&D
             </h2>
 
@@ -160,7 +160,7 @@ export default function Page() {
 
             {/* RIGHT SIDE: Features */}
             <div className="space-y-8 mt-6">
-              <h2 className="text-4xl text-[var(--greenShade)] font-medium font-serif mb-10">
+              <h2 className="text-4xl max-lg:text-3xl max-lg:text-center text-[var(--greenShade)] font-medium font-serif mb-10">
                 Industry-Leading Sustainability
               </h2>
 
@@ -184,10 +184,10 @@ export default function Page() {
 
       {/* Building Lasting Partnerships */}
       <section className="bg-[#fdf6ec] py-16">
-        <div className="max-w-7xl mx-auto flex flex-row gap-12 px-6 max-lg:grid-cols-1">
+        <div className="max-w-7xl mx-auto flex flex-row gap-12 px-6 max-lg:flex-col-reverse">
           {/* LEFT TEXT + CARDS */}
-          <div className="w-[70%]">
-            <h2 className="text-4xl font-medium text-[var(--greenShade)] mb-6 font-serif leading-tight">
+          <div className="w-[70%] max-lg:flex max-lg:flex-col max-lg:w-[100%]">
+            <h2 className="text-4xl max-lg:text-3xl max-lg:text-center font-medium text-[var(--greenShade)] mb-6 font-serif leading-tight">
               Building Lasting Partnerships
             </h2>
 
@@ -219,8 +219,8 @@ export default function Page() {
           </div>
 
           {/* RIGHT IMAGE + PROGRESS BAR */}
-          <div className="w-[30%] flex flex-col justify-between">
-            <div className="relative w-full h-[500px] max-lg:h-[400px]">
+          <div className="w-[30%] max-md:w-[80%] max-lg:w-[80%] max-lg:rounded-xl mx-auto flex flex-col justify-between">
+            <div className="relative w-full h-[500px] max-md:h-[16rem] max-lg:h-[400px]">
               <Image
                 src="/assets/images/quality-textile.png" // replace with your textile image
                 alt="Tailored Suit"
@@ -241,8 +241,8 @@ export default function Page() {
       <section className="bg-[#fdf6ec] py-16">
         <div className="max-w-7xl mx-auto grid grid-cols-2 gap-12 px-6 max-lg:grid-cols-1">
           {/* RIGHT CONTENT */}
-          <div className="flex flex-col justify-center">
-            <h2 className="text-4xl font-medium text-[var(--greenShade)] mb-8 font-serif">
+          <div className="flex flex-col justify-center max-lg:order-2">
+            <h2 className="text-4xl max-lg:text-3xl max-lg:text-center font-medium text-[var(--greenShade)] mb-8 font-serif">
               Our Purpose: Beyond Manufacturing
             </h2>
 
@@ -269,7 +269,7 @@ export default function Page() {
           </div>
 
           {/* LEFT IMAGE */}
-          <div className="relative w-full h-[550px] max-lg:h-[400px]">
+          <div className="relative w-full max-lg:w-[80%] mx-auto h-[550px] max-md:h-[16rem] max-lg:h-[400px] max-lg:order-1">
             <Image
               src="/assets/images/beyond-manufacturing.png" // replace with your image path
               alt="Textile Work"
@@ -283,13 +283,13 @@ export default function Page() {
 
 
       {/* Weaving Tommorrow  */}
-      <WeavingTommorrow/>
+      <WeavingTommorrow />
 
 
-      
 
 
-    
+
+
     </main>
   );
 }
