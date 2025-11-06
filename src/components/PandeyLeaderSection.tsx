@@ -42,9 +42,9 @@ const items = [
 const WhatWeAreDoing: React.FC = () => {
   return (
     <section className="bg-white py-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-[40%_60%] gap-12 px-6 max-lg:grid-cols-1 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-[40%_60%] gap-12 max-xl:gap-y-12 max-xl:gap-x-0 px-6 max-lg:grid-cols-1 items-center">
         {/* LEFT IMAGE */}
-        <div className="relative w-[80%] mx-auto h-[450px] rounded-md overflow-hidden">
+        <div className="relative w-[80%] mx-auto h-[450px] max-md:h-[20rem] max-lg:h-[30rem] max-lg:w-[60%] rounded-md overflow-hidden">
           <Image
             src="/assets/images/leader3.jpg" // replace with your static image
             alt="Volunteers"
@@ -55,17 +55,17 @@ const WhatWeAreDoing: React.FC = () => {
 
         {/* RIGHT CONTENT */}
         <div>
-          <h2 className="text-4xl font-medium text-[var(--greenShade)] mb-4">
+          <h2 className="text-4xl max-lg:text-3xl max-lg:text-center font-medium text-[var(--greenShade)] mb-4">
             Innovation Under Mr. Pandey's Leadership
           </h2>
-          <p className="text-base text-[var(--bodyContent)] font-open mb-10 leading-relaxed">
+          <p className="text-base text-[var(--bodyContent)] max-lg:text-justify font-open mb-10 leading-relaxed">
             His vision extends beyond the laboratory - transforming experimental
             concepts into scalable solutions that meet both sustainability goals
             and market demands.
           </p>
 
           {/* Items */}
-          <div className="grid grid-cols-2 gap-y-10 gap-x-8 max-md:grid-cols-1">
+          <div className="grid grid-cols-2 gap-y-10 gap-x-8 max-lg:gap-x-8 max-xl:gap-x-0 max-md:grid-cols-1">
             {items.map((item, idx) => (
               <div
                 key={idx}

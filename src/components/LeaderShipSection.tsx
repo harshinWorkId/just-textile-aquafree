@@ -76,7 +76,7 @@ const LeadershipSection: React.FC = () => {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <h2 className="text-4xl font-medium text-[var(--greenShade)] font-serif mb-4">
+            <h2 className="text-4xl max-lg:text-3xl max-lg:text-center font-medium text-[var(--greenShade)] font-serif mb-4">
               Leadership that Guides and Inspires at Just Textiles
             </h2>
             <p className="text-[var(--bodyContent)] text-base font-open leading-relaxed mb-6">
@@ -112,7 +112,7 @@ const LeadershipSection: React.FC = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="grid grid-cols-2 gap-6 -mt-4"
+            className="grid grid-cols-2 max-md:grid-cols-1 gap-6 -mt-4"
           >
             {cards.map((c, i) => (
               <motion.div

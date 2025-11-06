@@ -6,9 +6,10 @@ interface TeamMemberCardProps {
     name: string;
     title: string;
     des: string;
+    des2?: string
 }
 
-const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ imageSrc, name, title, des }) => {
+const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ imageSrc, name, title, des, des2 }) => {
     return (
         <div className="relative bg-white pt-20 pb-8 px-6 shadow-sm text-center group">
             {/* Absolute positioning for the background pattern if needed, for now just a border */}
@@ -38,6 +39,13 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ imageSrc, name, title, 
                 </p>
 
                 <p className='text-gray-700 mb-6'>{des}</p>
+                {
+                    des2 !== null && (
+                        <p className='text-gray-700 mb-6'>{des2}</p>
+
+                    )
+
+                }
                 <button className="inline-flex items-center justify-center px-6 py-2 border border-blue-400 text-sm font-medium rounded-full text-blue-500 hover:bg-blue-50 hover:text-blue-600 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
                     READ MORE
                 </button>
